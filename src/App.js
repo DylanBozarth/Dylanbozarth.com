@@ -5,7 +5,7 @@ import { Homepage } from "./pages/homepage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Projects } from "./pages/projects";
 import { Skills } from "./pages/skills";
-import {About} from './pages/About'
+import {Testimonials} from './pages/Testimonials'
 import {Hireme} from './pages/hireme'
 import {Stars} from './components/stars'
 function App() {
@@ -20,7 +20,7 @@ function App() {
             <Route exact path="/" component={Homepage} />
             <Route path="/Projects" component={Projects} />
             <Route path="/Skills" component={Skills} />
-            <Route path="/About" component={About} />
+            <Route path="/Testimonials" component={Testimonials} />
             <Route path="/hireme" component={Hireme} />
             
           </Switch>

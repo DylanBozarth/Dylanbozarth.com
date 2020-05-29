@@ -2,5 +2,5 @@ import React from 'react';
 
 
 export const Skills = () => (
-    <div>Skills</div>
+    <div className="whitetext">HE CAN DO ANYHING</div>
 )

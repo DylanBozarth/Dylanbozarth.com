@@ -15,17 +15,18 @@ export const Navigation = () => (
         <Nav className="mr-auto">
           <Link to="/Projects">
             {" "}
-            <Nav.Link href="#features">Projects</Nav.Link>{" "}
+            <Nav.Link href="#features" className="nav-link">Projects</Nav.Link>{" "}
           </Link>
 
+          <Link to="/Testimonials">
+            {" "}
+            <Nav.Link href="#features" className="nav-link">Testimonials</Nav.Link>{" "}
+          </Link>
           <Link to="/Skills">
             {" "}
-            <Nav.Link href="#features">Testimonials</Nav.Link>{" "}
+            <Nav.Link href="#features" className="nav-link">Skills</Nav.Link>{" "}
           </Link>
-          <Link to="/About">
-            {" "}
-            <Nav.Link href="#features">About me</Nav.Link>{" "}
-          </Link>
+          
         </Nav>
         <Nav>
         <Link to="/hireme">
