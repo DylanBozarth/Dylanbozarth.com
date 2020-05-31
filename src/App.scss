@@ -179,14 +179,17 @@ margin-left: 3%;
   text-shadow: 0px 0px 10px deepskyblue, 0px 0px 20px deepskyblue, 0px 0px 30px deepskyblue, 0px 0px 40px deepskyblue, 0px 0px 70px deepskyblue, 0px 0px 80px deepskyblue, 0px 0px 100px deepskyblue, 0px 0px 150px deepskyblue;
 }
 
+
   /* Homepage start */ 
   .homepage {
     background-color: black;
     height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 .homepagetitle {
-    animation: move 3s;
-    -webkit-animation: move 1.5s;
+    //animation: move 3s;
+    //-webkit-animation: move 1.5s;
     color: white;
     font-size: 12vh;
     

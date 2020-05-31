@@ -1,9 +1,29 @@
 import React from "react";
-
+import { motion } from "framer-motion";
+const changepage = {
+   in: {
+   opacity: 1,
+   x: 0
+   },
+   out: {
+   opacity: 1,
+   x: '-100vw'
+   }
+   
+     }
+     const pagetransition = {
+       duration: 1.5
+     }
 export const Projects = () => (
-  <div classNameNameName="projectspage container">
-    <div classNameNameName="row">
-      <div classNameNameName="col-sm projectitem">
+   
+  <motion.div className="projectspage container" 
+  initial="out"
+ animate="in"
+ exit="out"
+ variants={changepage}
+ transition={pagetransition}>
+    <div className="row">
+      <div className="col-sm projectitem">
         
 
 <div className="container projectitems">
@@ -54,6 +74,6 @@ export const Projects = () => (
       </div>
       </div>
      
-  </div>
+  </motion.div>
   
 );

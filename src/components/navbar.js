@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export const Navigation = () => (
   <div>
@@ -12,27 +12,26 @@ export const Navigation = () => (
       </Link>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto">
-          <Link to="/Projects">
+        <Nav className="mr-auto" >
+          <NavLink to="/Projects">
             {" "}
-            <Nav.Link href="#features" className="nav-link">Projects</Nav.Link>{" "}
-          </Link>
+            <Nav.Link href="#features" className="nav-link" >Projects</Nav.Link>{" "}
+          </NavLink>
 
-          <Link to="/Testimonials">
+          <NavLink to="/Testimonials">
             {" "}
-            <Nav.Link href="#features" className="nav-link">Testimonials</Nav.Link>{" "}
-          </Link>
-          <Link to="/Skills">
+            <Nav.Link href="#features" className="nav-link" >Testimonials</Nav.Link>{" "}
+          </NavLink>
+          <NavLink to="/Skills">
             {" "}
-            <Nav.Link href="#features" className="nav-link">Skills</Nav.Link>{" "}
-          </Link>
+            <Nav.Link href="#features" className="nav-link" >Skills</Nav.Link>{" "}
+          </NavLink>
           
-        </Nav>
-        <Nav>
-        <Link to="/hireme">
+        
+        <NavLink to="/hireme" >
             {" "}
-            <Nav.Link href="#features">Hire me</Nav.Link>{" "}
-          </Link>
+            <Nav.Link href="#features" >Hire me</Nav.Link>{" "}
+          </NavLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
