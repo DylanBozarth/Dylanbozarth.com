@@ -7,7 +7,7 @@ const changepage = {
    },
    out: {
    opacity: 1,
-   x: '-100vw'
+   x: '100vw'
    }
    
      }
@@ -16,63 +16,91 @@ const changepage = {
      }
 export const Projects = () => (
    
-  <motion.div className="projectspage container" 
+  <motion.div className="container projectitems" 
   initial="out"
  animate="in"
  exit="out"
  variants={changepage}
  transition={pagetransition}>
-    <div className="row">
-      <div className="col-sm projectitem">
+    
         
 
-<div className="container projectitems">
-  <div className="row">
+<div className="row projectsmaster">
     
   
-    <div className="col-sm">
+    <a href="https://skylimfitness.com/" target="_blank" rel="noopener noreferrer">
      <div className="flip">
     <div className="front skylimit" >
-       <h1 className="text-shadow">SKYLIMIT FITNESS</h1>
+       <h1 className="text-shadow skylimittitle"></h1>
     </div>
     <div className="back">
        <h2>SkyLimit Fitness</h2>
        <p>SkyLimit Fitness, a personal trainer's website. With e-commerce and blog functionality. Made with React and SCSS</p>
     </div>
 </div>
-     </div>
+ </a>    
    
-    
+    <a href="https://admiring-lamport-599b6b.netlify.app/" target="_blank" rel="noopener noreferrer">
      <div className="flip">
-    <div className="front">
-       <h1 className="text-shadow">MOUNTAIN</h1>
+    <div className="front munchapp">
+       <h1 className="text-shadow"></h1>
     </div>
     <div className="back">
-       <h2>Angular</h2>
-       <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+       <h2>Munch, Food ordering app.</h2>
+       <p> Made with React and integrated with google firebase for log-in functionality.</p>
     </div>
+</div></a>
 </div>
-    </div>
    
     
+      <div className="row">
+    <a href="https://loving-newton-bfdf08.netlify.app/" target="_blank" rel="noopener noreferrer">
+     <div className="flip">
+    <div className="front weatherapp
+" >
+       <h1 className="text-shadow">Weather app</h1>
+    </div>
+    <div className="back">
+       <h2>Weather app</h2>
+       <p>A mobile-first global weather app. Made with React Native with search and API functionality.</p>
+    </div>
+</div>
+</a>
+
+<a href="https://loving-newton-bfdf08.netlify.app/" target="_blank" rel="noopener noreferrer">
+     <div className="flip">
+    <div className="front weatherapp
+" >
+       <h1 className="text-shadow">Weather app</h1>
+    </div>
+    <div className="back">
+       <h2>Weather app</h2>
+       <p>A mobile-first global weather app. Made with React Native with search and API functionality.</p>
+    </div>
+</div>
+</a>
+</div>
+<div className="row">
+<a href="https://loving-newton-bfdf08.netlify.app/" target="_blank" rel="noopener noreferrer">
+     <div className="flip">
+    <div className="front weatherapp
+" >
+       <h1 className="text-shadow">Weather app</h1>
+    </div>
+    <div className="back">
+       <h2>Weather app</h2>
+       <p>A mobile-first global weather app. Made with React Native with search and API functionality.</p>
+    </div>
+</div>
+</a>
+
+
+
+
+
+</div>
       
-    
-     <div className="flip">
-    <div className="front" >
-       <h1 className="text-shadow">MOUNTAIN</h1>
-    </div>
-    <div className="back">
-       <h2>Angular</h2>
-       <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-    </div>
-</div>
-</div>
-
-
-
-
-      </div>
-      </div>
+   
      
   </motion.div>
   

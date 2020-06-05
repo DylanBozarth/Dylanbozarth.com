@@ -7,7 +7,7 @@ const changepage = {
   },
   out: {
   opacity: 1,
-  x: '-100vw'
+  x: '100vw'
   }
   
     }

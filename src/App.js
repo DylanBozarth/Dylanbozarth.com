@@ -2,23 +2,17 @@ import React from "react";
 import { Navigation } from "./components/navbar";
 import "./App.scss";
 import { Homepage } from "./pages/homepage";
-import { BrowserRouter as Router, Switch, Route, __RouterContext } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Projects } from "./pages/projects";
 import { Skills } from "./pages/skills";
 import {Testimonials} from './pages/Testimonials'
 import {Hireme} from './pages/hireme'
 import {Stars} from './components/stars'
 import {AnimatePresence, motion} from 'framer-motion'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
-  const spring = {
-    type: "spring",
-    damping: 20,
-    stiffness: 100,
-    when: "afterChildren"
-  };
   
   return (
     <Router>
