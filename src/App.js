@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Projects } from "./pages/projects";
 import { Skills } from "./pages/skills";
 import {Testimonials} from './pages/Testimonials'
-import {Hireme} from './pages/hireme'
+import Hireme from './pages/hireme'
 import {Stars} from './components/stars'
 import {AnimatePresence, motion} from 'framer-motion'
 import 'bootstrap/dist/css/bootstrap.min.css';
