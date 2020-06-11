@@ -12,7 +12,7 @@ const changepage = {
   },
 };
 const pagetransition = {
-  duration: 1.5,
+  duration: 0,
 };
 export const Homepage = () => (
   <motion.div

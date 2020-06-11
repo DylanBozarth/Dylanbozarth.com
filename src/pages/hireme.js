@@ -1,59 +1,59 @@
-import { motion } from "framer-motion";
+// Customize this 'myform.js' script and add it to your JS bundle.
+// Then import it with 'import MyForm from "./myform.js"'.
+// Finally, add a <MyForm/> element whereever you wish to display the form.
+
 import React from "react";
 
-export default class Hireme extends React.Component {
+export default class Contact extends React.Component {
   constructor(props) {
     super(props);
     this.submitForm = this.submitForm.bind(this);
     this.state = {
-      status: ""
-      
+      status: "",
+      invisibletext: "",
     };
   }
 
   render() {
-    const changepage = {
-      in: {
-        opacity: 1,
-        x: 0,
-      },
-      out: {
-        opacity: 1,
-        x: "100vw",
-      },
-    };
-    const pagetransition = {
-      duration: 1.5,
-    };
     const { status } = this.state;
+    function itworked() {
+      alert('AAAA')
+    }
+
+    function didntwork() {
+      alert('bbbbb')
+    }
+
     return (
-    <motion.div
-    initial="out"
-    animate="in"
-    exit="out"
-    variants={changepage}
-    transition={pagetransition}
-    className="homepage"
-  >
       <form
         onSubmit={this.submitForm}
-        action="https://formspree.io/moqkdyqw"
+        action="https://formspree.io/maypqndd"
         method="POST"
-        className="form"
+        className="contactform"
       >
-      <div className="login">
-	<h1>AAAAA</h1>
-    <form method="post">
-    	<input type="text" name="u" placeholder="Username" required="required" />
-        <input type="password" name="p" placeholder="Password" required="required" />
-        <button type="submit" className="btn btn-primary btn-block btn-large">Let me in.</button>
-    </form>
-</div>
-      </form>{status === "SUCCESS" ? <p>Thanks!</p> : <div className="submit">
-        <input type="submit" value="SEND" id="button-blue" />
-        <div className="ease"></div>
-      </div>}
-        {status === "ERROR" && <p>Ooops! There was an error.</p>}</motion.div>
+        <h1 className="contactsky">Contact sky</h1>
+
+       
+        <label>Your name</label>
+        <input type="text" name="My name:" />
+        <br />
+        <label>Email:</label>
+        <input type="email" name="email" />
+        <br />
+        <label>Phone number</label>
+        <input type="text" name="Phone number" />
+        <br />
+        <label>What are you fitness goals?</label>
+        <textarea type="text" name="My fitness goals" />
+
+       
+        {status === "SUCCESS" ? (
+          <p>{itworked()}</p>
+        ) : (
+          <button className="submitbutton">Submit</button>
+        )}
+        {status === "ERROR" && <p>{didntwork()}</p>}
+      </form>
     );
   }
 
@@ -76,7 +76,6 @@ export default class Hireme extends React.Component {
     xhr.send(data);
   }
 }
-
 
 
   /* 
