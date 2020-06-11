@@ -35,7 +35,7 @@ export const Navigation = () => (
             {" "}
             <Nav.Link href="#features" >Hire me</Nav.Link>{" "}
             
-          </NavLink><a href="https://skylimfitness.com/"
+          </NavLink><a href="https://codepen.io/Dylanbozarth/full/KKVzNvq"
         target="_blank"
         rel="noopener noreferrer" className="nav-link">Resumé</a>
         </Nav>

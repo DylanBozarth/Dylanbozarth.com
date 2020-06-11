@@ -1,7 +1,7 @@
 // Customize this 'myform.js' script and add it to your JS bundle.
 // Then import it with 'import MyForm from "./myform.js"'.
 // Finally, add a <MyForm/> element whereever you wish to display the form.
-
+import cogoToast from "cogo-toast";
 import React from "react";
 
 export default class Contact extends React.Component {
@@ -17,34 +17,36 @@ export default class Contact extends React.Component {
   render() {
     const { status } = this.state;
     function itworked() {
-      alert('AAAA')
+      cogoToast.success(
+        "Thank you for reaching out! I will contact you shortly."
+      );
     }
 
     function didntwork() {
-      alert('bbbbb')
+      cogoToast.error("Error, please try again. ");
     }
 
     return (
       <form
         onSubmit={this.submitForm}
-        action="https://formspree.io/maypqndd"
+        action="https://formspree.io/moqkdyqw"
         method="POST"
         className="contactform"
       >
-        <h1 className="contactsky">Contact sky</h1>
+        
 
        
-        <label>Your name</label>
-        <input type="text" name="My name:" />
+        <label className="hiremelabel">Your name/Company Name</label>
+        <input type="text" name="Name" placeholder="John Smith, Awesome LLC" />
         <br />
-        <label>Email:</label>
-        <input type="email" name="email" />
+        <label className="hiremelabel">Email:</label>
+        <input type="email" name="email" placeholder="123@email.com" />
         <br />
-        <label>Phone number</label>
-        <input type="text" name="Phone number" />
+        <label className="hiremelabel">Phone number</label>
+        <input type="text" name="Phone number" placeholder="867-5309" />
         <br />
-        <label>What are you fitness goals?</label>
-        <textarea type="text" name="My fitness goals" />
+        <label className="hiremelabel">Comments</label>
+        <input type="text" name="Phone number"  />
 
        
         {status === "SUCCESS" ? (

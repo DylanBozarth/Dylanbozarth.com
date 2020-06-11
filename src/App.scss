@@ -654,11 +654,17 @@ $color_grey_dark: darkslategrey;
   transform: scale(1.1);
 }
 // form start (hire me) 
+.hiremelabel {
+  color: white;
+}
 .contactform {
-  margin-top: -10%;
-  width: 68%;
+  margin-top: 5%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
+  border-width: thick;
+  border-style: ridge;
+  border-color: darkslateblue;
 }
 .contactme {
   text-align: center;
