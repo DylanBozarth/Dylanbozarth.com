@@ -15,18 +15,23 @@ const pagetransition = {
   duration: 1.5,
 };
 export const Homepage = () => (
-  
   <motion.div
-  initial="out"
-  animate="in"
-  exit="out"
-  variants={changepage}
-  transition={pagetransition}
- 
+    initial="out"
+    animate="in"
+    exit="out"
+    variants={changepage}
+    transition={pagetransition}
     className="homepage"
-    
   >
-    <motion.h2 className="homepagetitle" >Looking for a great developer?</motion.h2>
-    
+<div id="container" className="homepagebox">
+  Looking for a
+  <div id="flip">
+    <div><div>Web developer</div></div>
+    <div><div>Javascript wiz</div></div>
+    <div><div>React expert?</div></div>
+  </div>
+  ?
+</div>
+
   </motion.div>
 );

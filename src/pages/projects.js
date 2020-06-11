@@ -47,7 +47,7 @@ export const Projects = () => (
 
 <div className="griditem">
       <a
-        href="https://skylimfitness.com/"
+        href="https://admiring-lamport-599b6b.netlify.app/"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -56,10 +56,9 @@ export const Projects = () => (
             <h1 className="text-shadow skylimittitle"></h1>
           </div>
           <div className="back">
-            <h2>SkyLimit Fitness</h2>
+            <h2>Munch</h2>
             <p>
-              SkyLimit Fitness, a personal trainer's website. With e-commerce
-              and blog functionality. Made with React and SCSS
+              A food ordering app, made with React. With firebase and google log-in functionality. 
             </p>
           </div>
         </div>
@@ -68,7 +67,7 @@ export const Projects = () => (
 
 <div className="griditem">
       <a
-        href="https://skylimfitness.com/"
+        href="https://loving-newton-bfdf08.netlify.app/"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -77,10 +76,9 @@ export const Projects = () => (
             <h1 className="text-shadow skylimittitle"></h1>
           </div>
           <div className="back">
-            <h2>SkyLimit Fitness</h2>
+            <h2>Mobile first React-native weatherapp </h2>
             <p>
-              SkyLimit Fitness, a personal trainer's website. With e-commerce
-              and blog functionality. Made with React and SCSS
+              Made with accuweather API, type in any city and get the current weather. 
             </p>
           </div>
         </div>
@@ -91,7 +89,26 @@ export const Projects = () => (
 <div className="row">
 <div className="griditem">
       <a
-        href="https://skylimfitness.com/"
+        href="https://admiring-lamport-599b6b.netlify.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className="flip">
+          <div className="front calc">
+            <h1 className="text-shadow skylimittitle"></h1>
+          </div>
+          <div className="back">
+            <h2>React Calculator</h2>
+            <p>
+              A calculator made with React. With every functionality that I could think of. 
+            </p>
+          </div>
+        </div>
+      </a>
+</div>
+<div className="griditem">
+      <a
+        href="https://codepen.io/Dylanbozarth/full/jOPNpJe"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -100,10 +117,9 @@ export const Projects = () => (
             <h1 className="text-shadow skylimittitle"></h1>
           </div>
           <div className="back">
-            <h2>SkyLimit Fitness</h2>
+            <h2>To do list</h2>
             <p>
-              SkyLimit Fitness, a personal trainer's website. With e-commerce
-              and blog functionality. Made with React and SCSS
+              Simple CRUD (Create, read, update and delete) application. Made with Javascript and Node.js.  
             </p>
           </div>
         </div>
@@ -111,7 +127,7 @@ export const Projects = () => (
 </div>
 <div className="griditem">
       <a
-        href="https://skylimfitness.com/"
+        href="https://codepen.io/Dylanbozarth/pen/gObbbNg"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -120,10 +136,9 @@ export const Projects = () => (
             <h1 className="text-shadow skylimittitle"></h1>
           </div>
           <div className="back">
-            <h2>SkyLimit Fitness</h2>
+            <h2>George Bush Quote machine</h2>
             <p>
-              SkyLimit Fitness, a personal trainer's website. With e-commerce
-              and blog functionality. Made with React and SCSS
+              Made with Javascript, click to recieve a "Bushism". 
             </p>
           </div>
         </div>
@@ -131,7 +146,7 @@ export const Projects = () => (
 </div>
 <div className="griditem">
       <a
-        href="https://skylimfitness.com/"
+        href="https://codepen.io/Dylanbozarth/full/oNgLoMN"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -140,10 +155,9 @@ export const Projects = () => (
             <h1 className="text-shadow skylimittitle"></h1>
           </div>
           <div className="back">
-            <h2>SkyLimit Fitness</h2>
+            <h2>Javascript Quiz</h2>
             <p>
-              SkyLimit Fitness, a personal trainer's website. With e-commerce
-              and blog functionality. Made with React and SCSS
+              A quiz made with Scss animations. 
             </p>
           </div>
         </div>

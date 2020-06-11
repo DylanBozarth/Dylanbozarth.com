@@ -2,8 +2,11 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 
+
 export const Navigation = () => (
-  <div>
+  <div
+  className="homepage"
+>
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Link to="/">
         <Navbar.Brand href="#home" className="pulse">
@@ -31,7 +34,10 @@ export const Navigation = () => (
         <NavLink to="/hireme" >
             {" "}
             <Nav.Link href="#features" >Hire me</Nav.Link>{" "}
-          </NavLink>
+            
+          </NavLink><a href="https://skylimfitness.com/"
+        target="_blank"
+        rel="noopener noreferrer" className="nav-link">Resumé</a>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
