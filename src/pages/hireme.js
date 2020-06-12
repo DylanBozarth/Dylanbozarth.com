@@ -4,6 +4,8 @@
 import cogoToast from "cogo-toast";
 import React from "react";
 
+import { motion } from "framer-motion";
+
 export default class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -25,8 +27,28 @@ export default class Contact extends React.Component {
     function didntwork() {
       cogoToast.error("Error, please try again. ");
     }
-
+    const changepage = {
+      in: {
+        opacity: 1,
+        x: 0,
+      },
+      out: {
+        opacity: 1,
+        x: "100vw",
+      },
+    };
+    const pagetransition = {
+      duration: 1.5,
+    };
     return (
+      <motion.div
+    className="container"
+    initial="out"
+    animate="in"
+    exit="out"
+    variants={changepage}
+    transition={pagetransition}
+  >
       <form
         onSubmit={this.submitForm}
         action="https://formspree.io/moqkdyqw"
@@ -56,6 +78,7 @@ export default class Contact extends React.Component {
         )}
         {status === "ERROR" && <p>{didntwork()}</p>}
       </form>
+      </motion.div>
     );
   }
 

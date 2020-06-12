@@ -9,10 +9,10 @@ export const Stars = () => (
     params={{
 	    "particles": {
 	        "number": {
-	            "value": 150,
+	            "value": 190,
 	            "density": {
 	                "enable": true,
-	                "value_area": 1500
+	                "value_area": 2000
 	            }
 	        },
 	        "line_linked": {
@@ -21,10 +21,10 @@ export const Stars = () => (
 	        },
 	        "move": {
 	            "direction": "right",
-	            "speed": 0.12
+	            "speed": 0.18
 	        },
 	        "size": {
-	            "value": 1.5
+	            "value": 1.9
 	        },
 	        "opacity": {
 	            "anim": {
