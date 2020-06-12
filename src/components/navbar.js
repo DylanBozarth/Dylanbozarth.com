@@ -4,10 +4,44 @@ import { Link, NavLink } from "react-router-dom";
 
 
 export const Navigation = () => (
-  <div
-  className="homepage"
->
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+  <nav className="container">
+  <ul>
+    <li>
+      <NavLink to="/Projects">
+            {" "}
+            <Nav.Link href="#features" className="nav-link" >Projects</Nav.Link>{" "}
+          </NavLink>
+    </li>
+    <li>
+    <NavLink to="/Skills">
+            {" "}
+            <Nav.Link href="#features" className="nav-link" >Skills</Nav.Link>{" "}
+          </NavLink>
+    </li>
+    <li>
+    <NavLink to="/Testimonials">
+            {" "}
+            <Nav.Link href="#features" className="nav-link" >Testimonials</Nav.Link>{" "}
+          </NavLink>
+    </li>
+    <li>
+    <NavLink to="/hireme" >
+            {" "}
+            <Nav.Link href="#features" >Hire me</Nav.Link>{" "}
+            
+          </NavLink>
+    </li>
+    <li>
+    <a href="https://codepen.io/Dylanbozarth/full/KKVzNvq"
+        target="_blank"
+        rel="noopener noreferrer" className="nav-link">Resumé</a>
+    </li>
+  </ul>
+</nav>
+);
+
+/* 
+<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Link to="/">
         <Navbar.Brand href="#home" className="pulse">
           Dylan Bozarth
@@ -41,5 +75,4 @@ export const Navigation = () => (
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-  </div>
-);
+    */ 

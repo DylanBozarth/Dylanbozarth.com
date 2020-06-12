@@ -21,7 +21,7 @@ export const Homepage = () => (
     exit="out"
     variants={changepage}
     transition={pagetransition}
-    className="homepage"
+    className=""
   >
 <div id="container" className="homepagebox">
   Looking for a

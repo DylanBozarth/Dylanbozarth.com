@@ -22,7 +22,7 @@ export const Testimonials = () => (
   exit="out"
   variants={changepage}
   transition={pagetransition}
-     className="homepage"
+     className="testimonialpage"
    ><div className="blog-card">
     <div className="meta">
       <div className="photo"></div>
