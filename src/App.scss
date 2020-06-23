@@ -224,7 +224,7 @@ nav ul li a:hover {
 .projectitems {
   margin-top: 3%;
  margin-right: auto;
- margin-left: 5%;
+
   
 }
 
@@ -325,6 +325,10 @@ nav ul li a:hover {
 }
 .munchapp {
   background-image: url('./images/munch.png') !important;
+  background-size: fill;
+}
+.oldportfolio {
+  background-image: url('./images/oldportfolio.png') !important;
   background-size: fill;
 }
 .weatherapp {
@@ -567,7 +571,7 @@ background-repeat: no-repeat;
 }
 .contactform {
   margin-top: 5%;
-  width: 50%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
   border-width: thick;
@@ -778,7 +782,7 @@ aside {
 }
 .asidejs {
   background: url(./skillsimages/javascript.png);
-  background-size: 100% 100%;
+  background-size: 80% 80%;
 }
 .asidereact {
   background: url(./skillsimages/react.png);

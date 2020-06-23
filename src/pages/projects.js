@@ -47,7 +47,7 @@ export const Projects = () => (
 
 <div className="griditem">
       <a
-        href="https://admiring-lamport-599b6b.netlify.app/"
+        href="https://srv9z.codesandbox.io/"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -64,7 +64,28 @@ export const Projects = () => (
         </div>
       </a>
 </div>
-
+<div className="griditem">
+      <a
+        href="https://cez5x.csb.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className="flip">
+          <div className="front oldportfolio">
+            <h1 className="text-shadow skylimittitle"></h1>
+          </div>
+          <div className="back">
+            <h2>Old Portfolio</h2>
+            <p>
+              My old website, which served its purpose but needed to be re-done. 
+            </p>
+          </div>
+        </div>
+      </a>
+</div>
+</div>
+<div className="row">
+  
 <div className="griditem">
       <a
         href="https://loving-newton-bfdf08.netlify.app/"
@@ -85,11 +106,9 @@ export const Projects = () => (
       </a>
 </div>
 
-</div>
-<div className="row">
 <div className="griditem">
       <a
-        href="https://admiring-lamport-599b6b.netlify.app/"
+        href="https://codepen.io/Dylanbozarth/pen/vYYKVNX"
         target="_blank"
         rel="noopener noreferrer"
       >

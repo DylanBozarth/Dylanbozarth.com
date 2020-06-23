@@ -6,6 +6,12 @@ import { Link, NavLink } from "react-router-dom";
 export const Navigation = () => (
   <nav className="container">
   <ul>
+  <li>
+      <NavLink to="/">
+            {" "}
+            <Nav.Link href="#features" className="nav-link" >Home</Nav.Link>{" "}
+          </NavLink>
+    </li>
     <li>
       <NavLink to="/Projects">
             {" "}
@@ -32,7 +38,7 @@ export const Navigation = () => (
           </NavLink>
     </li>
     <li>
-    <a href="https://codepen.io/Dylanbozarth/full/KKVzNvq"
+    <a href="https://drive.google.com/file/d/1L6Hvq5Gymh1TG1DrfwAqvsj8zWwIW1C2/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer" className="nav-link">Resumé</a>
     </li>
