@@ -22,8 +22,9 @@ export const Projects = () => (
     variants={changepage}
     transition={pagetransition}
   >
-    <div className="grid-container">
+    <div className="grid-container"><h1 className="projectstitle">Comercial projects</h1>
        <div className="row">
+         
        <div className="griditem">
       <a
         href="https://skylimfitness.com/"
@@ -44,7 +45,30 @@ export const Projects = () => (
         </div>
       </a>
 </div>
+<div className="griditem">
+      <a
+        href="https://piljz.csb.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className="flip">
+          <div className="front hws">
+            <h1 className="text-shadow skylimittitle"></h1>
+          </div>
+          <div className="back">
+            <h2>History's Armory</h2>
+            <p>
+             History's Armory, a website for collectors and enthusiasts to buy historical reproduction armor and weapons. Made with React and Scss. 
+            </p>
+          </div>
+        </div>
+      </a>
+</div>
 
+
+</div><h1 className="projectstitle">Personal Projects</h1>
+<div className="row">
+  
 <div className="griditem">
       <a
         href="https://srv9z.codesandbox.io/"
@@ -64,28 +88,6 @@ export const Projects = () => (
         </div>
       </a>
 </div>
-<div className="griditem">
-      <a
-        href="https://cez5x.csb.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div className="flip">
-          <div className="front oldportfolio">
-            <h1 className="text-shadow skylimittitle"></h1>
-          </div>
-          <div className="back">
-            <h2>Old Portfolio</h2>
-            <p>
-              My old website, which served its purpose but needed to be re-done. 
-            </p>
-          </div>
-        </div>
-      </a>
-</div>
-</div>
-<div className="row">
-  
 <div className="griditem">
       <a
         href="https://loving-newton-bfdf08.netlify.app/"
