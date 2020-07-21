@@ -22,7 +22,7 @@ export const Projects = () => (
     variants={changepage}
     transition={pagetransition}
   >
-    <div className="grid-container"><h1 className="projectstitle">Comercial projects</h1>
+    <div className="grid-container"><h1 className="projectstitle">Commercial projects</h1>
        <div className="row">
          
        <div className="griditem">
@@ -47,7 +47,7 @@ export const Projects = () => (
 </div>
 <div className="griditem">
       <a
-        href="https://piljz.csb.app/"
+        href="https://63520.csb.app/"
         target="_blank"
         rel="noopener noreferrer"
       >
