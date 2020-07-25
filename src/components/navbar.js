@@ -1,10 +1,10 @@
 import React from "react";
-import { Navbar, Nav } from "react-bootstrap";
-import { Link, NavLink } from "react-router-dom";
+import {  Nav } from "react-bootstrap";
+import {  NavLink } from "react-router-dom";
 
 
 export const Navigation = () => (
-  <nav className="container">
+  <nav className="container navbarmaster">
   <ul>
   <li>
       <NavLink to="/">

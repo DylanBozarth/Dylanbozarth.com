@@ -47,7 +47,7 @@ export const Projects = () => (
 </div>
 <div className="griditem">
       <a
-        href="https://63520.csb.app/"
+        href="https://76y7e.csb.app/"
         target="_blank"
         rel="noopener noreferrer"
       >
