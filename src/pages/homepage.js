@@ -26,11 +26,11 @@ export const Homepage = () => (
 <div id="container" className="homepagebox">
   Looking for a
   <div id="flip">
-    <div><div>Web developer</div></div>
-    <div><div>Javascript wiz</div></div>
-    <div><div>React expert?</div></div>
+    <div><div>A website?</div></div>
+    <div><div>An App?</div></div>
+    <div><div>A web developer?</div></div>
   </div>
-  ?
+  
 </div>
 
   </motion.div>
