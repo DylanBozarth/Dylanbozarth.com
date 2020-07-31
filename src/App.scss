@@ -58,8 +58,14 @@ nav ul li a:hover {
 }
 .nav-link {
   color: steelblue !important;
-  margin: 1rem !important;
- 
+  margin-right: 15px !important;
+  margin-left: 4px !important;
+  font-size: 130%;
+}
+.navbarmaster {
+  
+  margin-left: auto;
+  margin-right: auto;
 }
 .nav-link:hover {
   color: white !important;
@@ -243,6 +249,7 @@ nav ul li a:hover {
 .projectitems {
   margin-top: 3%;
   margin-right: auto;
+  margin-left: 2.5rem !important;
 }
 
 .moretocome {
@@ -1402,4 +1409,13 @@ aside:hover ul li:nth-child(3) {
   100% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
 }

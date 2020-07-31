@@ -22,7 +22,7 @@ export const Projects = () => (
     variants={changepage}
     transition={pagetransition}
   >
-    <div className="grid-container"><h1 className="projectstitle">Commercial projects</h1>
+    <div className="grid-container"><h1 className="projectstitle">Commercial Web projects</h1>
        <div className="row">
          
        <div className="griditem">
@@ -66,7 +66,7 @@ export const Projects = () => (
 </div>
 
 
-</div><h1 className="projectstitle">Personal Projects</h1>
+</div><h1 className="projectstitle">Personal Web Projects</h1>
 <div className="row">
   
 <div className="griditem">

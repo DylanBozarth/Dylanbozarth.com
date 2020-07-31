@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Projects } from "./pages/projects";
 import { Skills } from "./pages/skills";
 import {Testimonials} from './pages/Testimonials'
+import {Footer} from './components/footer'
 import Hireme from './pages/hireme'
 import {Stars} from './components/stars'
 import {AnimatePresence, motion} from 'framer-motion'
@@ -31,6 +32,7 @@ function App() {
             
           </Switch>
           </AnimatePresence>
+          <Footer />
         </div>
       </motion.div>
       

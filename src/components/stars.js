@@ -9,7 +9,7 @@ export const Stars = () => (
     params={{
 	    "particles": {
 	        "number": {
-	            "value": 190,
+	            "value": 240,
 	            "density": {
 	                "enable": true,
 	                "value_area": 2000
