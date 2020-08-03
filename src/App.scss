@@ -248,14 +248,17 @@ nav ul li a:hover {
 // base
 .projectitems {
   margin-top: 3%;
-  margin-right: auto;
-  margin-left: 2.5rem !important;
+  
 }
-
+.griditem {
+  margin-left: auto;
+  margin-right: auto;
+}
 .moretocome {
   color: white;
   margin-bottoM: 10%;
   font-size: 36px;
+  text-align: center;
 }
 .grid-container {
   display: grid !important;
@@ -341,39 +344,39 @@ nav ul li a:hover {
   background-position: center !important;
 }
 .skylimit {
-  background-image: url("./images/skyfitness.png") !important;
+  background-image: url("./images/skyfitnessnew.jpg") !important;
   background-size: fill;
 }
 .hws {
-  background-image: url("./images/hws.png") !important;
+  background-image: url("./images/hwsnew.jpg") !important;
   background-size: fill;
 }
 .munchapp {
-  background-image: url("./images/munch.png") !important;
+  background-image: url("./images/munchnew.jpg") !important;
   background-size: fill;
 }
 .oldportfolio {
-  background-image: url("./images/oldportfolio.png") !important;
+  background-image: url("./images/oldportfolionew.jpg") !important;
   background-size: fill;
 }
 .weatherapp {
-  background-image: url("./images/weatherapp.png") !important;
+  background-image: url("./images/weatherapp.gif") !important;
   background-size: fill;
 }
 .todo {
-  background-image: url("./images/todo.png") !important;
+  background-image: url("./images/todonew.jpg") !important;
   background-size: fill;
 }
 .quiz {
-  background-image: url("./images/quiz.png") !important;
+  background-image: url("./images/quiznew.jpg") !important;
   background-size: fill;
 }
 .quote {
-  background-image: url("./images/quote.png") !important;
+  background-image: url("./images/quotenew.jpg") !important;
   background-size: fill;
 }
 .calc {
-  background-image: url("./images/calc.png") !important;
+  background-image: url("./images/calc.gif") !important;
   background-size: fill;
 }
 .skylimittitle {
@@ -551,7 +554,7 @@ $color_grey_dark: darkslategrey;
     }
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 550px) {
     flex-direction: row;
     max-width: 700px;
     .meta {
@@ -745,7 +748,7 @@ textarea {
   width: 300px;
   height: 160px;
   max-height: 160px;
-  background-image: url("./images/freecodecamp.png");
+  background-image: url("./images/fccNew.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -753,7 +756,7 @@ textarea {
   width: 300px;
   height: 160px;
   max-height: 160px;
-  background-image: url("./images/github.png");
+  background-image: url("./images/githubnew.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -761,7 +764,7 @@ textarea {
   width: 300px;
   height: 160px;
   max-height: 160px;
-  background-image: url("./images/codepen.png");
+  background-image: url("./images/codepenPreview.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }

@@ -99,7 +99,7 @@ export const Projects = () => (
             <h1 className="text-shadow skylimittitle"></h1>
           </div>
           <div className="back">
-            <h2>Mobile first React-native weatherapp </h2>
+            <h2>Mobile first React weather app </h2>
             <p>
               Made with accuweather API, type in any city and get the current weather. 
             </p>
@@ -185,7 +185,7 @@ export const Projects = () => (
       </a>
 </div>
 </div>
-<h1 className="moretocome">More coming soon!</h1>
+<h1 className="moretocome">React Native are projects currently in development.</h1>
 </div>
 
   </motion.div>
