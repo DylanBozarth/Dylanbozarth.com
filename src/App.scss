@@ -596,6 +596,7 @@ $color_grey_dark: darkslategrey;
 }
 .evidencelink {
   color: white;
+  margin-left: 5%;
 }
 .evidencelink:hover {
   text-decoration: none;
@@ -834,6 +835,10 @@ aside {
 }
 .asidescss {
   background: url(./skillsimages/scss.png);
+  background-size: 100% 100%;
+}
+.asidessql {
+  background: url(./skillsimages/sql.png);
   background-size: 100% 100%;
 }
 aside:hover {
