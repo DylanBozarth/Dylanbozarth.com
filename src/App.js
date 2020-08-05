@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import { Navigation } from "./components/navbar";
 import "./App.scss";
 import { Homepage } from "./pages/homepage";
@@ -11,16 +11,10 @@ import Hireme from "./pages/hireme";
 import { Stars } from "./components/stars";
 import { AnimatePresence, motion } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { gsap, TweenMax, Power3 } from "gsap";
+
 
 function App() {
-  let thediv = useRef(null);
-  
-  useEffect(() => {
-    TweenMax.to(thediv, 2.5, {x: 100, y: 100});
-
-  });
-
+ 
   return (
     <Router>
       <motion.div className="wrapper">
@@ -29,17 +23,10 @@ function App() {
           <Stars />
         </div>
         <div className="sliderdiv">
-          <h1
-            ref={(el) => {
-              thediv = el;
-            }}
-            className="whitetext"
-          >
-            hello
-          </h1>
+         
           <AnimatePresence exitBeforeEnter>
             <Switch>
-              {/* <Route exact path="/" component={Homepage} /> */}
+               <Route exact path="/" component={Homepage} /> 
               <Route path="/Projects" component={Projects} />
               <Route path="/Skills" component={Skills} />
               <Route path="/Testimonials" component={Testimonials} />
