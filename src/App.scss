@@ -162,14 +162,12 @@ nav ul li a:hover {
 .projectstitle {
   color: white;
   padding: 10px;
+  text-align: center;
 }
 /* homepage text effects */
 .homepagebox {
   text-align: center;
   margin-top: -10rem !important; 
-  
-}
-.fliptext {
   
 }
 #container {
@@ -253,20 +251,22 @@ nav ul li a:hover {
   margin-top: 3%;
   
 }
-.griditem {
-  margin-left: auto;
-  margin-right: auto;
-}
 .moretocome {
   color: white;
-  margin-bottoM: 10%;
   font-size: 36px;
   text-align: center;
 }
+.projectlink {
+  text-align: center;
+  color: white;
+
+}
+.projectlink:hover {
+  text-decoration: none;
+}
 .grid-container {
   display: grid !important;
-  margin-left: auto;
-  margin-right: auto;
+  
 }
 .grid-container {
   display: inline-grid !important;

@@ -30,13 +30,13 @@ export const Projects = () => (
         href="https://skylimfitness.com/"
         target="_blank"
         rel="noopener noreferrer"
-      >
+      ><h2 className="projectlink">SkyLimit Fitness</h2>
         <div className="flip">
           <div className="front skylimit">
             <h1 className="text-shadow skylimittitle"></h1>
           </div>
           <div className="back">
-            <h2>SkyLimit Fitness</h2>
+            
             <p>
               SkyLimit Fitness, a personal trainer's website. With e-commerce
               and blog functionality. Made with React and SCSS
@@ -50,13 +50,13 @@ export const Projects = () => (
         href="https://76y7e.csb.app/"
         target="_blank"
         rel="noopener noreferrer"
-      >
+      ><h2 className="projectlink">Spokane Power Stroke</h2>
         <div className="flip">
           <div className="front hws">
             <h1 className="text-shadow skylimittitle"></h1>
           </div>
           <div className="back">
-            <h2>History's Armory</h2>
+           
             <p>
              History's Armory, a website for collectors and enthusiasts to buy historical reproduction armor and weapons. Made with React and Scss. 
             </p>
@@ -64,23 +64,18 @@ export const Projects = () => (
         </div>
       </a>
 </div>
-
-
-</div><h1 className="projectstitle">Personal Web Projects</h1>
-<div className="row">
-  
 <div className="griditem">
       <a
         href="https://srv9z.codesandbox.io/"
         target="_blank"
         rel="noopener noreferrer"
-      >
+      ><h2 className="projectlink">History's Armory</h2>
         <div className="flip">
           <div className="front munchapp">
             <h1 className="text-shadow skylimittitle"></h1>
           </div>
           <div className="back">
-            <h2>Munch</h2>
+            
             <p>
               A food ordering app, made with React. With firebase and google log-in functionality. 
             </p>
@@ -88,105 +83,8 @@ export const Projects = () => (
         </div>
       </a>
 </div>
-<div className="griditem">
-      <a
-        href="https://loving-newton-bfdf08.netlify.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div className="flip">
-          <div className="front weatherapp">
-            <h1 className="text-shadow skylimittitle"></h1>
-          </div>
-          <div className="back">
-            <h2>Mobile first React weather app </h2>
-            <p>
-              Made with accuweather API, type in any city and get the current weather. 
-            </p>
-          </div>
-        </div>
-      </a>
-</div>
 
-<div className="griditem">
-      <a
-        href="https://codepen.io/Dylanbozarth/pen/vYYKVNX"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div className="flip">
-          <div className="front calc">
-            <h1 className="text-shadow skylimittitle"></h1>
-          </div>
-          <div className="back">
-            <h2>React Calculator</h2>
-            <p>
-              A calculator made with React. With every functionality that I could think of. 
-            </p>
-          </div>
-        </div>
-      </a>
-</div>
-<div className="griditem">
-      <a
-        href="https://codepen.io/Dylanbozarth/full/jOPNpJe"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div className="flip">
-          <div className="front todo">
-            <h1 className="text-shadow skylimittitle"></h1>
-          </div>
-          <div className="back">
-            <h2>To do list</h2>
-            <p>
-              Simple CRUD (Create, read, update and delete) application. Made with Javascript and Node.js.  
-            </p>
-          </div>
-        </div>
-      </a>
-</div>
-<div className="griditem">
-      <a
-        href="https://codepen.io/Dylanbozarth/pen/gObbbNg"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div className="flip">
-          <div className="front quote">
-            <h1 className="text-shadow skylimittitle"></h1>
-          </div>
-          <div className="back">
-            <h2>George Bush Quote machine</h2>
-            <p>
-              Made with Javascript, click to recieve a "Bushism". 
-            </p>
-          </div>
-        </div>
-      </a>
-</div>
-<div className="griditem">
-      <a
-        href="https://codepen.io/Dylanbozarth/full/oNgLoMN"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div className="flip">
-          <div className="front quiz">
-            <h1 className="text-shadow skylimittitle"></h1>
-          </div>
-          <div className="back">
-            <h2>Javascript Quiz</h2>
-            <p>
-              A quiz made with Scss animations. 
-            </p>
-          </div>
-        </div>
-      </a>
-</div>
-</div>
-<h1 className="moretocome">React Native are projects currently in development.</h1>
-</div>
 
+</div></div>
   </motion.div>
 );
