@@ -194,6 +194,7 @@ nav ul li a:hover {
 #flip {
   height: 50px;
   overflow: hidden;
+  
 }
 
 #flip > div > div {
@@ -259,6 +260,10 @@ nav ul li a:hover {
 .projectitems {
   margin-top: 3%;
   
+}
+.projectitem {
+  margin-left: 25px;
+  margin-right: 25px;
 }
 .moretocome {
   color: white;
@@ -823,7 +828,7 @@ aside {
 }
 .reacticon {
    background: url(./skillsimages/react.png);
-  background-size: 120% 120%;
+  background-size: 100%;
   width: 50px; 
   height: 50px;
   padding-left: 25px;

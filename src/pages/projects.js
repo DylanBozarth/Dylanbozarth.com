@@ -15,7 +15,7 @@ const pagetransition = {
 };
 export const Projects = () => (
   <motion.div
-    className="container projectitems"
+    className="container "
     initial="out"
     animate="in"
     exit="out"
@@ -25,7 +25,7 @@ export const Projects = () => (
     <div className="grid-container">
       <h1 className="projectstitle">Commercial Web projects</h1>
       <div className="row">
-        <div className="griditem">
+        
           <a
             href="https://skylimfitness.com/"
             target="_blank"
@@ -33,7 +33,7 @@ export const Projects = () => (
           >
             <h2 className="projectlink skylimittext">SkyLimit Fitness</h2>
             <div className="flip">
-              <div className="front skylimit">
+              <div className="front skylimit col-md-12 ml-auto">
                 <h1 className="text-shadow skylimittitle"></h1>
               </div>
               <div className="back">
@@ -50,8 +50,8 @@ export const Projects = () => (
               </div>
             </div>
           </a>
-        </div>
-        <div className="griditem">
+        
+       
           <a
             href="https://76y7e.csb.app/"
             target="_blank"
@@ -61,7 +61,7 @@ export const Projects = () => (
               Spokane Power Stroke
             </h2>
             <div className="flip">
-              <div className="front powerstroke">
+              <div className="front powerstroke col-md-12 ml-auto">
                 <h1 className="text-shadow skylimittitle"></h1>
               </div>
               <div className="back">
@@ -75,8 +75,8 @@ export const Projects = () => (
               
             </div>
           </a>
-        </div>
-        <div className="griditem">
+        
+        
           <a
             href="https://srv9z.codesandbox.io/"
             target="_blank"
@@ -84,7 +84,7 @@ export const Projects = () => (
           >
             <h2 className="projectlink hwstext">History's Armory</h2>
             <div className="flip">
-              <div className="front hws">
+              <div className="front hws col-md-12 ml-auto">
                 <h1 className="text-shadow skylimittitle"></h1>
               </div>
               <div className="back">
@@ -103,6 +103,6 @@ export const Projects = () => (
           </a>
         </div>
       </div>
-    </div>
+    
   </motion.div>
 );
