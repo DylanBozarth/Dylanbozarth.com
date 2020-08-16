@@ -179,24 +179,12 @@ export const Skills = () => (
             href="https://github.com/Imstupidpleasehelp"
           >
             <div className="col-md-4">
-              Github
+            <h3 className="linktitle">Github</h3>
               <div className="skillboximggithub"></div> <br />
             </div>
           </a>
         </div>
-        <div className="col-sm evidencelink">
-          <a
-            className="evidencelink"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://codepen.io/dashboard/?cursor=ZD0wJm89MSZwPTEmdj00MTU1NTkyMg=="
-          >
-            <div className="col-md-4">
-              Codepen
-              <div className="skillboximgcodepen"></div> <br />
-            </div>
-          </a>
-        </div>
+        
         <div className="col-sm evidencelink">
           <a
             className="evidencelink"
@@ -205,7 +193,7 @@ export const Skills = () => (
             href="https://www.freecodecamp.org/dylanbozarth"
           >
             <div className="col-md-4">
-              Freecodecamp <div className="skillboximgfcc"></div>
+              <h3 className="linktitle">Freecodecamp</h3> <div className="skillboximgfcc"></div>
               <br />
             </div>
           </a>
