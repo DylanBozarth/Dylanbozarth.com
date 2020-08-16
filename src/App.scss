@@ -365,8 +365,8 @@ nav ul li a:hover {
   background-size: fill;
 }
 .powerstroke {
-  background-image: url("./images/skyfitnessnew.jpg") !important;
-  background-size: fill;
+  background-image: url("./images/spokanepowerstroke.jpg") !important;
+  background-size: 100% 100%;
 }
 .hws {
   background-image: url("./images/hwsnew.jpg") !important;
@@ -857,6 +857,14 @@ aside {
   height: 50px;
   padding-left: 25px;
   padding-right: 25px;
+}
+.framermotionicon {
+  background: url(./skillsimages/framermotion.gif);
+ background-size: 100% 100%;
+ width: 50px; 
+ height: 50px;
+ padding-left: 25px;
+ padding-right: 25px;
 }
 .asidehtml {
   background: url(./skillsimages/html.jfif);

@@ -53,8 +53,9 @@ export const Projects = () => (
         
        
           <a
-            href="https://76y7e.csb.app/"
-            target="_blank"
+          onClick={() => alert('Site not deployed at this time, please check back later.')}
+            href=""
+            /*target="_blank" */
             rel="noopener noreferrer"
           >
             <h2 className="projectlink powerstroketext">
@@ -65,11 +66,11 @@ export const Projects = () => (
                 <h1 className="text-shadow skylimittitle"></h1>
               </div>
               <div className="back">
-                <p> lorem asdnasdnasndasdlaksdjlaksdjo</p>
+                <p> A power-stroke autoshop in Spokane Washington. Site made with React and framer motion for modern looking design.  </p>
                 <div className="row iconrow">
                   <div className="reacticon"></div>
                   <div className="cssicon"></div>
-                  <div className="scssicon"></div>
+                  <div className="framermotionicon"></div>
                 </div>
               </div>
               
@@ -96,7 +97,7 @@ export const Projects = () => (
                 <div className="row iconrow">
                   <div className="reacticon"></div>
                   <div className="cssicon"></div>
-                  <div className="scssicon"></div>
+                  <div className="framermotionicon"></div>
                 </div>
               </div>
             </div>
