@@ -40,15 +40,21 @@ class Projects extends Component {
     this.state = {
       items: [
         {
-          image: "./images/skyfitnessnew.jpg",
-          title: "Engine Repair",
-          link: '/skylimit'
+          image: "./images/spokanepowerstroke.jpg",
+          title: "Spokane Power Stroke",
+          link: '/powerstroke'
         },
         {
-          image: "./images/spokanepowerstroke.jpg",
-          title: "Engine Repair",
+          image: "./images/hwsnew.png",
+          title: "History's Armory",
+          link: '/weaponsshop'
+        },
+        {
+          image: "./images/skyfitnessnew.jpg",
+          title: "Skylimit Fitness",
           link: '/skylimit'
         },
+        
       ],
     };
   }
@@ -73,7 +79,7 @@ class Projects extends Component {
                 variants={frameVariants}
                 transition={transition}
               >
-                <h1 className="Projectstitle">{title}</h1>
+                <h1 className="projectstitle">{title}</h1>
                 <Link to={link}>
                   <motion.img
                     src={image}

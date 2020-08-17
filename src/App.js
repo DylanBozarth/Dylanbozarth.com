@@ -11,8 +11,8 @@ import Hireme from "./pages/hireme";
 import { Stars } from "./components/stars";
 import { AnimatePresence, motion } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { SkylimitFocus } from "./components/singleimage";
-
+import { SkylimitFocus } from "./components/skylimitfocus";
+import {PowerstrokeFocus} from './components/powerstrokefocus'
 
 function App() {
  
@@ -33,6 +33,7 @@ function App() {
               <Route path="/Testimonials" component={Testimonials} />
               <Route path="/hireme" component={Hireme} />
               <Route path="/skylimit" component={SkylimitFocus} />
+              <Route path="/powerstroke" component={PowerstrokeFocus} />
             </Switch>
           </AnimatePresence>
           <Footer />
