@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Card from '../components/Card'
 const changepage = {
   in: {
     opacity: 1,
@@ -31,79 +32,35 @@ export const Projects = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className="projectlink skylimittext">SkyLimit Fitness</h2>
-            <div className="flip">
-              <div className="front skylimit col-md-12 ml-auto">
-                <h1 className="text-shadow skylimittitle"></h1>
-              </div>
-              <div className="back">
-                <p>
-                  SkyLimit Fitness, a personal trainer's website. With
-                  e-commerce and blog functionality. Made with React and SCSS
-                </p>
-                <div className="row iconrow">
-                  <div className="reacticon"></div>
-                  
-                  <div className="scssicon"></div>
-                  <div className="paypalicon"></div>
-                </div>
-              </div>
-            </div>
+            <Card
+        imgUrl="https://images.unsplash.com/photo-1509233725247-49e657c54213?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=687&q=80"
+        title="Relax"
+        description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
+            deleniti dicta officia temporibus magni! Sint soluta excepturi
+            suscipit alias ut!"
+      />
           </a>
+          <Card
+        imgUrl="https://images.unsplash.com/photo-1516035645781-9f126e774e9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+        title="Chill"
+        description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
+            deleniti dicta officia temporibus magni! Sint soluta excepturi
+            suscipit alias ut!"
+      />
+        <Card
+        imgUrl="https://images.unsplash.com/photo-1516035645781-9f126e774e9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+        title="Chill"
+        description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
+            deleniti dicta officia temporibus magni! Sint soluta excepturi
+            suscipit alias ut!"
+      />
         
        
-          <a
-          onClick={() => alert('Site not deployed at this time, please check back later.')}
-            href=""
-            /*target="_blank" */
-            rel="noopener noreferrer"
-          >
-            <h2 className="projectlink powerstroketext">
-              Spokane Power Stroke
-            </h2>
-            <div className="flip">
-              <div className="front powerstroke col-md-12 ml-auto">
-                <h1 className="text-shadow skylimittitle"></h1>
-              </div>
-              <div className="back">
-                <p> A power-stroke autoshop in Spokane Washington. Site made with React and framer motion for modern looking design.  </p>
-                <div className="row iconrow">
-                  <div className="reacticon"></div>
-                  <div className="cssicon"></div>
-                  <div className="framermotionicon"></div>
-                </div>
-              </div>
-              
-            </div>
-          </a>
+          
         
         
-          <a
-            href="https://76y7e.csb.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className="projectlink hwstext">History's Armory</h2>
-            <div className="flip">
-              <div className="front hws col-md-12 ml-auto">
-                <h1 className="text-shadow skylimittitle"></h1>
-              </div>
-              <div className="back">
-                <p>
-                  History's Armory, a website for collectors and enthusiasts to
-                  buy historical reproduction armor and weapons. Made with React
-                  and Scss.
-                </p>
-                <div className="row iconrow">
-                  <div className="reacticon"></div>
-                  <div className="cssicon"></div>
-                  <div className="framermotionicon"></div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
+          
+          </div></div>
     
   </motion.div>
 );
