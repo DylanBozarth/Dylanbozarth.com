@@ -1,5 +1,14 @@
 /* menu start */
+.App {
+height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
+  margin: auto;
 
+  padding: 50px;
+}
 nav {
   min-width: 100%;
   max-width: 100%;
@@ -155,6 +164,10 @@ nav ul li a:hover {
   padding: 10px;
   text-align: center;
 }
+.projectspage {
+  margin-left: auto;
+  margin-right: auto;
+}
 .skylimittext {
   font-family: 'Bubblegum Sans', cursive;
 }
@@ -166,7 +179,7 @@ nav ul li a:hover {
 }
 
 .card {
-  width: 300px;
+  width: 450px;
   height: 450px;
   border-radius: 3px;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -208,16 +221,11 @@ nav ul li a:hover {
   letter-spacing: 1.3px;
   line-height: 22px;
 }
-
-
-@keyframes waves {
-  0% {
-    background-position: 0;
-  }
-  100% {
-    background-position: 1360px;
-  }
+.skylimitcard {
+  background-image: url('./images/skyfitness.gif');
+  background-size: 100% 100%;
 }
+
 
 @media screen and (max-width: 720px) {
   .App {
