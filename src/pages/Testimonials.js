@@ -1,5 +1,7 @@
 import React from 'react';
 import Card from "../components/card";
+
+import { Container} from "react-bootstrap";
 import { motion } from "framer-motion";
 const changepage = {
   in: {
@@ -25,7 +27,7 @@ export const Testimonials = () => (
   transition={pagetransition}
      className="testimonialpage"
    >
-        <div>
+        <Container>
         <Card
         imgUrl="https://skylimfitness.com/static/media/Sky.e0283525.jpg"
         title="Relax"
@@ -34,7 +36,7 @@ export const Testimonials = () => (
             suscipit alias ut!"
       />
           
-    </div>
+    </Container>
 </motion.div>
   
 )

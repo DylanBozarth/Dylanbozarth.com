@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
+import { Container, Col, Row } from "react-bootstrap";
+
 const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] };
 
 const thumbnailVariants = {
@@ -42,37 +44,37 @@ class Projects extends Component {
         {
           image: "./images/spokanepowerstroke.jpg",
           title: "Spokane Power Stroke",
-          link: '/powerstroke'
+          link: "/powerstroke",
         },
         {
           image: "./images/hwsnew.png",
           title: "History's Armory",
-          link: '/weaponsshop'
+          link: "/weaponsshop",
         },
         {
           image: "./images/skyfitnessnew.jpg",
           title: "Skylimit Fitness",
-          link: '/skylimit'
+          link: "/skylimit",
         },
-        
       ],
     };
   }
   state = {};
   render() {
     return (
-      <div className="Projects">
-        <motion.div
-          className="thumbnails"
-          initial="out"
-    animate="in"
-    exit="out"
-    variants={changepage}
-    transition={pagetransition}
-          
-        >
+      <motion.div
+        className="thumbnails"
+        initial="out"
+        animate="in"
+        exit="out"
+        variants={changepage}
+        transition={pagetransition}
+      >
+        <Container className="Projects">
+          <Row>
           {this.state.items.map(({ title, image, link }) => (
             <motion.div className="thumbnail" variants={thumbnailVariants}>
+              {" "}
               <motion.div
                 className="frame"
                 whileHover="hover"
@@ -91,10 +93,8 @@ class Projects extends Component {
               </motion.div>
             </motion.div>
           ))}
-        </motion.div>
-        
-        
-      </div>
+        </Row></Container>
+      </motion.div>
     );
   }
 }

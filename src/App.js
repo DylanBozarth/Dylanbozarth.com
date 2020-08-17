@@ -1,6 +1,7 @@
 import React from "react";
 import { Navigation } from "./components/navbar";
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Homepage } from "./pages/homepage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import  Projects  from "./pages/projects";
@@ -13,6 +14,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { SkylimitFocus } from "./components/skylimitfocus";
 import {PowerstrokeFocus} from './components/powerstrokefocus'
+import { Weaponsshopfocus } from "./components/weaponsshopfocus";
 
 function App() {
  
@@ -34,6 +36,7 @@ function App() {
               <Route path="/hireme" component={Hireme} />
               <Route path="/skylimit" component={SkylimitFocus} />
               <Route path="/powerstroke" component={PowerstrokeFocus} />
+              <Route path="/weaponsshop" component={Weaponsshopfocus} />
             </Switch>
           </AnimatePresence>
           <Footer />
