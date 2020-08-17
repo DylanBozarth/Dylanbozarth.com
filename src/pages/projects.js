@@ -79,7 +79,7 @@ export const Projects = () => (
         
         
           <a
-            href="https://srv9z.codesandbox.io/"
+            href="https://76y7e.csb.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
