@@ -3,7 +3,7 @@ import { Navigation } from "./components/navbar";
 import "./App.css";
 import { Homepage } from "./pages/homepage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Projects } from "./pages/projects";
+import  Projects  from "./pages/projects";
 import { Skills } from "./pages/skills";
 import { Testimonials } from "./pages/Testimonials";
 import { Footer } from "./components/footer";
@@ -11,6 +11,7 @@ import Hireme from "./pages/hireme";
 import { Stars } from "./components/stars";
 import { AnimatePresence, motion } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { SkylimitFocus } from "./components/singleimage";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
               <Route path="/Skills" component={Skills} />
               <Route path="/Testimonials" component={Testimonials} />
               <Route path="/hireme" component={Hireme} />
+              <Route path="/skylimit" component={SkylimitFocus} />
             </Switch>
           </AnimatePresence>
           <Footer />

@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { images } from "./images";
 
 const transition = {
   duration: 1,
@@ -22,17 +21,15 @@ const backVariants = {
   enter: { x: 0, opacity: 1, transition: { delay: 1, ...transition } }
 };
 
-export const SingleImage = ({ match }) => (
+export const SkylimitFocus = ({ match }) => (
   <motion.div className="single" initial="exit" animate="enter" exit="exit">
     <motion.img
       variants={imageVariants}
-      src={`https://static1.squarespace.com/static/5b475b2c50a54f54f9b4e1dc/t/${
-        images[parseInt(match.params.id, 10)]
-      }.jpg?format=1500w`}
-      alt="The Barbican"
+      src='./images/skyfitnessnew.jpg'
+      alt="SkyLimit Fitness"
     />
     <motion.div className="back" variants={backVariants}>
-      <Link to="/">← Back</Link>
+      <Link to="/projects">← Back</Link>
     </motion.div>
   </motion.div>
 );
