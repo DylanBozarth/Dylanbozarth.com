@@ -28,6 +28,7 @@ export const SkylimitFocus = ({ match }) => (
       src='./images/skyfitnessnew.jpg'
       alt="SkyLimit Fitness"
     />
+    <p className="">ADMASDAKSDKAJND</p>
     <motion.div className="back" variants={backVariants}>
       <Link to="/projects">← Back</Link>
     </motion.div>
