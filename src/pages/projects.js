@@ -79,7 +79,7 @@ class Projects extends Component {
         <Container className="Projects "><h1 className="projectpagetitle">Comercial web projects</h1>
           <Row>
           <Col></Col>
-          <Col>
+          <Col md="auto">
           {this.state.items.map(({ title, image, link }) => (
             <motion.div className="thumbnail" variants={thumbnailVariants}>
               {" "}

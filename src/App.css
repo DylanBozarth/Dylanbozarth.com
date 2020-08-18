@@ -152,6 +152,7 @@ nav ul li {
   padding: 10px;
   text-align: center;
 }
+
 .projectpagetitle {
   color: white;
   text-align: center;
@@ -263,16 +264,18 @@ nav ul li {
   }
   
 }
-
+.frontbox {
+  position: relative;
+  margin-bottom: 5%;
+}
 .linkbox {
   text-align: center;
-  margin-bottom: 10%;
+
 }
 .linkbutton {
   color: white;
   padding: 25px;
   border: 1px solid white;
-  margin: 15px;
   
 }
 .linkbutton:hover {
@@ -282,6 +285,15 @@ nav ul li {
     0px 0px 80px deepskyblue, 0px 0px 100px deepskyblue,
     0px 0px 150px deepskyblue;
 }
+/* focus page start */ 
+.focusimage {
+  width: 100%;
+}
+
+
+
+
+
 /* card start */ 
 .card {
   width: 450px;
