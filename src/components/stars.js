@@ -16,15 +16,15 @@ export const Stars = () => (
 	            }
 	        },
 	        "line_linked": {
-	            "enable": true,
-	            "opacity": 0.02
+	            "enable": false,
+	            "opacity": 0.05
 	        },
 	        "move": {
 	            "direction": "right",
-	            "speed": 0.18
+	            "speed": 1
 	        },
 	        "size": {
-	            "value": 1.9
+	            "value": 2.5
 	        },
 	        "opacity": {
 	            "anim": {

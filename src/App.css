@@ -152,7 +152,10 @@ nav ul li {
   padding: 10px;
   text-align: center;
 }
-
+.projectpagetitle {
+  color: white;
+  text-align: center;
+}
 .projectspage {
   margin-left: auto;
   margin-right: auto;
@@ -232,6 +235,9 @@ nav ul li {
   font-size: 54px;
   z-index: 1;
   float: right;
+}
+.whitetext {
+  color: white !important;
 }
 
 .back a {

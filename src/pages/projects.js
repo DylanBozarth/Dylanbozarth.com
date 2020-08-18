@@ -47,15 +47,16 @@ class Projects extends Component {
           link: "/powerstroke",
         },
         {
-          image: "./images/hwsnew.png",
-          title: "History's Armory",
-          link: "/weaponsshop",
-        },
-        {
           image: "./images/skyfitnessnew.jpg",
           title: "Skylimit Fitness",
           link: "/skylimit",
         },
+        {
+          image: "./images/hwsnew.png",
+          title: "History's Armory",
+          link: "/weaponsshop",
+        },
+        
       ],
     };
   }
@@ -63,15 +64,18 @@ class Projects extends Component {
   render() {
     return (
       <motion.div
-        className="thumbnails"
+        className="thumbnails "
         initial="out"
         animate="in"
         exit="out"
         variants={changepage}
         transition={pagetransition}
       >
-        <Container className="Projects">
+        
+        <Container className="Projects "><h1 className="projectpagetitle">Comercial web projects</h1>
           <Row>
+          <Col></Col>
+          <Col>
           {this.state.items.map(({ title, image, link }) => (
             <motion.div className="thumbnail" variants={thumbnailVariants}>
               {" "}
@@ -92,7 +96,8 @@ class Projects extends Component {
                 </Link>
               </motion.div>
             </motion.div>
-          ))}
+          ))}</Col>
+          <Col></Col>
         </Row></Container>
       </motion.div>
     );

@@ -30,7 +30,7 @@ export const SkylimitFocus = ({ match }) => (
     />
     <p className="">ADMASDAKSDKAJND</p>
     <motion.div className="back" variants={backVariants}>
-      <Link to="/projects">← Back</Link>
+      <Link to="/projects" className="whitetext">← Back</Link>
     </motion.div>
   </motion.div>
 );
