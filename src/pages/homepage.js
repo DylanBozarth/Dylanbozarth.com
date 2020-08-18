@@ -1,16 +1,50 @@
 import React from "react";
 
+import { motion } from "framer-motion";
+const changepage = {
+  start: {
+    opacity: 0,
+  },
+  in: {
+    opacity: 1,
+  },
+  out: {
+    opacity: 0,
+  },
+};
+const pagetransition = {
+  duration: 1.5,
+};
 export const Homepage = () => (
-  
-    
-<div id="container" className="homepagebox">
- <p className="fliptext"> Looking for </p>
-  <div id="flip">
-    <div><div> <p className="fliptext">A website?</p></div></div>
-    <div><div> <p className="fliptext">An App?</p></div></div>
-    <div><div> <p className="fliptext">A web developer?</p></div></div>
-  </div>
-  
-</div>
-    
+  <motion.div
+    id="container"
+    initial="start"
+    animate="in"
+    exit="out"
+    variants={changepage}
+    transition={pagetransition}
+    className="homepagebox"
+  >
+    <p className="fliptext"> Looking for </p>
+    <div id="flip">
+      <div>
+        <div>
+          {" "}
+          <p className="fliptext">A website?</p>
+        </div>
+      </div>
+      <div>
+        <div>
+          {" "}
+          <p className="fliptext">An App?</p>
+        </div>
+      </div>
+      <div>
+        <div>
+          {" "}
+          <p className="fliptext">A web developer?</p>
+        </div>
+      </div>
+    </div>
+  </motion.div>
 );

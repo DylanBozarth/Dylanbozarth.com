@@ -24,13 +24,17 @@ const imageVariants = {
   hover: { scale: 1.10 },
 };
 const changepage = {
+  start: {
+opacity: 0,
+y: "100vh",
+  },
   in: {
     opacity: 1,
-    y: 0,
+    y: 0
   },
   out: {
-    opacity: 1,
-    y: "100vw",
+    opacity: 0,
+    y: "100vh",
   },
 };
 const pagetransition = {
@@ -65,7 +69,7 @@ class Projects extends Component {
     return (
       <motion.div
         className="thumbnails "
-        initial="out"
+        initial="start"
         animate="in"
         exit="out"
         variants={changepage}

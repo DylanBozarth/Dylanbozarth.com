@@ -235,6 +235,9 @@ nav ul li {
   float: right;
   padding-right: 50px;
 }
+.Projects {
+  margin-bottom: 10%;
+}
 .back {
   top: 5%;
   font-size: 54px;
