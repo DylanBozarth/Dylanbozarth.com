@@ -21,16 +21,16 @@ const frameVariants = {
 };
 
 const imageVariants = {
-  hover: { scale: 1.25 },
+  hover: { scale: 1.10 },
 };
 const changepage = {
   in: {
     opacity: 1,
-    x: 0,
+    y: 0,
   },
   out: {
     opacity: 1,
-    x: "100vw",
+    y: "100vw",
   },
 };
 const pagetransition = {

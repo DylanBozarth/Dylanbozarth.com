@@ -29,8 +29,8 @@ export const SkylimitFocus = ({ match }) => (
       alt="SkyLimit Fitness"
     />
     <p className="">ADMASDAKSDKAJND</p>
-    <motion.div className="back" variants={backVariants}>
-      <Link to="/projects" className="whitetext">← Back</Link>
+    <motion.div className="back whitetext" variants={backVariants}>
+      <Link to="/projects" >← Back</Link>
     </motion.div>
   </motion.div>
 );

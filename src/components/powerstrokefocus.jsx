@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const transition = {
   duration: 1,
-  ease: [0.43, 0.13, 0.23, 0.96]
+  ease: [0.43, 0.13, 0.23, 0.96],
 };
 
 const imageVariants = {
@@ -12,24 +12,28 @@ const imageVariants = {
   enter: {
     y: "0%",
     opacity: 1,
-    transition
-  }
+    transition,
+  },
 };
 
 const backVariants = {
   exit: { x: 100, opacity: 0, transition },
-  enter: { x: 0, opacity: 1, transition: { delay: 1, ...transition } }
+  enter: { x: 0, opacity: 1, transition: { delay: 1, ...transition } },
 };
 
 export const PowerstrokeFocus = ({ match }) => (
   <motion.div className="single" initial="exit" animate="enter" exit="exit">
     <motion.img
       variants={imageVariants}
-      src='./images/skyfitnessnew.jpg'
+      src="./images/skyfitnessnew.jpg"
       alt="SkyLimit Fitness"
     />
     <motion.div className="back" variants={backVariants}>
-      <Link to="/projects">← Back</Link>
+      <Link to="/projects" className="whitetext">
+        ← Back
+      </Link>{" "}
+      <br />
+      <p className="focustext">Adasdasdad</p>
     </motion.div>
   </motion.div>
 );
