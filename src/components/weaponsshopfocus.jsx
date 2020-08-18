@@ -23,13 +23,41 @@ const backVariants = {
 
 export const Weaponsshopfocus = ({ match }) => (
   <motion.div className="single" initial="exit" animate="enter" exit="exit">
-    <motion.img
-      variants={imageVariants}
-      src='./images/skyfitnessnew.jpg'
-      alt="SkyLimit Fitness"
-    />
+    <a href="https://www.google.com/" target="_blank"
+        rel="noopener noreferrer">
+      <motion.img
+        variants={imageVariants}
+        src="./images/hwsnew.png"
+        alt="History's Armory"
+      />
+    </a>
     <motion.div className="back" variants={backVariants}>
-      <Link to="/projects">← Back</Link>
-    </motion.div>
+      <Link to="/projects" className="whitetext">
+        ← Back
+      </Link>{" "}
+      <br />
+    </motion.div>{" "}
+    <p className="focustext">
+      Spokane Power Stroke. asndkjabskdj asdn asdnlasn d aksdnlasd lansdln aslkd
+      asldnlansdlnasld nasldn lasnd lasndlasdlasdla sndlasndas d
+    </p>
+    <div className="linkbox">
+      <a
+        className="linkbutton"
+        href="https://www.google.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View Website
+      </a>{" "}
+      <a
+        className="linkbutton"
+        href="https://github.com/Imstupidpleasehelp/spokane-power-stroke"
+        target="blank"
+        rel="noopener noreferrer"
+      >
+        View code
+      </a>
+    </div>
   </motion.div>
 );

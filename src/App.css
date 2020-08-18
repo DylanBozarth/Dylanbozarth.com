@@ -234,6 +234,8 @@ nav ul li {
   color: white;
   float: right;
   padding-right: 50px;
+  font-size: 2rem;
+  margin-bottom: 6%;
 }
 .Projects {
   margin-bottom: 10%;
@@ -243,6 +245,7 @@ nav ul li {
   font-size: 54px;
   z-index: 1;
   float: right;
+  margin-right: 5%;
 }
 .whitetext {
   color: white !important;
@@ -261,7 +264,24 @@ nav ul li {
   
 }
 
-
+.linkbox {
+  text-align: center;
+  margin-bottom: 10%;
+}
+.linkbutton {
+  color: white;
+  padding: 25px;
+  border: 1px solid white;
+  margin: 15px;
+  
+}
+.linkbutton:hover {
+  color: white !important;
+  text-shadow: 0px 0px 10px deepskyblue, 0px 0px 20px deepskyblue,
+    0px 0px 30px deepskyblue, 0px 0px 40px deepskyblue, 0px 0px 70px deepskyblue,
+    0px 0px 80px deepskyblue, 0px 0px 100px deepskyblue,
+    0px 0px 150px deepskyblue;
+}
 /* card start */ 
 .card {
   width: 450px;
