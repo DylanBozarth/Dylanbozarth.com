@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import  Projects  from "./pages/projects";
 import { Skills } from "./pages/skills";
 import { Testimonials } from "./pages/Testimonials";
-import { Footer } from "./components/footer";
 import Hireme from "./pages/hireme";
 import { Stars } from "./components/stars";
 import { AnimatePresence, motion } from "framer-motion";
@@ -27,7 +26,7 @@ function App() {
         </div>
         <div className="sliderdiv">
          
-          <AnimatePresence exitBeforeEnter>
+          <AnimatePresence exitBeforeEnter> {/* this is where we control animations */}
             <Switch>
                <Route exact path="/" component={Homepage} /> 
               <Route path="/Projects" component={Projects} />
@@ -39,7 +38,7 @@ function App() {
               <Route path="/weaponsshop" component={Weaponsshopfocus} />
             </Switch>
           </AnimatePresence>
-          <Footer />
+          
         </div>
       </motion.div>
     </Router>
