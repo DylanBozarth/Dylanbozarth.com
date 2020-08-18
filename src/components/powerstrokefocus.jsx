@@ -24,17 +24,28 @@ const backVariants = {
 
 export const PowerstrokeFocus = ({ match }) => (
   <Container>
-    <motion.div className="" initial="exit" animate="enter" exit="exit">
-      <Col>
-        <motion.div className="back" variants={backVariants}>
-          <Link to="/projects" className="whitetext">
-            ← Back
-          </Link>{" "}
-        </motion.div>
-      </Col>
-      <Col>
-        {" "}
-        <div className="linkbox">
+    <Row>
+      <motion.div className="" initial="exit" animate="enter" exit="exit">
+        <Col>
+          <motion.div className="back" variants={backVariants}>
+            <Link to="/projects" className="whitetext">
+              ← Back
+            </Link>{" "}
+          </motion.div>{" "}
+          <a
+            href="https://www.google.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <motion.img
+              className="focusimage"
+              variants={imageVariants}
+              src="./images/spokanepowerstroke.jpg"
+              alt="SkyLimit Fitness"
+            />
+          </a>
+        </Col>
+        <Col className="linkbox">
           <a
             className="linkbutton"
             href="https://www.google.com/"
@@ -51,27 +62,14 @@ export const PowerstrokeFocus = ({ match }) => (
           >
             View code
           </a>
-         
-        </div>
-      </Col>
-      <Col >
-         <p className="focustext">
+        </Col>
+        <Col>
+          <p className="focustext">
             Spokane Power Stroke. asndkjabskdj asdn asdnlasn d aksdnlasd lansdln
             aslkd asldnlansdlnasld nasldn lasnd lasndlasdlasdla sndlasndas d
           </p>
-        <a
-          href="https://www.google.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <motion.img
-          className="focusimage"
-            variants={imageVariants}
-            src="./images/spokanepowerstroke.jpg"
-            alt="SkyLimit Fitness"
-          />
-        </a>
-      </Col>
-    </motion.div>
+        </Col>
+      </motion.div>
+    </Row>
   </Container>
 );

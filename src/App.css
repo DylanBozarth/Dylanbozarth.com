@@ -231,13 +231,7 @@ nav ul li {
   float: center;
   margin-right: 5%;
 }
-.focustext {
-  color: white;
-  float: right;
-  padding-right: 50px;
-  font-size: 2rem;
-  margin-bottom: 6%;
-}
+
 .Projects {
   margin-bottom: 10%;
 }
@@ -268,15 +262,10 @@ nav ul li {
   position: relative;
   margin-bottom: 5%;
 }
-.linkbox {
-  text-align: center;
-
-}
 .linkbutton {
   color: white;
   padding: 25px;
   border: 1px solid white;
-  
 }
 .linkbutton:hover {
   color: white !important;
@@ -287,7 +276,18 @@ nav ul li {
 }
 /* focus page start */ 
 .focusimage {
-  width: 100%;
+  width: 75vw;
+}
+.linkbox {
+  text-align: center;
+  margin-top: 5vh;
+}
+.focustext {
+  color: white;
+  float: right;
+  padding-right: 50px;
+  font-size: 2rem;
+  margin: 10%;
 }
 
 
@@ -348,7 +348,10 @@ nav ul li {
   .App {
     flex-direction: column;
   }
-
+  .focusimage {
+    width: 100vw;
+    margin-right: 15%;
+  }
   .App > *:not(:last-child) {
     margin-bottom: 20px;
   }
