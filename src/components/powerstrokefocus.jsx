@@ -1,8 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-
-import { Container, Col, Row, Image } from "react-bootstrap";
 const transition = {
   duration: 1,
   ease: [0.43, 0.13, 0.23, 0.96],
@@ -23,52 +21,49 @@ const backVariants = {
 };
 
 export const PowerstrokeFocus = ({ match }) => (
-  
-    <Container>
-      <motion.div className="focuspage" initial="exit" animate="enter" exit="exit">
-       
-          <motion.div className="back" variants={backVariants}>
-            <Link to="/projects" className="whitetext">
-              ← Back
-            </Link>{" "}
-          </motion.div>{" "}
+  <motion.div className="single" initial="exit" animate="enter" exit="exit">
+    
+      <motion.div className="back" variants={backVariants}>
+        <Link to="/projects" className="whitetext backbutton">
+          ← Back
+        </Link>{" "}
+         
+        <p className="languagesused">Languages used</p>
+        <div className="row">
+          <img width="50px" height="50px" alt="icon" src='./images/react.png'></img>
+          <img width="50px" height="50px" alt="icon"src='./images/scss.png'></img>
+          <img width="50px" height="50px" alt="icon"src='./images/paypal.jpg'></img>
           
-          <a
-            href="https://www.google.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="focusimage"
-              variants={imageVariants}
-              src="./images/spokanepowerstroke.jpg"
-              alt="SkyLimit Fitness"
-            />
-          </a>
-        
-        
-          <a
-            className="linkbutton"
-            href="https://www.google.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Website
-          </a>{" "}
-          <a
-            className="linkbutton"
-            href="https://github.com/Imstupidpleasehelp/spokane-power-stroke"
-            target="blank"
-            rel="noopener noreferrer"
-          >
-            View code
-          </a>
-        
-        
-          <p className="focustext">
-            Spokane Power Stroke. asndkjabskdj asdn asdnlasn d aksdnlasd lansdln
-            aslkd asldnlansdlnasld nasldn lasnd lasndlasdlasdla sndlasndas d
-          </p>
-      </motion.div>
-    </Container>
+          <img width="70px" height="50px" alt="icon" src='./images/redux.png'></img>
+        </div>
+      </motion.div>{" "}
+     <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer"> <motion.img
+        variants={imageVariants}
+        src="./images/skyfitnessnew.jpg"
+        alt="SkyLimit Fitness"
+      />
+    </a>
+
+    <div className="linkbox">
+      <a
+        className="linkbutton"
+        href="https://www.google.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View Website
+      </a>{" "}
+      <a
+        className="linkbutton"
+        href="https://github.com/Imstupidpleasehelp/spokane-power-stroke"
+        target="blank"
+        rel="noopener noreferrer"
+      >
+        View code
+      </a>
+      <p className="focustext">
+        Skylimit Fitness. A React website made for a personal trainer from Spokane Washington. Skylimit fitness was my first full scale project. 
+      </p>
+    </div>
+  </motion.div>
 );

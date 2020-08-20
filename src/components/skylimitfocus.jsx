@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Row } from "react-bootstrap";
 const transition = {
   duration: 1,
   ease: [0.43, 0.13, 0.23, 0.96],
@@ -23,19 +22,22 @@ const backVariants = {
 
 export const SkylimitFocus = ({ match }) => (
   <motion.div className="single" initial="exit" animate="enter" exit="exit">
-    <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+    
       <motion.div className="back" variants={backVariants}>
         <Link to="/projects" className="whitetext backbutton">
           ← Back
         </Link>{" "}
+         
         <p className="languagesused">Languages used</p>
         <div className="row">
-          <div className="reacticon"></div>
-          <div className="scssicon"></div>
-          <div className="paypalicon"></div>
+          <img width="50px" height="50px" alt="icon" src='./images/react.png'></img>
+          <img width="50px" height="50px" alt="icon" src='./images/scss.png'></img>
+          <img width="50px" height="50px" alt="icon" src='./images/paypal.jpg'></img>
+          
+          <img width="70px" height="50px" alt="icon" src='./images/redux.png'></img>
         </div>
       </motion.div>{" "}
-      <motion.img
+     <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer"> <motion.img
         variants={imageVariants}
         src="./images/skyfitnessnew.jpg"
         alt="SkyLimit Fitness"

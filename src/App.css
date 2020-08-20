@@ -272,7 +272,6 @@ nav ul li {
   }
 .linkbox {
   text-align: center;
-  border: white 1px solid;
   padding: 1rem;
   width: 100%;
   margin-top: 1%;
@@ -281,7 +280,7 @@ nav ul li {
   color: white;
   padding: 1rem;
   border: 1px solid white;
-  
+ 
 }
 .linkbutton:hover {
   color: white !important;
