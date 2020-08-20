@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-
+import { Row } from "react-bootstrap";
 const transition = {
   duration: 1,
   ease: [0.43, 0.13, 0.23, 0.96],
@@ -25,9 +25,15 @@ export const SkylimitFocus = ({ match }) => (
   <motion.div className="single" initial="exit" animate="enter" exit="exit">
     <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
       <motion.div className="back" variants={backVariants}>
-        <Link to="/projects" className="whitetext">
+        <Link to="/projects" className="whitetext backbutton">
           ← Back
         </Link>{" "}
+        <p className="languagesused">Languages used</p>
+        <div className="row">
+          <div className="reacticon"></div>
+          <div className="scssicon"></div>
+          <div className="paypalicon"></div>
+        </div>
       </motion.div>{" "}
       <motion.img
         variants={imageVariants}
@@ -36,7 +42,6 @@ export const SkylimitFocus = ({ match }) => (
       />
     </a>
 
-    
     <div className="linkbox">
       <a
         className="linkbutton"
@@ -55,9 +60,8 @@ export const SkylimitFocus = ({ match }) => (
         View code
       </a>
       <p className="focustext">
-      Spokane Power Stroke. asndkjabskdj asdn asdnlasn d aksdnlasd lansdln aslkd
-      asldnlansdlnasld nasldn lasnd lasndlasdlasdla sndlasndas d
-    </p>
+        Skylimit Fitness. A React website made for a personal trainer from Spokane Washington. Skylimit fitness was my first full scale project. 
+      </p>
     </div>
   </motion.div>
 );

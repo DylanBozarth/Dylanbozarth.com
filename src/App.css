@@ -235,15 +235,7 @@ nav ul li {
 .Projects {
   margin-bottom: 10%;
 }
-.back {
-  font-size: 2rem;
-  z-index: 1;
-  float: right;
-  margin-right: 25vw;
-  text-align: center;
-  border: 1px white solid;
-  padding: 1rem;
-}
+
 .whitetext {
   color: white !important;
 }
@@ -267,15 +259,23 @@ nav ul li {
 
 /* focus page start */ 
 
-.focusimage {
-
-}
-  
+  .backbutton {
+    font-size: 3rem;
+  }
+  .back {
+    font-size: 2rem;
+    z-index: 1;
+    float: right;
+    margin-right: 10%;
+    text-align: center;
+    padding: 1rem;
+  }
 .linkbox {
   text-align: center;
   border: white 1px solid;
   padding: 1rem;
   width: 100%;
+  margin-top: 1%;
 }
 .linkbutton {
   color: white;
@@ -290,13 +290,20 @@ nav ul li {
     0px 0px 80px deepskyblue, 0px 0px 100px deepskyblue,
     0px 0px 150px deepskyblue;
 }
+.iconbox {
+  align-content: center;
+}
 .focustext {
   color: white;
   float: right;
   font-size: 2rem;
   text-align: center;
+  margin-top: 2%;
 }
-
+.languagesused {
+  color: white;
+  font-size: 2rem
+}
 
 
 
