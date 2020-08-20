@@ -236,11 +236,13 @@ nav ul li {
   margin-bottom: 10%;
 }
 .back {
-  font-size: 54px;
+  font-size: 2rem;
   z-index: 1;
   float: right;
-  margin-right: 25%;
+  margin-right: 25vw;
   text-align: center;
+  border: 1px white solid;
+  padding: 1rem;
 }
 .whitetext {
   color: white !important;
@@ -264,21 +266,27 @@ nav ul li {
 }
 
 /* focus page start */ 
+
 .focusimage {
   width: 75vw;
-}
+} 
 .focuspage {
-  
+  height: 80vh; /* Set your own height: percents, ems, whatever! */
+  width: 80vw; /* Set your own width: percents, ems, whatever! */
+  overflow: auto; /* Recommended in case content is larger than the container */
+  margin: auto; /* Center the item vertically & horizontally */
+  position: absolute; /* Break it out of the regular flow */
+  top: 0; left: 0; bottom: 0; right: 0; /* Set the bounds in which to center it, relative to its parent/container */
 }
+  
 .linkbox {
   text-align: center;
-  margin-top: 4vh;
   border: white 1px solid;
-  padding: 25px;
+  padding: 1rem;
 }
 .linkbutton {
   color: white;
-  padding: 25px;
+  padding: 1rem;
   border: 1px solid white;
   
 }
@@ -292,9 +300,7 @@ nav ul li {
 .focustext {
   color: white;
   float: right;
-  padding-right: 50px;
   font-size: 2rem;
-  margin-top: 5%;
   text-align: center;
 }
 

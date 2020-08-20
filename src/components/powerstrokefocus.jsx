@@ -23,16 +23,16 @@ const backVariants = {
 };
 
 export const PowerstrokeFocus = ({ match }) => (
-  <Container>
-    
+  
+    <Container>
       <motion.div className="focuspage" initial="exit" animate="enter" exit="exit">
-        <Col className="buffer"></Col>
-        <Col>
+       
           <motion.div className="back" variants={backVariants}>
             <Link to="/projects" className="whitetext">
               ← Back
             </Link>{" "}
           </motion.div>{" "}
+          
           <a
             href="https://www.google.com/"
             target="_blank"
@@ -45,8 +45,8 @@ export const PowerstrokeFocus = ({ match }) => (
               alt="SkyLimit Fitness"
             />
           </a>
-        </Col>
-        <Col className="linkbox">
+        
+        <div className="linkbox">
           <a
             className="linkbutton"
             href="https://www.google.com/"
@@ -63,15 +63,12 @@ export const PowerstrokeFocus = ({ match }) => (
           >
             View code
           </a>
-        </Col>
-        <Col>
+        </div>
+        
           <p className="focustext">
             Spokane Power Stroke. asndkjabskdj asdn asdnlasn d aksdnlasd lansdln
             aslkd asldnlansdlnasld nasldn lasnd lasndlasdlasdla sndlasndas d
           </p>
-        </Col>
-        <Col className="buffer"></Col>
       </motion.div>
-    
-  </Container>
+    </Container>
 );
