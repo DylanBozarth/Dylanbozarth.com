@@ -236,11 +236,11 @@ nav ul li {
   margin-bottom: 10%;
 }
 .back {
-  top: 5%;
   font-size: 54px;
   z-index: 1;
   float: right;
-  margin-right: 5%;
+  margin-right: 25%;
+  text-align: center;
 }
 .whitetext {
   color: white !important;
@@ -262,10 +262,25 @@ nav ul li {
   position: relative;
   margin-bottom: 5%;
 }
+
+/* focus page start */ 
+.focusimage {
+  width: 75vw;
+}
+.focuspage {
+  
+}
+.linkbox {
+  text-align: center;
+  margin-top: 4vh;
+  border: white 1px solid;
+  padding: 25px;
+}
 .linkbutton {
   color: white;
   padding: 25px;
   border: 1px solid white;
+  
 }
 .linkbutton:hover {
   color: white !important;
@@ -274,20 +289,13 @@ nav ul li {
     0px 0px 80px deepskyblue, 0px 0px 100px deepskyblue,
     0px 0px 150px deepskyblue;
 }
-/* focus page start */ 
-.focusimage {
-  width: 75vw;
-}
-.linkbox {
-  text-align: center;
-  margin-top: 5vh;
-}
 .focustext {
   color: white;
   float: right;
   padding-right: 50px;
   font-size: 2rem;
-  margin: 10%;
+  margin-top: 5%;
+  text-align: center;
 }
 
 

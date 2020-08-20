@@ -24,8 +24,9 @@ const backVariants = {
 
 export const PowerstrokeFocus = ({ match }) => (
   <Container>
-    <Row>
-      <motion.div className="" initial="exit" animate="enter" exit="exit">
+    
+      <motion.div className="focuspage" initial="exit" animate="enter" exit="exit">
+        <Col className="buffer"></Col>
         <Col>
           <motion.div className="back" variants={backVariants}>
             <Link to="/projects" className="whitetext">
@@ -69,7 +70,8 @@ export const PowerstrokeFocus = ({ match }) => (
             aslkd asldnlansdlnasld nasldn lasnd lasndlasdlasdla sndlasndas d
           </p>
         </Col>
+        <Col className="buffer"></Col>
       </motion.div>
-    </Row>
+    
   </Container>
 );

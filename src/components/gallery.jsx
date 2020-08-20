@@ -47,7 +47,7 @@ class Gallery extends Component {
           variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
         >
           {this.state.items.map(({ title, image, number, link }) => (
-            <motion.div className="thumbnail" variants={thumbnailVariants}>
+            <motion.div className="thumbnail" variants={thumbnailVariants} key={title}>
               <motion.div
                 className="frame"
                 whileHover="hover"
