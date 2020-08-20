@@ -43,7 +43,7 @@ export const Navigation = () => (
           className="nav-link"
         >
           {" "}
-          <Nav.Link href="#features">Resumé</Nav.Link>{" "}
+          <div className="nav-link">Resumé</div>{" "}
         </a>
       </li>
     </ul>

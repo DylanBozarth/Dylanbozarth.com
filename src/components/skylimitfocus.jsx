@@ -46,7 +46,7 @@ export const SkylimitFocus = ({ match }) => (
 
     <div className="linkbox">
       <a
-        className="linkbutton"
+        className="button2 b-blue rot-135"
         href="https://www.google.com/"
         target="_blank"
         rel="noopener noreferrer"
@@ -54,7 +54,7 @@ export const SkylimitFocus = ({ match }) => (
         View Website
       </a>{" "}
       <a
-        className="linkbutton"
+        className="button2 b-blue rot-135"
         href="https://github.com/Imstupidpleasehelp/spokane-power-stroke"
         target="blank"
         rel="noopener noreferrer"

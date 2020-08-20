@@ -32,21 +32,20 @@ export const PowerstrokeFocus = ({ match }) => (
         <div className="row">
           <img width="50px" height="50px" alt="icon" src='./images/react.png'></img>
           <img width="50px" height="50px" alt="icon"src='./images/scss.png'></img>
-          <img width="50px" height="50px" alt="icon"src='./images/paypal.jpg'></img>
+          <img width="50px" height="50px" alt="icon"src='./images/framermotion.gif'></img>
           
-          <img width="70px" height="50px" alt="icon" src='./images/redux.png'></img>
         </div>
       </motion.div>{" "}
      <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer"> <motion.img
         variants={imageVariants}
-        src="./images/skyfitnessnew.jpg"
+        src="./images/spokanepowerstroke.jpg"
         alt="SkyLimit Fitness"
       />
     </a>
 
     <div className="linkbox">
       <a
-        className="linkbutton"
+        className="button2 b-blue rot-135"
         href="https://www.google.com/"
         target="_blank"
         rel="noopener noreferrer"
@@ -54,7 +53,7 @@ export const PowerstrokeFocus = ({ match }) => (
         View Website
       </a>{" "}
       <a
-        className="linkbutton"
+        className="button2 b-blue rot-135"
         href="https://github.com/Imstupidpleasehelp/spokane-power-stroke"
         target="blank"
         rel="noopener noreferrer"
