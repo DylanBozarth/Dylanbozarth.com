@@ -23,24 +23,20 @@ const backVariants = {
 
 export const SkylimitFocus = ({ match }) => (
   <motion.div className="single" initial="exit" animate="enter" exit="exit">
-    <a href="https://www.google.com/" target="_blank"
-        rel="noopener noreferrer">
+    <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+      <motion.div className="back" variants={backVariants}>
+        <Link to="/projects" className="whitetext">
+          ← Back
+        </Link>{" "}
+      </motion.div>{" "}
       <motion.img
         variants={imageVariants}
         src="./images/skyfitnessnew.jpg"
         alt="SkyLimit Fitness"
       />
     </a>
-    <motion.div className="back" variants={backVariants}>
-      <Link to="/projects" className="whitetext">
-        ← Back
-      </Link>{" "}
-      <br />
-    </motion.div>{" "}
-    <p className="focustext">
-      Spokane Power Stroke. asndkjabskdj asdn asdnlasn d aksdnlasd lansdln aslkd
-      asldnlansdlnasld nasldn lasnd lasndlasdlasdla sndlasndas d
-    </p>
+
+    
     <div className="linkbox">
       <a
         className="linkbutton"
@@ -58,6 +54,10 @@ export const SkylimitFocus = ({ match }) => (
       >
         View code
       </a>
+      <p className="focustext">
+      Spokane Power Stroke. asndkjabskdj asdn asdnlasn d aksdnlasd lansdln aslkd
+      asldnlansdlnasld nasldn lasnd lasndlasdlasdla sndlasndas d
+    </p>
     </div>
   </motion.div>
 );

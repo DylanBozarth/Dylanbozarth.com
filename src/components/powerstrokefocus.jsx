@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col, Row, Image } from "react-bootstrap";
 const transition = {
   duration: 1,
   ease: [0.43, 0.13, 0.23, 0.96],
@@ -38,7 +38,7 @@ export const PowerstrokeFocus = ({ match }) => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <motion.img
+            <Image
               className="focusimage"
               variants={imageVariants}
               src="./images/spokanepowerstroke.jpg"
@@ -46,7 +46,7 @@ export const PowerstrokeFocus = ({ match }) => (
             />
           </a>
         
-        <div className="linkbox">
+        
           <a
             className="linkbutton"
             href="https://www.google.com/"
@@ -63,7 +63,7 @@ export const PowerstrokeFocus = ({ match }) => (
           >
             View code
           </a>
-        </div>
+        
         
           <p className="focustext">
             Spokane Power Stroke. asndkjabskdj asdn asdnlasn d aksdnlasd lansdln
