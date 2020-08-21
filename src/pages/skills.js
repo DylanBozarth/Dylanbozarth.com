@@ -2,17 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const changepage = {
-  start: {
-opacity: 0,
-y: "100vh",
-  },
   in: {
     opacity: 1,
-    y: 0
+    x: 0,
   },
   out: {
-    opacity: 0,
-    y: "100vh",
+    opacity: 1,
+    x: "100vw",
   },
 };
 const pagetransition = {

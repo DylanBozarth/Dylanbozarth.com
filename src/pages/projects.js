@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 import { Container, Col, Row } from "react-bootstrap";
 
@@ -21,20 +21,16 @@ const frameVariants = {
 };
 
 const imageVariants = {
-  hover: { scale: 1.10 },
+  hover: { scale: 1.1 },
 };
 const changepage = {
-  start: {
-opacity: 0,
-y: "100vh",
-  },
   in: {
     opacity: 1,
-    y: 0
+    x: 0,
   },
   out: {
-    opacity: 0,
-    y: "100vh",
+    opacity: 1,
+    x: "100vw",
   },
 };
 const pagetransition = {
@@ -60,7 +56,6 @@ class Projects extends Component {
           title: "History's Armory",
           link: "/weaponsshop",
         },
-        
       ],
     };
   }
@@ -69,40 +64,46 @@ class Projects extends Component {
     return (
       <motion.div
         className="thumbnails "
-        initial="start"
+        initial="out"
         animate="in"
         exit="out"
         variants={changepage}
         transition={pagetransition}
       >
-        
-        <Container className="Projects "><h1 className="projectpagetitle">Comercial web projects</h1>
-          <Row>
-          <Col></Col>
-          <Col md="auto">
-          {this.state.items.map(({ title, image, link }) => (
-            <motion.div className="thumbnail" variants={thumbnailVariants}>
-              {" "}
-              <motion.div
-                className="frame"
-                whileHover="hover"
-                variants={frameVariants}
-                transition={transition}
-              >
-                <h1 className="projectstitle">{title}</h1>
-                <Link to={link}>
-                  <motion.img
-                    src={image}
-                    alt={image}
-                    variants={imageVariants}
-                    transition={transition}
-                  />
-                </Link>
-              </motion.div>
-            </motion.div>
-          ))}</Col>
-          <Col></Col>
-        </Row></Container>
+          <Container className="Projects ">
+            <h1 className="projectpagetitle">Comercial web projects</h1>
+            <Row>
+              <Col></Col>
+              <Col md="auto">
+                {this.state.items.map(({ title, image, link }) => (
+                  <motion.div
+                    className="thumbnail"
+                    variants={thumbnailVariants}
+                  >
+                    {" "}
+                    <motion.div
+                      className="frame"
+                      whileHover="hover"
+                      variants={frameVariants}
+                      transition={transition}
+                      
+                    >
+                      <h1 className="projectstitle">{title}</h1>
+                      <Link to={link}>
+                        <motion.img
+                          src={image}
+                          alt={image}
+                          variants={imageVariants}
+                          transition={transition}
+                        />
+                      </Link>
+                    </motion.div>
+                  </motion.div>
+                ))}
+              </Col>
+              <Col></Col>
+            </Row>
+          </Container>
       </motion.div>
     );
   }

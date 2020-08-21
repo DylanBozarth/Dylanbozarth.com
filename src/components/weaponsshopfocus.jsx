@@ -32,7 +32,7 @@ export const Weaponsshopfocus  = ({ match }) => (
         <div className="row">
           <img width="50px" height="50px" alt="icon" src='./images/react.png'></img>
           <img width="50px" height="50px" alt="icon"src='./images/css.jfif'></img>
-          
+          <img width="50px" height="50px" alt="icon" src="./images/redux.png"></img>
         </div>
       </motion.div>{" "}
      <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer"> <motion.img
@@ -61,7 +61,8 @@ export const Weaponsshopfocus  = ({ match }) => (
       </a>
       <p className="focustext">
         History's Armory. A practice project and my way of <a href="http://www.kultofathena.com/" target="blank"
-        rel="noopener noreferrer">improving this commercial website</a>. Made with React, Redux, and Css.
+        rel="noopener noreferrer">improving this commercial website</a>. Made with React, Redux, and Css. 
+        I have no affiliation with Kult of Athena.
       </p>
     </div>
   </motion.div>

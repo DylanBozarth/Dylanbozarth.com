@@ -26,7 +26,7 @@ function App() {
         </div>
         <div className="sliderdiv">
          
-          <AnimatePresence exitBeforeEnter> {/* this is where we control animations */}
+          <AnimatePresence exitBeforeEnter={true}> {/* this is where we control animations */}
             <Switch>
                <Route exact path="/" component={Homepage} /> 
               <Route path="/Projects" component={Projects} />
