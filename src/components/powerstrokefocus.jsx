@@ -61,7 +61,7 @@ export const PowerstrokeFocus = ({ match }) => (
         View code
       </a>
       <p className="focustext">
-        Skylimit Fitness. A React website made for a personal trainer from Spokane Washington. Skylimit fitness was my first full scale project. 
+       Spokane Power Stroke, A website for a local autoshop in Spokane Washington. Website made with React, Scss, and framer motion animation. 
       </p>
     </div>
   </motion.div>

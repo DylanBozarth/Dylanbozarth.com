@@ -60,7 +60,8 @@ export const Weaponsshopfocus  = ({ match }) => (
         View code
       </a>
       <p className="focustext">
-        Skylimit Fitness. A React website made for a personal trainer from Spokane Washington. Skylimit fitness was my first full scale project. 
+        History's Armory. A practice project and my way of <a href="http://www.kultofathena.com/" target="blank"
+        rel="noopener noreferrer">improving this commercial website</a>. Made with React, Redux, and Css.
       </p>
     </div>
   </motion.div>
