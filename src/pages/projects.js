@@ -64,11 +64,11 @@ class Projects extends Component {
     return (
       <motion.div
         className="thumbnails "
-        initial="out"
-        animate="in"
-        exit="out"
-        variants={changepage}
-        transition={pagetransition}
+         initial="out"
+    animate="in"
+    exit="out"
+    variants={changepage}
+    transition={pagetransition}
       >
           <Container className="Projects ">
             <h1 className="projectpagetitle">Comercial web projects</h1>

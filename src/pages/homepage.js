@@ -2,14 +2,13 @@ import React from "react";
 
 import { motion } from "framer-motion";
 const changepage = {
-  start: {
-    opacity: 0,
-  },
   in: {
     opacity: 1,
+    x: 0,
   },
   out: {
-    opacity: 0,
+    opacity: 1,
+    x: "100vw",
   },
 };
 const pagetransition = {
@@ -18,7 +17,7 @@ const pagetransition = {
 export const Homepage = () => (
   <motion.div
     id="container"
-    initial="start"
+    initial="out"
     animate="in"
     exit="out"
     variants={changepage}
