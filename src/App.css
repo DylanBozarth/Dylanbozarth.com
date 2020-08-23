@@ -9,6 +9,9 @@ height: 100vh;
 
   padding: 50px;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 nav {
   min-width: 100%;
   max-width: 100%;
