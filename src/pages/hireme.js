@@ -30,11 +30,11 @@ export default class Contact extends React.Component {
     const changepage = {
       in: {
         opacity: 1,
-        x: 0,
+        
       },
       out: {
-        opacity: 1,
-        x: "100vw",
+        opacity: 0,
+        
       },
     };
     const pagetransition = {
