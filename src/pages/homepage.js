@@ -1,14 +1,13 @@
 import React from "react";
 
 import { motion } from "framer-motion";
+import { Planet } from "../components/planet";
 const changepage = {
   in: {
     opacity: 1,
-    
   },
   out: {
     opacity: 0,
-    
   },
 };
 const pagetransition = {
@@ -24,26 +23,7 @@ export const Homepage = () => (
     transition={pagetransition}
     className="homepagebox"
   >
-    <p className="fliptext"> Looking for </p>
-    <div id="flip">
-      <div>
-        <div>
-          {" "}
-          <p className="fliptext">A website?</p>
-        </div>
-      </div>
-      <div>
-        <div>
-          {" "}
-          <p className="fliptext">An App?</p>
-        </div>
-      </div>
-      <div>
-        <div>
-          {" "}
-          <p className="fliptext">A web developer?</p>
-        </div>
-      </div>
-    </div>
+   Where on Earth can you find a good developer? 
+    <Planet />
   </motion.div>
 );

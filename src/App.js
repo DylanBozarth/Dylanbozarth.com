@@ -22,7 +22,7 @@ function App() {
       <motion.div className="wrapper">
         <Navigation />{" "}
         <div className="backgroundclass">
-          <Stars />
+         
         </div>
         <div className="sliderdiv">
          
