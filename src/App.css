@@ -408,84 +408,23 @@ nav ul li {
 /* homepage text effects */
 .homepagebox {
   text-align: center;
-  margin-top: -10rem !important; 
   
 }
-#container {
-  color: whitesmoke;
+.typingstuff {
+ 
+  overflow: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  height: 100vh;
+  font-size: 3rem ;
+}
+
+.neon {
+  font-weight: 400;
+  text-align: center;
   text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: bold;
-  padding-top: 200px;
-
-  width: 100%;
-  bottom: 45%;
-  display: block;
 }
 
-#flip {
-  height: 50px;
-  overflow: hidden;
-  
-}
-
-#flip > div > div {
-  color: #fff;
-
-  height: 45px;
-  margin-bottom: 45px;
-  display: inline-block;
-}
-
-#flip div:first-child {
-  animation: show 5s linear infinite;
-}
-
-#flip div div {
-  background: #42c58a;
-}
-#flip div:first-child div {
-  background: blue;
-}
-#flip div:last-child div {
-  background: #dc143c;
-}
-
-@keyframes show {
-  0% {
-    margin-top: -270px;
-  }
-  5% {
-    margin-top: -180px;
-  }
-  33% {
-    margin-top: -180px;
-  }
-  38% {
-    margin-top: -90px;
-  }
-  66% {
-    margin-top: -90px;
-  }
-  71% {
-    margin-top: 0px;
-  }
-  99.99% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: -270px;
-  }
-}
-
-.homepagep {
-  position: fixed;
-  width: 100%;
-  bottom: 30px;
-  font-size: 16px;
-  color: white;
-  margin-top: 200px;
-}
 /*End of homgepage */
 /* card start */
 
@@ -670,10 +609,7 @@ nav ul li {
       flex-basis: 40%;
       height: auto;
     }
-    .homepagebox {
-      margin-right: 25%;
-      
-    }
+    
     .description {
       flex-basis: 60%;
      
@@ -1590,23 +1526,3 @@ aside:hover ul li:nth-child(3) {
 
 
 
-
-
-
-/* general styling */
-
-
-.typingstuff {
- 
-  overflow: visible;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  
-  font-size: 3rem ;
-}
-
-.neon {
-  font-weight: 400;
-  text-align: center;
-  text-transform: uppercase;
-}

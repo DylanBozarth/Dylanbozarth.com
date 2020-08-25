@@ -29,23 +29,8 @@ export const Navigation = () => (
           <Nav.Link href="#features">Testimonials</Nav.Link>{" "}
         </NavLink>
       </li>
-      <li>
-        <NavLink to="/hireme" className="nav-link">
-          {" "}
-          <Nav.Link href="#features">Hire me</Nav.Link>{" "}
-        </NavLink>
-      </li>
-      <li>
-        <a
-          href="https://drive.google.com/file/d/1L6Hvq5Gymh1TG1DrfwAqvsj8zWwIW1C2/view?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="nav-link"
-        >
-          {" "}
-          <div className="nav-link">Resumé</div>{" "}
-        </a>
-      </li>
+      
+      
     </ul>
   </nav>
 );
