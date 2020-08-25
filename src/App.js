@@ -2,7 +2,7 @@ import React from "react";
 import { Navigation } from "./components/navbar";
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Homepage } from "./pages/homepage";
+import  Homepage  from "./pages/homepage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import  Projects  from "./pages/projects";
 import { Skills } from "./pages/skills";

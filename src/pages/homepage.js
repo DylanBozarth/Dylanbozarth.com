@@ -1,5 +1,6 @@
 import React from "react";
-
+import { Container, Col, Row } from "react-bootstrap";
+import useHover from "../components/usehover";
 import { motion } from "framer-motion";
 const changepage = {
   in: {
@@ -12,7 +13,10 @@ const changepage = {
 const pagetransition = {
   duration: 1.5,
 };
-export const Homepage = () => (
+
+function Homepage() {
+const [hoverRef, isHovered] = useHover();  
+return(
   <motion.div
     id="container"
     initial="out"
@@ -22,10 +26,15 @@ export const Homepage = () => (
     transition={pagetransition}
     className="homepagebox"
   >
-   <div class="wrapper">
-    <div class="typing-demo">
-      This is a typing demo.
-    </div>
-</div>
+    <Container className="typingstuff">
+      This is my portfolio
+      <Row>
+        <Col className="portfolioitem">My projects</Col>
+        <Col className="portfolioitem">My skills</Col>
+        <Col className="portfolioitem" ref={hoverRef}>{isHovered ? "Hovered !" : "Hover me !"}</Col>
+      </Row>
+    </Container>
   </motion.div>
-);
+  )
+};
+export default Homepage

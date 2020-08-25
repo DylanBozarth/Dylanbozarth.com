@@ -1567,3 +1567,6 @@ aside:hover ul li:nth-child(3) {
 }
 
 /* typing begins */ 
+.portfolioitem {
+  color: red;
+}
