@@ -1,7 +1,6 @@
 import React from "react";
 
 import { motion } from "framer-motion";
-import { Planet } from "../components/planet";
 const changepage = {
   in: {
     opacity: 1,
@@ -23,7 +22,10 @@ export const Homepage = () => (
     transition={pagetransition}
     className="homepagebox"
   >
-   Where on Earth can you find a good developer? 
-    <Planet />
+   <div class="wrapper">
+    <div class="typing-demo">
+      This is a typing demo.
+    </div>
+</div>
   </motion.div>
 );

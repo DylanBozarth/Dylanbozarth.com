@@ -22,11 +22,11 @@ function App() {
       <motion.div className="wrapper">
         <Navigation />{" "}
         <div className="backgroundclass">
-         
+         <Stars />
         </div>
         <div className="sliderdiv">
          
-          <AnimatePresence exitBeforeEnter={true}> {/* this is where we control animations */}
+          <AnimatePresence > {/* this is where we control animations */}
             <Switch>
                <Route exact path="/" component={Homepage} /> 
               <Route path="/Projects" component={Projects} />
