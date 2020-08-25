@@ -1,5 +1,5 @@
 import React from "react";
-import { Container} from "react-bootstrap";
+import { Container, Col} from "react-bootstrap";
 import { motion } from "framer-motion";
 
 import useHover from "../components/usehover";
@@ -28,9 +28,12 @@ return(
     className="homepagebox"
   >
     <Container className="typingstuff">
-    <div className="container">
-  <div className="neon" ref={hoverRef}>{isHovered ? "According to himself" : "The world's best front-end developer"}</div>
-</div>
+    <Col>
+  <motion.div animate={{ rotate: 360 }}
+    transition={{ duration: 2 }} className="neon" ref={hoverRef}>"{isHovered ? "According to himself" : "The world's best front-end developer"}"</motion.div>
+</Col>
+<motion.button animate={{ x: 100 }}
+  transition={{ ease: "easeOut", duration: 2 }}>asdasd</motion.button>
     </Container>
   </motion.div>
   )
