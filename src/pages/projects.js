@@ -71,7 +71,7 @@ class Projects extends Component {
     transition={pagetransition}
       >
           <Container className="Projects ">
-            <h1 className="projectpagetitle">Comercial web projects</h1>
+            <h1 className="projectpagetitle ">Comercial web projects <br /> Click for more details</h1>
             <Row>
               <Col></Col>
               <Col md="auto">

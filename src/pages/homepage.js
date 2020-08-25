@@ -1,7 +1,8 @@
 import React from "react";
-import { Container, Col, Row } from "react-bootstrap";
-import useHover from "../components/usehover";
+import { Container} from "react-bootstrap";
 import { motion } from "framer-motion";
+
+import useHover from "../components/usehover";
 const changepage = {
   in: {
     opacity: 1,
@@ -15,7 +16,7 @@ const pagetransition = {
 };
 
 function Homepage() {
-const [hoverRef, isHovered] = useHover();  
+  const [hoverRef, isHovered] = useHover(); 
 return(
   <motion.div
     id="container"
@@ -27,12 +28,9 @@ return(
     className="homepagebox"
   >
     <Container className="typingstuff">
-      This is my portfolio
-      <Row>
-        <Col className="portfolioitem">My projects</Col>
-        <Col className="portfolioitem">My skills</Col>
-        <Col className="portfolioitem" ref={hoverRef}>{isHovered ? "Hovered !" : "Hover me !"}</Col>
-      </Row>
+    <div className="container">
+  <div className="neon" ref={hoverRef}>{isHovered ? "According to himself" : "The world's best front-end developer"}</div>
+</div>
     </Container>
   </motion.div>
   )
