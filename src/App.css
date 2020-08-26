@@ -142,11 +142,14 @@ nav ul li {
   color: white;
   padding: 10px;
   text-align: center;
+  font-family: 'Carter One', cursive;
 }
 
 .projectpagetitle {
   color: white;
   text-align: center;
+  font-family: 'Bubblegum Sans', cursive
+
 }
 .projectspage {
   margin-left: auto;
