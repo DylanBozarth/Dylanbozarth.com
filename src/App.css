@@ -408,7 +408,7 @@ nav ul li {
 /* homepage text effects */
 .homepagebox {
   text-align: center;
-  
+  margin-top: 10vh;
 }
 .typingstuff {
  
@@ -423,6 +423,7 @@ nav ul li {
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 9vh
 }
 
 /*End of homgepage */

@@ -42,7 +42,7 @@ function Homepage() {
             : "The world's best front-end developer"}
           "
         </motion.div>
-        <Row>
+        <Row className="homepagerow">
           <Col>
             <Nav.Link to="/projects">Projects</Nav.Link>{" "}
           </Col>
