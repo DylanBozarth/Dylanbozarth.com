@@ -1,8 +1,8 @@
 import React from "react";
-import { Container, Col, Row, Card } from "react-bootstrap";
+import { Container, Col, Row } from "react-bootstrap";
 import { motion } from "framer-motion";
 
-import { Nav } from "react-bootstrap";
+import Card from "../components/card";
 import { NavLink } from "react-router-dom";
 import useHover from "../components/usehover";
 const changepage = {
@@ -40,16 +40,15 @@ function Homepage() {
             ? "According to himself"
             : "The world's best front-end developer"}
         </motion.div>
-        <h1>Test</h1>
+        
         <Row className="homepagerow">
           <Col>
           <NavLink to="/projects">
-            <Card style={{ width: "20rem" }}>
-              <Card.Header>My projects</Card.Header>
-              <Card.Body>
-                <Card.Img src="./images/css.jfif"></Card.Img>
-              </Card.Body>
-            </Card>
+          <Card
+          imgUrl="https://skylimfitness.com/static/media/Sky.e0283525.jpg"
+          title=" My Projects"
+          description=""
+        />
           </NavLink></Col>
           <Col>
             <a
@@ -57,25 +56,20 @@ function Homepage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}
-              <Card style={{ width: "20rem" }}>
-                <Card.Header>My Resume</Card.Header>
-                <Card.Body>
-                  
-                  <Card.Img src="./images/css.jfif"></Card.Img>
-                </Card.Body>
-              </Card>{" "}
+              <Card 
+          imgUrl="./images/resume.png"
+          title="My Resume"
+          
+        />
             </a>
           </Col>
           <NavLink to="/hireme">
           <Col>
-            <Card style={{ width: "20rem" }}>
-              <Card.Header>Contact</Card.Header>
-              <Card.Body>
-                
-                <Card.Img src="./images/css.jfif"></Card.Img>
-              </Card.Body>
-            </Card>
+          <Card
+          imgUrl="./images/contact.png"
+          title="Contact"
+          description=""
+        />
           </Col>
           </NavLink>
         </Row>

@@ -332,6 +332,19 @@ nav ul li {
 }
 /* card start */ 
 .card {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 3px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom:  10vh;
+  background-size: 100% 100%;
+}
+.card2 {
   width: 450px;
   height: 450px;
   border-radius: 3px;
@@ -341,6 +354,7 @@ nav ul li {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom:  10vh;
 }
 
 .card:hover {
@@ -622,6 +636,8 @@ nav ul li {
 /* form start (hire me) */ 
 .hiremelabel {
   color: white;
+  text-align: center;
+  font-size: 2rem;
 }
 .contactform {
   margin-top: 5%;
@@ -629,7 +645,7 @@ nav ul li {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
-  border-width: thick;
+  border-width: 1rem;
   border-style: ridge;
   border-color: darkslateblue;
 }
