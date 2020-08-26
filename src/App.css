@@ -94,19 +94,7 @@ nav ul li {
 /* end of backgrounds */
 /* Homepage start */
 
-.homepage {
-  background-color: black;
 
-  overflow-x: hidden;
-  overflow-y: hidden;
-
-  color: white;
-}
-.intro {
-  margin-top: 6%;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 @keyframes pulse {
   25% {
@@ -412,10 +400,9 @@ nav ul li {
 }
 .typingstuff {
  
-  overflow: visible;
   display: -webkit-box;
   display: -ms-flexbox;
-  height: 100vh;
+ 
   font-size: 3rem ;
 }
 
@@ -1506,6 +1493,7 @@ aside:hover ul li:nth-child(3) {
 /* typing begins */ 
 .neon {
   color: #fff;
+  
   text-shadow:
     0 0 5px #fff,
     0 0 10px #fff,
@@ -1517,13 +1505,11 @@ aside:hover ul li:nth-child(3) {
     0 0 150px #0ff;
 }
 
+.neon:hover {
+  animation: fade-out 4s linear infinite;
+}
 
-
-
-
-
-
-
-
-
-
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
