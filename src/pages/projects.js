@@ -51,6 +51,10 @@ class Projects extends Component {
           title: "Skylimit Fitness",
           link: "/skylimit",
         },
+        {image: "",
+        title: "This website",
+        link: "/portfolio"
+        },
         {
           image: "./images/hwsnew.png",
           title: "History's Armory",

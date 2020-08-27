@@ -140,7 +140,7 @@ nav ul li {
 /* projects page */
 .projectstitle {
   color: white;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   font-family: 'Carter One', cursive;
 }
@@ -334,15 +334,17 @@ nav ul li {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0576ff', endColorstr='#24f8ff', GradientType=1 );
 }
 /* card start */ 
+
+
 .card {
   width: 20rem;
   height: 20rem;
-  border-radius: 3px;
+  border: 3px solid steelblue;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  overflow: hidden;
+  
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   margin-bottom:  10vh;
   background-size: 100% 100%;
@@ -361,6 +363,9 @@ nav ul li {
 }
 
 .card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.card2:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
@@ -391,11 +396,6 @@ nav ul li {
   letter-spacing: 1.3px;
   line-height: 22px;
 }
-.skylimitcard {
-  background-image: url('./images/skyfitness.gif');
-  background-size: 100% 100%;
-}
-
 
 @media screen and (max-width: 720px) {
   .App {

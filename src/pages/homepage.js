@@ -42,15 +42,16 @@ function Homepage() {
         </motion.div>
         
         <Row className="homepagerow">
-          <Col>
-          <NavLink to="/projects">
+          <Col className="homepagelinkbox">
+          <NavLink to="/projects" >
           <Card
           imgUrl="./images/projectspage.png"
           title=" My Projects"
+          className="homepagecardimg"
           description=""
         />
           </NavLink></Col>
-          <Col>
+          <Col className="homepagelinkbox">
             <a
               href="https://drive.google.com/file/d/1L6Hvq5Gymh1TG1DrfwAqvsj8zWwIW1C2/view?usp=sharing"
               target="_blank"
@@ -59,15 +60,16 @@ function Homepage() {
               <Card 
           imgUrl="./images/resume.png"
           title="My Resume"
-          
+          className="homepagecardimg"
         />
             </a>
           </Col>
           <NavLink to="/hireme">
-          <Col>
+          <Col className="homepagelinkbox">
           <Card
           imgUrl="./images/contact.png"
           title="Contact Me"
+          className="homepagecardimg"
           description=""
         />
           </Col>
