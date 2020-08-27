@@ -57,7 +57,7 @@ nav ul li {
   font-size: 2vh;
 }
 .nav-link {
-  color: steelblue !important;
+  color: #169061 !important;
   margin-right: 15px !important;
   margin-left: 4px !important;
   font-size: 130%;
@@ -148,7 +148,6 @@ nav ul li {
 .projectpagetitle {
   color: white;
   text-align: center;
-  font-family: 'Bubblegum Sans', cursive
 
 }
 .projectspage {

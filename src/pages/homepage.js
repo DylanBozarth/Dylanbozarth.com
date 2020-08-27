@@ -31,7 +31,7 @@ function Homepage() {
     >
       <Container className="typingstuff">
         <motion.div
-          animate={{ rotate: 365 }}
+          animate={{ rotate: 360 }}
           transition={{ duration: "1.5" }}
           className="neon"
           ref={hoverRef}
