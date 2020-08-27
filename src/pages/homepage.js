@@ -37,15 +37,15 @@ function Homepage() {
           ref={hoverRef}
         >
           {isHovered
-            ? "According to himself"
-            : "The world's best front-end developer"}
+            ? "-Himself"
+            : '"He is the best developer in the world"'}
         </motion.div>
         
         <Row className="homepagerow">
           <Col>
           <NavLink to="/projects">
           <Card
-          imgUrl="https://skylimfitness.com/static/media/Sky.e0283525.jpg"
+          imgUrl="./images/projectspage.png"
           title=" My Projects"
           description=""
         />
@@ -67,7 +67,7 @@ function Homepage() {
           <Col>
           <Card
           imgUrl="./images/contact.png"
-          title="Contact"
+          title="Contact Me"
           description=""
         />
           </Col>

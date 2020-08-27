@@ -1524,11 +1524,4 @@ aside:hover ul li:nth-child(3) {
     0 0 150px #0ff;
 }
 
-.neon:hover {
-  animation: fade-out 4s linear infinite;
-}
 
-@keyframes fade-out {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
