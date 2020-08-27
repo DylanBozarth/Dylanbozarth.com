@@ -14,6 +14,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { SkylimitFocus } from "./components/skylimitfocus";
 import {PowerstrokeFocus} from './components/powerstrokefocus'
 import { Weaponsshopfocus } from "./components/weaponsshopfocus";
+import { ThiswebsiteFocus } from "./components/thiswebsitefocus";
 
 function App() {
  
@@ -36,6 +37,7 @@ function App() {
               <Route path="/skylimit" component={SkylimitFocus} />
               <Route path="/powerstroke" component={PowerstrokeFocus} />
               <Route path="/weaponsshop" component={Weaponsshopfocus} />
+              <Route path="/portfolio" component={ThiswebsiteFocus} />
             </Switch>
           </AnimatePresence>
           

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import {  motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { Container, Col, Row } from "react-bootstrap";
 
@@ -26,11 +26,9 @@ const imageVariants = {
 const changepage = {
   in: {
     opacity: 1,
-    
   },
   out: {
     opacity: 0,
-    
   },
 };
 const pagetransition = {
@@ -51,9 +49,10 @@ class Projects extends Component {
           title: "Skylimit Fitness",
           link: "/skylimit",
         },
-        {image: "",
-        title: "This website",
-        link: "/portfolio"
+        {
+          image: "./images/thiswebsite.png",
+          title: "This website",
+          link: "/portfolio",
         },
         {
           image: "./images/hwsnew.png",
@@ -68,46 +67,44 @@ class Projects extends Component {
     return (
       <motion.div
         className="thumbnails "
-         initial="out"
-    animate="in"
-    exit="out"
-    variants={changepage}
-    transition={pagetransition}
+        initial="out"
+        animate="in"
+        exit="out"
+        variants={changepage}
+        transition={pagetransition}
       >
-          <Container className="Projects ">
-            <h1 className="projectpagetitle ">Comercial web projects <br /> Click for more details</h1>
-            <Row>
-              <Col></Col>
-              <Col md="auto">
-                {this.state.items.map(({ title, image, link }) => (
+        <Container className="Projects ">
+          <h1 className="projectpagetitle ">
+            Comercial web projects <br /> Click for more details
+          </h1>
+          <Row>
+            <Col></Col>
+            <Col md="auto">
+              {this.state.items.map(({ title, image, link }) => (
+                <motion.div className="thumbnail" variants={thumbnailVariants}>
+                  {" "}
                   <motion.div
-                    className="thumbnail"
-                    variants={thumbnailVariants}
+                    className="frame"
+                    whileHover="hover"
+                    variants={frameVariants}
+                    transition={transition}
                   >
-                    {" "}
-                    <motion.div
-                      className="frame"
-                      whileHover="hover"
-                      variants={frameVariants}
-                      transition={transition}
-                      
-                    >
-                      <h1 className="projectstitle">{title}</h1>
-                      <Link to={link}>
-                        <motion.img
-                          src={image}
-                          alt={image}
-                          variants={imageVariants}
-                          transition={transition}
-                        />
-                      </Link>
-                    </motion.div>
+                    <h1 className="projectstitle">{title}</h1>
+                    <Link to={link}>
+                      <motion.img
+                        src={image}
+                        alt={image}
+                        variants={imageVariants}
+                        transition={transition}
+                      />
+                    </Link>
                   </motion.div>
-                ))}
-              </Col>
-              <Col></Col>
-            </Row>
-          </Container>
+                </motion.div>
+              ))}
+            </Col>
+            <Col></Col>
+          </Row>
+        </Container>
       </motion.div>
     );
   }

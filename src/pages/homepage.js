@@ -42,12 +42,12 @@ function Homepage() {
         </motion.div>
         
         <Row className="homepagerow">
-          <Col className="homepagelinkbox">
+          <Col className="homepagelinkbox ">
           <NavLink to="/projects" >
           <Card
           imgUrl="./images/projectspage.png"
           title=" My Projects"
-          className="homepagecardimg"
+          className="homepagecardimg "
           description=""
         />
           </NavLink></Col>

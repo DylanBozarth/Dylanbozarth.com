@@ -335,6 +335,39 @@ nav ul li {
 }
 /* card start */ 
 
+.gradient-border {
+  --borderWidth: 4.5px;
+ 
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, steelblue, #f37055, green, yellow, #5073b8, orange, #07b39b, white);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 5s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 .card {
   width: 20rem;
