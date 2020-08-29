@@ -33,7 +33,7 @@ export const SkylimitFocus = ({ match }) => (
           <img width="50px" height="50px" alt="icon" src='./images/react.png'></img>
           <img width="50px" height="50px" alt="icon" src='./images/scss.png'></img>
           <img width="50px" height="50px" alt="icon" src='./images/paypal.jpg'></img>
-          
+          <img width="50px" height="50px" alt="icon" src='./images/framermotion.gif'></img>
           <img width="70px" height="50px" alt="icon" src='./images/redux.png'></img>
         </div>
       </motion.div>{" "}

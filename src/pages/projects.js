@@ -83,7 +83,8 @@ class Projects extends Component {
               {this.state.items.map(({ title, image, link }) => (
                 <motion.div className="thumbnail" variants={thumbnailVariants}>
                   {" "}
-                  <motion.div
+                  <motion.div 
+                  key={title}
                     className="frame"
                     whileHover="hover"
                     variants={frameVariants}
