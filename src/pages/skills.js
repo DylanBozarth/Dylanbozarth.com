@@ -25,7 +25,7 @@ export const Skills = () => (
   >
     <div className="container">
       <h1 className="iworkwith">I work with the following technologies</h1>
-      <p className="iworkwith2">Hover to learn more</p>
+      <p className="iworkwith2">Hover to learn more <br /> Anything that I don't already know, I am always able to learn.</p>
       <div className="row">
         <div className="col-sm ">
           <aside className="profile-card asidehtml">

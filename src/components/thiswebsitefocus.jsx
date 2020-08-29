@@ -61,7 +61,7 @@ export const ThiswebsiteFocus = ({ match }) => (
         View code
       </a>
       <p className="focustext">
-      My portfolio.  Adasda sdaAdasda sdaAdasda sdaAdasda sdaAdasda sdaAdasda sdaAdasda sdaAdasda sdaAdasda sdaAdasda sdaAdasda sdaAdasda sdaAdasda sdaAdasda sdaAdasda sdaAdasda sdaAdasda sda
+     How is this website made?  My portfolio. Website made with React, React hooks, framer motion, and over 2000 lines of CSS code. 
       </p> 
     </div>
   </motion.div>
