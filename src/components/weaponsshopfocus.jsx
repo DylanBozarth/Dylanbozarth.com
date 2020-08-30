@@ -35,7 +35,7 @@ export const Weaponsshopfocus  = ({ match }) => (
           <img width="50px" height="50px" alt="icon" src="./images/redux.png"></img>
         </div>
       </motion.div>{" "}
-     <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer"> <motion.img
+     <a href="https://76y7e.csb.app/" target="_blank" rel="noopener noreferrer"> <motion.img
         variants={imageVariants}
         src="./images/hwsnew.png"
         alt="SkyLimit Fitness"
@@ -45,7 +45,7 @@ export const Weaponsshopfocus  = ({ match }) => (
     <div className="linkbox">
       <a
         className="button2 b-blue rot-135"
-        href="https://www.google.com/"
+        href="https://76y7e.csb.app/"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -53,7 +53,7 @@ export const Weaponsshopfocus  = ({ match }) => (
       </a>{" "}
       <a
         className="button2 b-blue rot-135"
-        href="https://github.com/Imstupidpleasehelp/spokane-power-stroke"
+        href="https://github.com/Imstupidpleasehelp/Historical-weapons-shop"
         target="blank"
         rel="noopener noreferrer"
       >

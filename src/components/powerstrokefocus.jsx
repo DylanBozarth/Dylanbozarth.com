@@ -36,7 +36,7 @@ export const PowerstrokeFocus = ({ match }) => (
           
         </div>
       </motion.div>{" "}
-     <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer"> <motion.img
+     <a href="https://kkoze.csb.app/" target="_blank" rel="noopener noreferrer"> <motion.img
         variants={imageVariants}
         src="./images/spokanepowerstroke.jpg"
         alt="SkyLimit Fitness"
@@ -46,7 +46,7 @@ export const PowerstrokeFocus = ({ match }) => (
     <div className="linkbox">
       <a
         className="button2 b-blue rot-135"
-        href="https://www.google.com/"
+        href="https://kkoze.csb.app/"
         target="_blank"
         rel="noopener noreferrer"
       >

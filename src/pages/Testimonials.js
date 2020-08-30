@@ -38,9 +38,9 @@ export const Testimonials = () => (
         </Col>
         <Col>
           <TestCard
-            imgUrl="https://skylimfitness.com/static/media/Sky.e0283525.jpg"
+            imgUrl="./images/brandon.jpg"
             title="Brandon B. Of Spokane Power Stroke"
-            description="He's pretty great, I paid him in Sushi"
+            description="Dylan was an excellent communicator and dilligent worker throughout the making of my website. I would describe what I wanted and before I knew it he would have a preview ready for me to view. I highly reccomend Dylan for your business."
           />
         </Col>
       </Row>

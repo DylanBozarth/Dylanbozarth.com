@@ -37,7 +37,7 @@ export const SkylimitFocus = ({ match }) => (
           <img width="70px" height="50px" alt="icon" src='./images/redux.png'></img>
         </div>
       </motion.div>{" "}
-     <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer"> <motion.img
+     <a href="https://skylimfitness.com/" target="_blank" rel="noopener noreferrer"> <motion.img
         variants={imageVariants}
         src="./images/skyfitnessnew.jpg"
         alt="SkyLimit Fitness"
@@ -47,7 +47,7 @@ export const SkylimitFocus = ({ match }) => (
     <div className="linkbox">
       <a
         className="button2 b-blue rot-135"
-        href="https://www.google.com/"
+        href="https://skylimfitness.com/"
         target="_blank"
         rel="noopener noreferrer"
       >
