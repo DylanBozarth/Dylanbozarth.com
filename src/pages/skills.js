@@ -169,36 +169,11 @@ export const Skills = () => (
         </div>
       </div>
       <br />
-      <h1 className="skillevidence">Relevant links</h1>
-      <div className="row linkboxes">
-        <div className="col-sm evidencelink">
-          <a
-            className="evidencelink"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/Imstupidpleasehelp"
-          >
-            <div className="col-md-4">
-            <h3 className="linktitle">Github</h3>
-              <div className="skillboximggithub"></div> <br />
-            </div>
-          </a>
-        </div>
+    
+      
         
-        <div className="col-sm evidencelink">
-          <a
-            className="evidencelink"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.freecodecamp.org/dylanbozarth"
-          >
-            <div className="col-md-4">
-              <h3 className="linktitle">Freecodecamp</h3> <div className="skillboximgfcc"></div>
-              <br />
-            </div>
-          </a>
-        </div>
-      </div>
+      
+     
     </div>
   </motion.div>
 );
