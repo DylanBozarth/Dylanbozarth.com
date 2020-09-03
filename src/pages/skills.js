@@ -179,7 +179,7 @@ export const Skills = () => (
     <p className="projectpagetitle">My online presence</p>
     <Row >
     <div className="item">
-      <a href="https://forum.freecodecamp.org/u/imstupidpleasehelp/summary" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/Imstupidpleasehelp" target="_blank" rel="noopener noreferrer">
   <img className="skillimage" src="./images/github.png" alt="" />
   <div className="item-content">
     <p>Github</p>
@@ -187,7 +187,7 @@ export const Skills = () => (
    </div></a>
 </div>
 <div className="item">
-  <a href="https://github.com/Imstupidpleasehelp" target="_blank" rel="noopener noreferrer">
+  <a href="https://stackoverflow.com/users/13569082/imstupidpleasehelp" target="_blank" rel="noopener noreferrer">
   <img className="skillimage" src="./images/stackoverflow.png" alt="" />
   <div className="item-content">
     <p>Stackoverflow Programming forum</p>
@@ -195,7 +195,7 @@ export const Skills = () => (
    </div></a>
 </div>
 <div className="item">
-  <a href="https://stackoverflow.com/users/13569082/imstupidpleasehelp" target="_blank" rel="noopener noreferrer">
+  <a href="https://forum.freecodecamp.org/u/imstupidpleasehelp/summary" target="_blank" rel="noopener noreferrer">
   <img className="skillimage" src="./images/fcc.png" alt="" />
   <div className="item-content">
     <p>Freecodecamp Forums </p>
