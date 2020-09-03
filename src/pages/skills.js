@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import {  Col, Row } from "react-bootstrap";
+import {  Col, Row, Card } from "react-bootstrap";
 const changepage = {
   in: {
     opacity: 1,
@@ -25,7 +25,7 @@ export const Skills = () => (
     className="whitetext"
   >
     <div className="container">
-      <h1 className="iworkwith">I work with the following technologies</h1>
+      <p className="iworkwith">I work with the following technologies</p>
       <p className="iworkwith2">Hover to learn more <br /> Anything that I don't already know, I am always able to learn.</p>
       <div className="row">
         <div className="col-sm ">
@@ -176,17 +176,32 @@ export const Skills = () => (
       
      
     </div>
-    <Row>
-      <Col>sdsdsd</Col>
-      <Col>sdsdsd</Col>
-      <Col>sdsdsd</Col>
-    </Row>
+    <p className="projectpagetitle">Evidence Link</p>
+    <main className="skillrow">
+    <div className="item">
+  <img className="skillimage" src="https://unsplash.it/640/426" alt="" />
+  <div className="item-content">
+    <p>Card Title</p>
+    <p><i>Card Subtitle</i></p>
+    
+   </div>
+</div>
+<div className="item">
+  <img className="skillimage" src="https://unsplash.it/640/426" alt="" />
+  <div className="item-content">
+    <p>Card Title</p>
+    <p><i>Card Subtitle</i></p>
+    
+   </div>
+</div>
+<div className="item">
+  <img className="skillimage" src="https://unsplash.it/640/426" alt="" />
+  <div className="item-content">
+    <p>Card Title</p>
+    <p><i>Card Subtitle</i></p>
+    
+   </div>
+</div></main>
   </motion.div>
 );
 
-/* 
-<div className="searchcontainer"><h1 className="searchtext"> Search</h1>
-  <input type="text" placeholder="Search..."></input>
-  <div className="search"></div>
-  </div>
-  */

@@ -150,11 +150,15 @@ nav ul li {
 .projectpagetitle {
   color: white;
   text-align: center;
+  font-size: 3rem;
 
 }
 .projectspage {
   margin-left: auto;
   margin-right: auto;
+}
+.evidencerow {
+  margin-left: 200px;
 }
 .skylimittext {
   font-family: 'Bubblegum Sans', cursive;
@@ -662,12 +666,12 @@ nav ul li {
   
 
 .evidencelink {
-  color: white;
-  margin-left: 5%;
+  color: black;
+  text-align: center;
 }
 .evidencelink:hover {
   text-decoration: none;
-  color: white;
+  color: black;
   transform: scale(1.1);
 }
 /* form start (hire me) */ 
@@ -846,12 +850,64 @@ textarea {
 }
 
 /* skill card start */
+
+.skillrow {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.item {
+  width: 30%;
+  overflow: hidden;
+  border-radius: 2px;
+  margin: 2rem auto;
+  box-shadow: 0 0px 3px rgba(0,0,0,0.25);
+  transition: box-shadow .25s ease-out;
+}
+
+.item:hover{
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.25);
+}
+
+.skillimage {
+  width: 100%;
+  display: block;
+}
+
+.item-content{
+  background-color: black;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.item-content div {
+    margin-top: 2rem;
+    text-align: right;
+}
+
+.card-action {
+  color: steelblue;
+  padding: .25rem .5rem;
+  text-decoration: none;
+  border: 1px solid white;
+}
+
+.card-action:hover {
+    border: 1px solid steelblue;
+}
+
+.card-action:focus {
+    background-color: rgba(70, 130, 180, .25);
+}
+/* skill card end */ 
 .iworkwith {
   text-align: center;
+  font-size: 2.4rem;
 }
 .iworkwith2 {
   text-align: center;
-  font-size: 24px;
+  font-size: 2rem;
 }
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
