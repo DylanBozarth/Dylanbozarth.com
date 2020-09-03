@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import {  Col, Row, Card } from "react-bootstrap";
+import {  Row } from "react-bootstrap";
 const changepage = {
   in: {
     opacity: 1,
@@ -176,32 +176,32 @@ export const Skills = () => (
       
      
     </div>
-    <p className="projectpagetitle">Evidence Link</p>
-    <main className="skillrow">
+    <p className="projectpagetitle">My online presence</p>
+    <Row >
     <div className="item">
-  <img className="skillimage" src="https://unsplash.it/640/426" alt="" />
+      <a href="https://forum.freecodecamp.org/u/imstupidpleasehelp/summary" target="_blank" rel="noopener noreferrer">
+  <img className="skillimage" src="./images/github.png" alt="" />
   <div className="item-content">
-    <p>Card Title</p>
-    <p><i>Card Subtitle</i></p>
+    <p>Github</p>
     
-   </div>
+   </div></a>
 </div>
 <div className="item">
-  <img className="skillimage" src="https://unsplash.it/640/426" alt="" />
+  <a href="https://github.com/Imstupidpleasehelp" target="_blank" rel="noopener noreferrer">
+  <img className="skillimage" src="./images/stackoverflow.png" alt="" />
   <div className="item-content">
-    <p>Card Title</p>
-    <p><i>Card Subtitle</i></p>
+    <p>Stackoverflow Programming forum</p>
     
-   </div>
+   </div></a>
 </div>
 <div className="item">
-  <img className="skillimage" src="https://unsplash.it/640/426" alt="" />
+  <a href="https://stackoverflow.com/users/13569082/imstupidpleasehelp" target="_blank" rel="noopener noreferrer">
+  <img className="skillimage" src="./images/fcc.png" alt="" />
   <div className="item-content">
-    <p>Card Title</p>
-    <p><i>Card Subtitle</i></p>
+    <p>Freecodecamp Forums </p>
     
-   </div>
-</div></main>
+   </div></a>
+</div></Row>
   </motion.div>
 );
 
