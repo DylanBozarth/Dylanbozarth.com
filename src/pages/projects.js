@@ -90,7 +90,7 @@ class Projects extends Component {
                     variants={frameVariants}
                     transition={transition}
                   >
-                    <h1 className="projectstitle">{title}</h1>
+                    <p className="projectstitle">{title}</p>
                     <Link to={link}>
                       <motion.img
                         src={image}

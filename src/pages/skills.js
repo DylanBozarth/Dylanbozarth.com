@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+import {  Col, Row } from "react-bootstrap";
 const changepage = {
   in: {
     opacity: 1,
@@ -175,6 +176,11 @@ export const Skills = () => (
       
      
     </div>
+    <Row>
+      <Col>sdsdsd</Col>
+      <Col>sdsdsd</Col>
+      <Col>sdsdsd</Col>
+    </Row>
   </motion.div>
 );
 
