@@ -23,9 +23,8 @@ function App() {
       <motion.div className="wrapper">
         <Navigation />{" "}
         <div className="backgroundclass">
-         <Stars />
+         
         </div>
-        <div className="sliderdiv">
          
           <AnimatePresence > {/* this is where we control animations */}
             <Switch>
@@ -41,7 +40,6 @@ function App() {
             </Switch>
           </AnimatePresence>
           
-        </div>
       </motion.div>
     </Router>
   );

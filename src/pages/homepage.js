@@ -36,44 +36,43 @@ function Homepage() {
           className="neon"
           ref={hoverRef}
         >
-          {isHovered
-            ? "-Himself"
-            : '"He is the best developer in the world"'}
+          {isHovered ? "-Himself" : '"He is the best developer in the world"'}
         </motion.div>
-        
+
         <Row className="homepagerow">
           <Col className="homepagelinkbox ">
-          <NavLink to="/projects" >
-          <Card
-          imgUrl="./images/projectspage.png"
-          title=" My Projects"
-          className="homepagecardimg "
-          description=""
-        />
-          </NavLink></Col>
+            <NavLink to="/projects">
+              <Card
+                imgUrl="./images/projectspage.png"
+                title=" My Projects"
+                className="homepagecardimg "
+                description=""
+              />
+            </NavLink>
+          </Col>
           <Col className="homepagelinkbox">
             <a
               href="https://drive.google.com/file/d/1L6Hvq5Gymh1TG1DrfwAqvsj8zWwIW1C2/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Card 
-          imgUrl="./images/resume.png"
-          title="My Resume"
-          className="homepagecardimg"
-        />
+              <Card
+                imgUrl="./images/resume.png"
+                title="My Resume"
+                className="homepagecardimg"
+              />
             </a>
           </Col>
-          <NavLink to="/hireme">
           <Col className="homepagelinkbox">
-          <Card
-          imgUrl="./images/contact.png"
-          title="Contact Me"
-          className="homepagecardimg"
-          description=""
-        />
+            <NavLink to="/hireme">
+              <Card
+                imgUrl="./images/contact.png"
+                title="Contact Me"
+                className="homepagecardimg"
+                description=""
+              />
+            </NavLink>{" "}
           </Col>
-          </NavLink>
         </Row>
       </Container>
     </motion.div>
