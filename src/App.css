@@ -31,7 +31,7 @@ nav ul {
     90deg,
     rgba(255, 255, 255, 0) 0%,
     rgba(255, 255, 255, 0.2) 100%,
-    rgba(255, 255, 255, 0.2) 75%,
+    black 75%,
     rgba(255, 255, 255, 0) 100%
   );
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
@@ -47,10 +47,6 @@ nav ul li {
 
 
 
-.navbartitle:hover {
-  box-shadow: 0px 0px 15px red;
-  background-color: red;
-}
 
 .whitetext {
   color: white;
@@ -73,10 +69,9 @@ nav ul li {
 }
 .nav-link:hover {
   color: white !important;
-  text-shadow: 0px 0px 10px deepskyblue, 0px 0px 20px deepskyblue,
-    0px 0px 30px deepskyblue, 0px 0px 40px deepskyblue, 0px 0px 70px deepskyblue,
-    0px 0px 80px deepskyblue, 0px 0px 100px deepskyblue,
-    0px 0px 150px deepskyblue;
+  text-shadow: 0px 0px 10px purple, 0px 0px 20px purple,
+    0px 0px 30px purple, 0px 0px 40px purple, 0px 0px 70px purple,
+    0px 0px 80px purple
 }
 
 /* end of menu */
@@ -86,9 +81,8 @@ nav ul li {
 }
 
 .backgroundclass {
-  background: #141E30;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url('./images/background.jpg'); 
+  background-size: 100% 100%;
 
   position: fixed;
   left: 0;
@@ -109,7 +103,7 @@ background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Fi
     color: red;
   }
   50% {
-    color: orange;
+    color: purple;
   }
 
   75% {
@@ -120,29 +114,6 @@ background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Fi
 
 
 
-@keyframes move {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-@-webkit-keyframes move {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
 
 /* projects page */
 .projectstitle {
@@ -165,15 +136,6 @@ background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Fi
 }
 .evidencerow {
   margin-left: 200px;
-}
-.skylimittext {
-  font-family: 'Bubblegum Sans', cursive;
-}
-.hwstext {
-  font-family: 'Metal Mania', cursive;
-}
-.powerstroketext {
-  font-family: 'Carter One', cursive;
 }
 
 .gallerytitle {
@@ -344,7 +306,7 @@ background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Fi
   color: white !important;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0576ff', endColorstr='#24f8ff', GradientType=1 );
 }
-/* card start */ 
+/* card start glowing effect */ 
 
 .gradient-border {
   --borderWidth: 4.5px;
@@ -359,7 +321,7 @@ background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Fi
   left: calc(-1 * var(--borderWidth));
   height: calc(100% + var(--borderWidth) * 2);
   width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(60deg, steelblue, #f37055, green, yellow, #5073b8, orange, #07b39b, white);
+  background: linear-gradient(60deg, steelblue, #85008d, darkslateblue, purple, #5073b8, purple, black, #c800d4);
   border-radius: calc(2 * var(--borderWidth));
   z-index: -1;
   animation: animatedgradient 5s ease alternate infinite;
@@ -383,7 +345,6 @@ background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Fi
 .card {
   width: 20rem;
   height: 20rem;
-  border: 3px solid steelblue;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   
@@ -562,19 +523,6 @@ background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Fi
   color: black;
   margin-top: 55px;
 }
-.text-shadow {
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04),
-    3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04),
-    0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04),
-    7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04),
-    9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04),
-    11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04),
-    13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04),
-    0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04),
-    17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04),
-    19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
-}
-
 /* start of testimonial cards */
 
 
@@ -732,13 +680,13 @@ input[type="submit"] {
 }
 
 input[type="text"]:focus {
-  background-color: skyblue;
+  background-color: steelblue;
 }
 input[type="email"]:focus {
-  background-color: skyblue;
+  background-color: steelblue;
 }
 textarea:focus {
-  background-color: skyblue;
+  background-color: steelblue;
 }
 textarea {
   width: 95%;
@@ -1610,15 +1558,14 @@ aside:hover ul li:nth-child(3) {
 .neon {
   color: #fff;
   
+  font-family: 'Nova Square', cursive;
   text-shadow:
-    0 0 5px #fff,
-    0 0 10px #fff,
-    0 0 20px #fff,
-    0 0 40px #0ff,
-    0 0 80px #0ff,
-    0 0 90px #0ff,
-    0 0 100px #0ff,
-    0 0 150px #0ff;
+    0 0 5px purple,
+    0 0 10px steelblue,
+    0 0 20px purple,
+    0 0 40px blue,
+    0 0 80px red,
+    0 0 90px red
 }
 
 

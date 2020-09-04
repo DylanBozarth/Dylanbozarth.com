@@ -55,7 +55,7 @@ export const SkylimitFocus = ({ match }) => (
       </a>{" "}
       <a
         className="button2 b-blue rot-135"
-        href="https://github.com/Imstupidpleasehelp/spokane-power-stroke"
+        href="https://github.com/Imstupidpleasehelp/SkylimitHost"
         target="blank"
         rel="noopener noreferrer"
       >
