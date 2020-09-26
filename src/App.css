@@ -217,6 +217,7 @@ nav ul li {
 
     height: auto;
   }
+ 
   
 }
 .frontbox {
@@ -410,6 +411,7 @@ nav ul li {
     width: 100vw;
     margin-right: 15%;
   }
+  
   .App > *:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -611,7 +613,8 @@ nav ul li {
       flex-basis: 60%;
      
     }
-    
+   
+  
       }
       .details {
         padding-left: 25px;

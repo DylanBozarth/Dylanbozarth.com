@@ -6,7 +6,7 @@ export default function Card(props) {
       style={{
         backgroundImage: `url(${props.imgUrl})`
       }}
-      className="card gradient-border"
+      className="card gradient-border container-fluid"
     >
       <div className="card-info">
         <h4 className="card-title">{props.title}</h4>

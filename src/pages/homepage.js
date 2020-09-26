@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Col, Row } from "react-bootstrap";
 import { motion } from "framer-motion";
 
 import Card from "../components/card";
@@ -27,9 +26,10 @@ function Homepage() {
       exit="out"
       variants={changepage}
       transition={pagetransition}
-      className="homepagebox"
+      className="homepagebox container"
     >
-      <Container className="typingstuff">
+      
+      <div className="typingstuff ">
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ duration: "1.5" }}
@@ -39,8 +39,8 @@ function Homepage() {
           {isHovered ? "-Himself" : '"He is the best developer in the world"'}
         </motion.div>
 
-        <Row className="homepagerow">
-          <Col className="homepagelinkbox ">
+        <div className="row">
+          <div className="homepagelinkbox  col-sm-4">
             <NavLink to="/projects">
               <Card
                 imgUrl="./images/projectspage.png"
@@ -49,8 +49,8 @@ function Homepage() {
                 description=""
               />
             </NavLink>
-          </Col>
-          <Col className="homepagelinkbox">
+          </div>
+          <div className="homepagelinkbox col-sm-4">
             <a
               href="https://drive.google.com/file/d/1L6Hvq5Gymh1TG1DrfwAqvsj8zWwIW1C2/view?usp=sharing"
               target="_blank"
@@ -62,8 +62,8 @@ function Homepage() {
                 className="homepagecardimg"
               />
             </a>
-          </Col>
-          <Col className="homepagelinkbox">
+          </div>
+          <div className="homepagelinkbox col-sm-4">
             <NavLink to="/hireme">
               <Card
                 imgUrl="./images/contact.png"
@@ -72,9 +72,9 @@ function Homepage() {
                 description=""
               />
             </NavLink>{" "}
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
+      </div>
     </motion.div>
   );
 }
