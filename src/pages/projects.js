@@ -40,6 +40,11 @@ class Projects extends Component {
     this.state = {
       items: [
         {
+          image: "./images/jymr.jpg",
+          title: "JYMR Doodles",
+          link: "/doodles",
+        },
+        {
           image: "./images/spokanepowerstroke.jpg",
           title: "Spokane Power Stroke",
           link: "/powerstroke",

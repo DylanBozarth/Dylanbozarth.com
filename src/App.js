@@ -14,6 +14,7 @@ import { SkylimitFocus } from "./components/skylimitfocus";
 import {PowerstrokeFocus} from './components/powerstrokefocus'
 import { Weaponsshopfocus } from "./components/weaponsshopfocus";
 import { ThiswebsiteFocus } from "./components/thiswebsitefocus";
+import { JymrDoodlesFocus } from "./components/jymrdoodlesfocus";
 
 function App() {
  
@@ -36,6 +37,7 @@ function App() {
               <Route path="/powerstroke" component={PowerstrokeFocus} />
               <Route path="/weaponsshop" component={Weaponsshopfocus} />
               <Route path="/portfolio" component={ThiswebsiteFocus} />
+              <Route path="/doodles" component={JymrDoodlesFocus} />
             </Switch>
           </AnimatePresence>
           
