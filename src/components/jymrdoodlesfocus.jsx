@@ -37,7 +37,7 @@ export const JymrDoodlesFocus = ({ match }) => (
           
         </div>
       </motion.div>{" "}
-     <a href="https://0n8cw.csb.app/" target="_blank" rel="noopener noreferrer"> <motion.img
+     <a href="https://lexup.csb.app/" target="_blank" rel="noopener noreferrer"> <motion.img
         variants={imageVariants}
         src="./images/jymr.jpg"
         alt="JYMR doodles"
@@ -47,7 +47,7 @@ export const JymrDoodlesFocus = ({ match }) => (
     <div className="linkbox">
       <a
         className="button2 b-blue rot-135"
-        href="https://0n8cw.csb.app/"
+        href="https://lexup.csb.app/"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -62,7 +62,7 @@ export const JymrDoodlesFocus = ({ match }) => (
         View code
       </a>
       <p className="focustext">
-       Spokane Power Stroke, A website for a local autoshop in Spokane Washington. Website made with React, Scss, and framer motion animation. 
+      JYMR doodles, a labradoodle breeder in Utah. Website made with React, React hooks, Scss, and JSON data.  
       </p>
     </div>
   </motion.div>

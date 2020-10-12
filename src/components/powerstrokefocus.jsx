@@ -36,7 +36,7 @@ export const PowerstrokeFocus = ({ match }) => (
           
         </div>
       </motion.div>{" "}
-     <a href="https://kkoze.csb.app/" target="_blank" rel="noopener noreferrer"> <motion.img
+     <a href="https://spokanepowerstroke.net/" target="_blank" rel="noopener noreferrer"> <motion.img
         variants={imageVariants}
         src="./images/spokanepowerstroke.jpg"
         alt="SkyLimit Fitness"
@@ -46,7 +46,7 @@ export const PowerstrokeFocus = ({ match }) => (
     <div className="linkbox">
       <a
         className="button2 b-blue rot-135"
-        href="https://kkoze.csb.app/"
+        href="https://spokanepowerstroke.net/"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -61,7 +61,7 @@ export const PowerstrokeFocus = ({ match }) => (
         View code
       </a>
       <p className="focustext">
-       Spokane Power Stroke, A website for a local autoshop in Spokane Washington. Website made with React, Scss, and framer motion animation. 
+       Spokane Power Stroke, A website for an autoshop in Spokane Washington. Website made with React, Scss, and framer motion animation. 
       </p>
     </div>
   </motion.div>
