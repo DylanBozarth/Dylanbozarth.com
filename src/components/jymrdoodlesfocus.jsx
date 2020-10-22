@@ -37,7 +37,7 @@ export const JymrDoodlesFocus = ({ match }) => (
           
         </div>
       </motion.div>{" "}
-     <a href="https://lexup.csb.app/" target="_blank" rel="noopener noreferrer"> <motion.img
+     <a href="https://56mvh.csb.app/" target="_blank" rel="noopener noreferrer"> <motion.img
         variants={imageVariants}
         src="./images/jymr.jpg"
         alt="JYMR doodles"
@@ -47,11 +47,11 @@ export const JymrDoodlesFocus = ({ match }) => (
     <div className="linkbox">
       <a
         className="button2 b-blue rot-135"
-        href="https://lexup.csb.app/"
+        href="https://rdxwy.csb.app/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        View Website
+        View Website preview
       </a>{" "}
       <a
         className="button2 b-blue rot-135"
