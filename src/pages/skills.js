@@ -221,7 +221,7 @@ export const Skills = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="skillimage" src="./images/codesignal.png" alt="" />
+          <img className="skillimage" src="./images/codesignal.jpg" alt="" />
           <div className="item-content">
             <p>
               CodeSignal <br /> (recently started)

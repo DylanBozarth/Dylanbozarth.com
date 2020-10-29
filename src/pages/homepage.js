@@ -57,7 +57,7 @@ function Homepage() {
               rel="noopener noreferrer"
             >
               <Card
-                imgUrl="./images/resume.png"
+                imgUrl="./images/resume.jpg"
                 title="My Resume"
                 className="homepagecardimg"
               />
