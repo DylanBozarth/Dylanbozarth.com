@@ -725,6 +725,9 @@ textarea {
   text-decoration: underline;
 }
 /* skills page */
+
+ 
+ 
 .html {
   background-image: url("./skillsimages/html.jfif");
   background-size: 100% 100%;
@@ -962,6 +965,10 @@ aside {
 }
 .asidessql {
   background: url(./skillsimages/sql.png);
+  background-size: 100% 100%;
+}
+.asidescsharp {
+  background: url(./skillsimages/csharp.png);
   background-size: 100% 100%;
 }
 aside:hover {

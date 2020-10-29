@@ -1,15 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import {  Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 const changepage = {
   in: {
     opacity: 1,
-    
   },
   out: {
     opacity: 0,
-    
   },
 };
 const pagetransition = {
@@ -26,7 +24,10 @@ export const Skills = () => (
   >
     <div className="container">
       <p className="iworkwith">I work with the following technologies</p>
-      <p className="iworkwith2">Hover to learn more <br /> Anything that I don't already know, I am always able to learn.</p>
+      <p className="iworkwith2">
+        Hover to learn more <br /> Anything that I don't already know, I am
+        always able to learn.
+      </p>
       <div className="row">
         <div className="col-sm ">
           <aside className="profile-card asidehtml">
@@ -161,47 +162,73 @@ export const Skills = () => (
             <div className="profile-bio">
               <p>SQL</p>
               <p>
-                Structured Query Language is a domain-specific
-                language used in programming and designed for managing data held
-                in a relational database management system
+                Structured Query Language is a domain-specific language used in
+                programming and designed for managing data held in a relational
+                database management system
+              </p>
+            </div>
+          </aside>{" "}
+        </div>
+        <div className="col-sm ">
+          <aside className="profile-card asidescsharp">
+            <header></header>
+
+            <div className="profile-bio">
+              <p>C#</p>
+              <p>
+                C# (pronounced see sharp, like the musical note C♯, but written
+                with the number sign) is a general-purpose, multi-paradigm
+                programming language encompassing strong typing, lexically
+                scoped, imperative, declarative, functional, generic,
+                object-oriented (class-based), and component-oriented
+                programming disciplines
               </p>
             </div>
           </aside>{" "}
         </div>
       </div>
       <br />
-    
-      
-        
-      
-     
     </div>
     <p className="projectpagetitle">My online presence</p>
-    <Row >
-    <div className="item">
-      <a href="https://github.com/Imstupidpleasehelp" target="_blank" rel="noopener noreferrer">
-  <img className="skillimage" src="./images/github.png" alt="" />
-  <div className="item-content">
-    <p>Github</p>
-    
-   </div></a>
-</div>
-<div className="item">
-  <a href="https://stackoverflow.com/users/13569082/imstupidpleasehelp" target="_blank" rel="noopener noreferrer">
-  <img className="skillimage" src="./images/stackoverflow.png" alt="" />
-  <div className="item-content">
-    <p>Stackoverflow Programming forum</p>
-    
-   </div></a>
-</div>
-<div className="item">
-  <a href="https://forum.freecodecamp.org/u/imstupidpleasehelp/summary" target="_blank" rel="noopener noreferrer">
-  <img className="skillimage" src="./images/fcc.png" alt="" />
-  <div className="item-content">
-    <p>Freecodecamp Forums </p>
-    
-   </div></a>
-</div></Row>
+    <Row>
+      <div className="item">
+        <a
+          href="https://github.com/Imstupidpleasehelp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img className="skillimage" src="./images/github.png" alt="" />
+          <div className="item-content">
+            <p>Github</p>
+          </div>
+        </a>
+      </div>
+      <div className="item">
+        <a
+          href="https://stackoverflow.com/users/13569082/imstupidpleasehelp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img className="skillimage" src="./images/stackoverflow.png" alt="" />
+          <div className="item-content">
+            <p>Stackoverflow Programming forum</p>
+          </div>
+        </a>
+      </div>
+      <div className="item">
+        <a
+          href="https://app.codesignal.com/profile/imstupidplea"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img className="skillimage" src="./images/codesignal.png" alt="" />
+          <div className="item-content">
+            <p>
+              CodeSignal <br /> (recently started)
+            </p>
+          </div>
+        </a>
+      </div>
+    </Row>
   </motion.div>
 );
-

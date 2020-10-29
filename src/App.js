@@ -15,9 +15,10 @@ import {PowerstrokeFocus} from './components/powerstrokefocus'
 import { Weaponsshopfocus } from "./components/weaponsshopfocus";
 import { ThiswebsiteFocus } from "./components/thiswebsitefocus";
 import { JymrDoodlesFocus } from "./components/jymrdoodlesfocus";
-
-function App() {
+import UseFavicon from './components/useFavicon'
  
+function App() {
+ UseFavicon('./images/Dicon.png')
   return (
     <Router>
       <motion.div className="wrapper">
