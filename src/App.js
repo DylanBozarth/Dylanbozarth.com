@@ -9,7 +9,6 @@ import { Skills } from "./pages/skills";
 import { Testimonials } from "./pages/Testimonials";
 import Hireme from "./pages/hireme";
 import { AnimatePresence, motion } from "framer-motion";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { SkylimitFocus } from "./components/skylimitfocus";
 import {PowerstrokeFocus} from './components/powerstrokefocus'
 import { Weaponsshopfocus } from "./components/weaponsshopfocus";
