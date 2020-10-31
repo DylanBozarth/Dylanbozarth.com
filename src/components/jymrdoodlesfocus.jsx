@@ -37,7 +37,7 @@ export const JymrDoodlesFocus = ({ match }) => (
           
         </div>
       </motion.div>{" "}
-     <a href="https://1ecyq.csb.app/" target="_blank" rel="noopener noreferrer"> <motion.img
+     <a href="https://p0iv5.csb.app/" target="_blank" rel="noopener noreferrer"> <motion.img
         variants={imageVariants}
         src="./images/jymr.jpg"
         alt="JYMR doodles"
@@ -47,7 +47,7 @@ export const JymrDoodlesFocus = ({ match }) => (
     <div className="linkbox">
       <a
         className="button2 b-blue rot-135"
-        href="https://1ecyq.csb.app/"
+        href="https://p0iv5.csb.app/"
         target="_blank"
         rel="noopener noreferrer"
       >
