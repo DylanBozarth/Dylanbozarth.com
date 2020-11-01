@@ -1,7 +1,7 @@
 import React from "react";
 import TestCard from "../components/testcard";
 
-import { Container, Row, Col} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
 const changepage = {
   in: {
@@ -40,7 +40,7 @@ export const Testimonials = () => (
           <TestCard
             imgUrl="./images/brandon.jpg"
             title="Brandon B. Of Spokane Power Stroke"
-            description="Dylan was an excellent communicator and dilligent worker throughout the making of my website. I would describe what I wanted and before I knew it he would have a preview ready for me to view. I highly reccomend Dylan for your business."
+            description="Dylan was an excellent communicator and dilligent worker throughout the making of my website. I would describe what I wanted and before I knew it he would have a preview ready for me to view. He's great at what he does. "
           />
         </Col>
       </Row>

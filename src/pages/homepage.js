@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 import Card from "../components/card";
 import { NavLink } from "react-router-dom";
-import useHover from "../components/usehover";
 const changepage = {
   in: {
     opacity: 1,
@@ -17,7 +16,7 @@ const pagetransition = {
 };
 
 function Homepage() {
-  const [hoverRef, isHovered] = useHover();
+ 
   return (
     <motion.div
       id="container"
@@ -29,15 +28,8 @@ function Homepage() {
       className="homepagebox container"
     >
       
-      <div className="typingstuff ">
-        <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ duration: "1.5" }}
-          className="neon"
-          ref={hoverRef}
-        >
-          {isHovered ? "-Himself" : '"He is the best developer in the world"'}
-        </motion.div>
+      
+        
 
         <div className="row">
           <div className="homepagelinkbox  col-sm-4">
@@ -74,7 +66,7 @@ function Homepage() {
             </NavLink>{" "}
           </div>
         </div>
-      </div>
+      
     </motion.div>
   );
 }
