@@ -217,14 +217,14 @@ export const Skills = () => (
       </div>
       <div className="item">
         <a
-          href="https://app.codesignal.com/profile/imstupidplea"
+          href="https://www.linkedin.com/in/dylan-bozarth-65a3581b4/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="skillimage" src="./images/codesignal.jpg" alt="" />
+          <img className="skillimage" src="./images/linkedin.png" alt="" />
           <div className="item-content">
             <p>
-              CodeSignal <br /> (recently started)
+              LinkedIn
             </p>
           </div>
         </a>
