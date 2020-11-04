@@ -27,9 +27,9 @@ function Homepage() {
       transition={pagetransition}
       className="homepagebox container"
     >
-      
-      
-        
+      <div className="text-center">
+      <h1 data-text="Dylan Bozarth" className="homeh1">Dylan Bozarth</h1>
+        </div>
 
         <div className="row">
           <div className="homepagelinkbox  col-sm-4">
@@ -49,7 +49,7 @@ function Homepage() {
               rel="noopener noreferrer"
             >
               <Card
-                imgUrl="./images/resume.jpg"
+                imgUrl="./images/resume.png"
                 title="My Resume"
                 className="homepagecardimg"
               />
