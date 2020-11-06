@@ -425,12 +425,13 @@ nav ul li {
   overflow: hidden;
   max-width: 7em;
   white-space: nowrap;
-  color: #fff;
+  color: white;
   animation: loading 4s infinite;
 }
 @keyframes loading {
   0% {
       max-width: 0;
+      color: darkslategray
   }
 }
 .homepagebox {
