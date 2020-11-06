@@ -418,7 +418,9 @@ nav ul li {
 }
 
 /* homepage text effects */
-
+.fontbig {
+  font-size: 4vh !important;
+}
 .homeh1:before {
   content: attr(data-text);
   position: absolute;
