@@ -59,17 +59,25 @@ class Projects extends Component {
           title: "This website",
           link: "/portfolio",
         },
-        
       ],
       practices: [
-        
-          {
-            image: "./images/hwsnew.png",
-            title: "History's Armory",
-            link: "/weaponsshop",
-          }
-        
-      ]
+        {
+          image: "./images/hwsnew.png",
+          title: "History's Armory",
+          link: "/weaponsshop",
+        },
+
+        {
+          image: "./images/weatherapp.png",
+          title: "Weatherapp",
+          link: "/weather",
+        },
+        {
+          image: "./images/jsquiz.png",
+          title: "Javascript Quiz",
+          link: "/jsquiz",
+        },
+      ],
     };
   }
   state = {};
@@ -93,8 +101,8 @@ class Projects extends Component {
               {this.state.items.map(({ title, image, link }) => (
                 <motion.div className="thumbnail" variants={thumbnailVariants}>
                   {" "}
-                  <motion.div 
-                  key={title}
+                  <motion.div
+                    key={title}
                     className="frame"
                     whileHover="hover"
                     variants={frameVariants}
@@ -116,16 +124,18 @@ class Projects extends Component {
             <Col></Col>
           </Row>
           <Row>
-          <p className="projectpagetitle2 ">
-            Practice projects <br /> "You don't learn to walk by following rules. You learn by doing, and by falling over." <br /> -Richard Branson
-          </p>
+            <p className="projectpagetitle2 ">
+              Practice projects <br /> "You don't learn to walk by following
+              rules. You learn by doing, and by falling over." <br /> -Richard
+              Branson
+            </p>
             <Col></Col>
             <Col md="auto">
               {this.state.practices.map(({ title, image, link }) => (
                 <motion.div className="thumbnail" variants={thumbnailVariants}>
                   {" "}
-                  <motion.div 
-                  key={title}
+                  <motion.div
+                    key={title}
                     className="frame"
                     whileHover="hover"
                     variants={frameVariants}
