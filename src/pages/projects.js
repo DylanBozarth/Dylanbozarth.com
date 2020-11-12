@@ -124,7 +124,7 @@ class Projects extends Component {
             <Col></Col>
           </Row>
           <Row>
-            <p className="projectpagetitle2 ">
+            <p className="projectstitle ">
               Practice projects <br /> "You don't learn to walk by following
               rules. You learn by doing, and by falling over." <br /> -Richard
               Branson
