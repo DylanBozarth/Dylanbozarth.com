@@ -20,7 +20,7 @@ const backVariants = {
   enter: { x: 0, opacity: 1, transition: { delay: 1, ...transition } },
 };
 
-export const JymrDoodlesFocus = ({ match }) => (
+export const Weatherappfocus = ({ match }) => (
   <motion.div className="single" initial="exit" animate="enter" exit="exit">
     
       <motion.div className="back" variants={backVariants}>
@@ -30,16 +30,16 @@ export const JymrDoodlesFocus = ({ match }) => (
          
         <p className="languagesused">Languages used</p>
         <div className="row">
-          <img width="50px" height="50px" alt="icon" src='./images/react.png'></img>
-          <img width="50px" height="50px" alt="icon"src='./images/scss.png'></img>
-          <img width="50px" height="50px" alt="icon"src='./images/hooksicon.png'></img>
+          <img width="50px" height="50px" alt="icon" src='./images/html.jfif'></img>
+          <img width="50px" height="50px" alt="icon"src='./images/css.jfif'></img>
+          <img width="50px" height="50px" alt="icon"src='./images/javascript.png'></img>
 
           
         </div>
       </motion.div>{" "}
-     <a href="https://jymrdoodles.com" target="_blank" rel="noopener noreferrer"> <motion.img
+     <a href="https://loving-newton-bfdf08.netlify.app/" target="_blank" rel="noopener noreferrer"> <motion.img
         variants={imageVariants}
-        src="./images/jymr.jpg"
+        src="./images/weatherapp.png"
         alt="JYMR doodles"
       />
     </a>
@@ -47,7 +47,7 @@ export const JymrDoodlesFocus = ({ match }) => (
     <div className="linkbox">
       <a
         className="button2 b-blue rot-135"
-        href="https://jymrdoodles.com"
+        href="https://loving-newton-bfdf08.netlify.app/"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -55,15 +55,14 @@ export const JymrDoodlesFocus = ({ match }) => (
       </a>{" "}
       <a
         className="button2 b-blue rot-135"
-        href="https://github.com/Imstupidpleasehelp/Puppywebsite"
+        href="https://github.com/Imstupidpleasehelp/Weatherapp"
         target="blank"
         rel="noopener noreferrer"
       >
         View code
       </a>
       <p className="focustext">
-      JYMR doodles, a labradoodle breeder in Utah. Website made with React, React hooks, Scss, and JSON data.  <br /> 
-      Currently working on a node.js backend for email sorting and form submission.
+      A weather app made with accuweather's free api.  Type in any city and see the current weather.  <br />Using html, css, and javascript.
       </p>
     </div>
   </motion.div>

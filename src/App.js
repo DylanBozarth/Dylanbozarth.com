@@ -15,6 +15,8 @@ import { Weaponsshopfocus } from "./components/weaponsshopfocus";
 import { ThiswebsiteFocus } from "./components/thiswebsitefocus";
 import { JymrDoodlesFocus } from "./components/jymrdoodlesfocus";
 import UseFavicon from './components/useFavicon'
+import { Jsquizfocus } from "./components/jsquizfocus";
+import { Weatherappfocus } from "./components/weatherappfocus";
  
 function App() {
  UseFavicon('./images/Dicon.png')
@@ -38,6 +40,8 @@ function App() {
               <Route path="/weaponsshop" component={Weaponsshopfocus} />
               <Route path="/portfolio" component={ThiswebsiteFocus} />
               <Route path="/doodles" component={JymrDoodlesFocus} />
+              <Route path="/jsquiz" component={Jsquizfocus} />
+              <Route path="/weather" component={Weatherappfocus} />
             </Switch>
           </AnimatePresence>
           

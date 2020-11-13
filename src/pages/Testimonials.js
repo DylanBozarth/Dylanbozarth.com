@@ -24,6 +24,7 @@ export const Testimonials = () => (
   >
     <div className="container">
       <div className="row">
+        
         <div className="col-sm-6">
           <TestCard
             imgUrl="https://skylimfitness.com/static/media/Sky.e0283525.jpg"
