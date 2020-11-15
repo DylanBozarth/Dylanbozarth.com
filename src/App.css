@@ -137,7 +137,7 @@ nav ul li {
 .projectpagetitle {
   
   text-align: center;
-  font-size: 3rem;
+  font-size: 3vh;
   color: white;
   text-shadow:
   0.05em 0 black,
@@ -152,7 +152,7 @@ nav ul li {
 .projectpagetitle2 {
   color: white;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2vh;
 
 }
 .projectspage {
