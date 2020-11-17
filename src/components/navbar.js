@@ -1,11 +1,15 @@
 import React from "react";
+
 import { Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-
+import 'bootstrap/dist/css/bootstrap.css'
 export const Navigation = () => (
-  <nav className="navbar bg-dark navbar-dark navbar-expand-sm">
-      <div className="container">
-        <a className="navbar-brand" href="#">Wisdom Pets</a>
+  <nav className="navbar  navbar-dark  navbar-expand-sm">
+      <div className="container text-center">
+      <NavLink to="/" className="nav-link">
+          {" "}
+          <p className="nav-link">Dylan Bozarth</p>{" "}
+        </NavLink>
         <button
           className="navbar-toggler"
           data-toggle="collapse"
@@ -16,14 +20,23 @@ export const Navigation = () => (
         >
           <span className="navbar-toggler-icon justify-content-end"></span>
         </button>
-        <div className="collapse navbar-collapse" id="toggler-nav">
-          <div className="navbar-nav">
-            <a className="nav-item nav-link active" href="#">Home</a>
-            <a className="nav-item nav-link" href="#">Mission</a>
-            <a className="nav-item nav-link" href="#">Staff</a>
-            <a className="nav-item nav-link disabled" href="#">Testimonials</a>
+        <div className="text-center"><div className="collapse navbar-collapse text-center" id="toggler-nav">
+          
+          
+        <NavLink to="/Projects" className="nav-link">
+          {" "}
+          <p href="#features"  className="nav-link">Projects</p>{" "}
+        </NavLink>
+        <NavLink to="/Skills" className="nav-link">
+          {" "}
+          <p href="#features"  className="nav-link">Skills</p>{" "}
+        </NavLink>
+        <NavLink to="/Testimonials" className="nav-link">
+          {" "}
+          <p href="#features"  className="nav-link">Testimonials</p>{" "}
+        </NavLink>
           </div>
         </div>
-      </div>
+    </div>
     </nav>
 );

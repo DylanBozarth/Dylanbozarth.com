@@ -51,20 +51,32 @@ nav ul li {
 .whitetext {
   color: white;
 }
-.link {
-  padding: 5%;
-  color: white;
-  font-size: 2vh;
-}
+
 .nav-link {
   color: whitesmoke !important;
-  margin-right: 15px !important;
-  margin-left: 4px !important;
-  font-size: 130%;
+  
+  font-size: 3.4vh;
+}
+.navbar-toggler-icon {
+  background-color: gold;
+}
+.navbar {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 100%,
+    black 75%,
+    rgba(255, 255, 255, 0) 100%
+
+    
+  );
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+    inset 0 0 5px rgba(255, 255, 255, 0.6);
+
+  z-index:  99;
 }
 
 .nav-link:hover {
-  color: white !important;
   text-shadow: 0px 0px 10px purple, 0px 0px 20px purple,
     0px 0px 30px purple, 0px 0px 40px purple, 0px 0px 70px purple,
     0px 0px 80px purple
