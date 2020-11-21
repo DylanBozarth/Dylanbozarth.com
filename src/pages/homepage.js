@@ -42,7 +42,7 @@ function Homepage() {
           </div>
           <div className="homepagelinkbox col-sm-4">
             <a
-              href="https://drive.google.com/file/d/1YE06GP1yxlZdLoYxT2KIB5rJJ2Dl1XcY/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Z_AJyAbUdIW-03mOaBYOplCv10VXimVD/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
