@@ -8,7 +8,7 @@ export const Navigation = () => (
       
         <NavLink to="/" className="nav-link">
           {" "}
-          <Nav.Link href="#features">Home</Nav.Link>{" "}
+          <Nav.Link href="#features">Dylan Bozarth</Nav.Link>{" "}
         </NavLink>
       
         <button
