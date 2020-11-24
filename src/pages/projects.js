@@ -128,6 +128,7 @@ class Projects extends Component {
               rules. You learn by doing, and by falling over." <br /> -Richard
               Branson
             </p><Row>
+              
             
             <Col></Col>
             <Col md="auto">
