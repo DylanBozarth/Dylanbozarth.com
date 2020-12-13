@@ -61,12 +61,17 @@ class Projects extends Component {
         },
       ],
       practices: [
+        
+        {
+          image: "./images/pizza.jpeg",
+          title: "Pizza Piza",
+          link: "/pizza",
+        },
         {
           image: "./images/hwsnew.png",
           title: "History's Armory",
           link: "/weaponsshop",
         },
-
         {
           image: "./images/weatherapp.png",
           title: "Weatherapp",
@@ -112,7 +117,7 @@ class Projects extends Component {
                     <Link to={link}>
                       <motion.img
                         src={image}
-                        alt={image}
+                        alt="javascript react developer"
                         variants={imageVariants}
                         transition={transition}
                       />
