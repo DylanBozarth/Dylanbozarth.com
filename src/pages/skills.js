@@ -155,37 +155,7 @@ export const Skills = () => (
         </div>
       </div>
       <div className="row">
-        <div className="col-sm ">
-          <aside className="profile-card asidessql">
-            <header></header>
-
-            <div className="profile-bio">
-              <p>SQL</p>
-              <p>
-                Structured Query Language is a domain-specific language used in
-                programming and designed for managing data held in a relational
-                database management system
-              </p>
-            </div>
-          </aside>{" "}
-        </div>
-        <div className="col-sm ">
-          <aside className="profile-card asidescsharp">
-            <header></header>
-
-            <div className="profile-bio">
-              <p>C#</p>
-              <p>
-                C# (pronounced see sharp, like the musical note C♯, but written
-                with the number sign) is a general-purpose, multi-paradigm
-                programming language encompassing strong typing, lexically
-                scoped, imperative, declarative, functional, generic,
-                object-oriented (class-based), and component-oriented
-                programming disciplines
-              </p>
-            </div>
-          </aside>{" "}
-        </div>
+        
       </div>
       <br />
     </div>
