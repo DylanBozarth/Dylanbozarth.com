@@ -14,7 +14,23 @@ const changepage = {
 const pagetransition = {
   duration: 1.5,
 };
-
+const floatIn1 = {
+  in: {
+    y: 0
+  },
+  out: {
+    y: '200vh'
+  },
+}
+const floatTransition = {
+  duration: 1.3
+}
+const floatTransition2 = {
+  duration: 1.7
+}
+const floatTransition3 = {
+  duration: 1.9
+}
 function Homepage() {
  
   return (
@@ -30,7 +46,12 @@ function Homepage() {
       
      
         <div className="row">
-          <div className="homepagelinkbox  col-sm-4">
+          <motion.div initial="out"
+      animate="in"
+      exit="out"
+      variants={floatIn1}
+      transition={floatTransition}
+       className="homepagelinkbox  col-sm-4">
             <NavLink to="/projects">
               <Card
                 imgUrl="./images/projectspage.png"
@@ -39,8 +60,13 @@ function Homepage() {
                 description=""
               />
             </NavLink>
-          </div>
-          <div className="homepagelinkbox col-sm-4">
+          </motion.div>
+          <motion.div className="homepagelinkbox col-sm-4" 
+          initial="out"
+          animate="in"
+          exit="out"
+          variants={floatIn1}
+          transition={floatTransition2}>
             <a
               href="https://drive.google.com/file/d/13Vhmlja68U-fa6Tog0hKdzXqISS51x4f/view?usp=sharing"
               target="_blank"
@@ -52,8 +78,13 @@ function Homepage() {
                 className="homepagecardimg"
               />
             </a>
-          </div>
-          <div className="homepagelinkbox col-sm-4">
+          </motion.div>
+          <motion.div className="homepagelinkbox col-sm-4" 
+          initial="out"
+          animate="in"
+          exit="out"
+          variants={floatIn1}
+          transition={floatTransition3}>
             <NavLink to="/hireme">
               <Card
                 imgUrl="./images/contact.png"
@@ -62,7 +93,7 @@ function Homepage() {
                 description=""
               />
             </NavLink>{" "}
-          </div>
+          </motion.div>
           
         </div>
       
