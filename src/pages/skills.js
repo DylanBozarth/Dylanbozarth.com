@@ -13,6 +13,25 @@ const changepage = {
 const pagetransition = {
   duration: 1.5,
 };
+const rowIn = {
+  in: {
+    x: 0
+  },
+  out: {
+    x: '100vw'
+  },
+};
+const rowIn2 = {
+  in: {
+    x: 0
+  },
+  out: {
+    x: '-100vw'
+  },
+};
+const SlideIn = {
+  duration: 1.5,
+};
 export const Skills = () => (
   <motion.div
     initial="out"
@@ -28,7 +47,11 @@ export const Skills = () => (
        Anything that I don't already know, I am
         always able to learn.
       </p>
-      <div className="row">
+      <motion.div initial="out"
+    animate="in"
+    exit="out"
+    variants={rowIn}
+    transition={SlideIn} className="row">
         <div className="col-sm ">
           <aside className="profile-card asidehtml">
             <header></header>
@@ -91,8 +114,12 @@ export const Skills = () => (
             </div>
           </aside>{" "}
         </div>
-      </div>
-      <div className="row">
+      </motion.div>
+      <motion.div initial="out"
+    animate="in"
+    exit="out"
+    variants={rowIn2}
+    transition={SlideIn} className="row">
         <div className="col-sm ">
           <aside className="profile-card asidereactnative">
             <header></header>
@@ -153,7 +180,7 @@ export const Skills = () => (
             </div>
           </aside>{" "}
         </div>
-      </div>
+      </motion.div>
       <div className="row">
         
       </div>
