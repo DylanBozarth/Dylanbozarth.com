@@ -18,6 +18,7 @@ import UseFavicon from './components/useFavicon'
 import { Jsquizfocus } from "./components/jsquizfocus";
 import { Weatherappfocus } from "./components/weatherappfocus";
  import  {pizzaFocus} from './components/pizzaFocus'
+import { Bitcoin } from "./components/bitcoinfocus";
 function App() {
  UseFavicon('./images/Dicon.png')
   return (
@@ -43,6 +44,7 @@ function App() {
               <Route path="/jsquiz" component={Jsquizfocus} />
               <Route path="/weather" component={Weatherappfocus} />
               <Route path="/pizza" component={pizzaFocus} />
+              <Route path="/bitcoin" component={Bitcoin} />
             </Switch>
           </AnimatePresence>
           

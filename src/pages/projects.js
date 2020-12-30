@@ -61,7 +61,11 @@ class Projects extends Component {
         },
       ],
       practices: [
-        
+        {
+          image: "./images/bitcoin.png",
+          title: "CryptoTracker",
+          link: "/bitcoin",
+        },
         {
           image: "./images/pizza.jpeg",
           title: "Pizza Piza",

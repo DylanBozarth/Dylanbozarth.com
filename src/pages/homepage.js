@@ -26,10 +26,10 @@ const floatTransition = {
   duration: 1.2
 }
 const floatTransition2 = {
-  duration: 1.5
+  duration: 1.4
 }
 const floatTransition3 = {
-  duration: 1.7
+  duration: 1.6
 }
 function Homepage() {
  
