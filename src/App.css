@@ -15,7 +15,9 @@ body::-webkit-scrollbar {
   
 
 }
-
+html {
+  scroll-behavior: smooth;
+}
 nav {
   min-width: 100%;
   max-width: 100%;
