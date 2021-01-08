@@ -63,7 +63,7 @@ export const JymrDoodlesFocus = ({ match }) => (
       </a>
       <p className="focustext">
       JYMR doodles, a labradoodle breeder in Utah. Website made with React, React hooks, Scss, and JSON data.  <br /> 
-     
+      Currently working on a node.js backend for email sorting and form submission.
       </p>
     </div>
   </motion.div>

@@ -1,10 +1,27 @@
 import React from "react";
 import { Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-
+import { motion } from "framer-motion";
+const changepage = {
+  in: {
+    opacity: 1,
+  },
+  out: {
+    opacity: 0,
+  },
+};
+const pagetransition = {
+  duration: 1.5,
+};
 export const Navigation = () => (
   <nav class="navbar  navbar-dark navbar-expand-sm">
-      <div class="container">
+      <motion.div class="container" 
+      initial="out"
+      animate="in"
+      exit="out"
+      variants={changepage}
+      transition={pagetransition}
+      >
       
         <NavLink to="/" className="nav-link">
           {" "}
@@ -43,6 +60,6 @@ export const Navigation = () => (
       
           </div>
         </div>
-      </div>
+      </motion.div>
     </nav>
 );

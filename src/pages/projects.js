@@ -82,6 +82,11 @@ class Projects extends Component {
           link: "/weather",
         },
         {
+          image: "./images/todo.png",
+          title: "Javascript todo List",
+          link: "/todo",
+        },
+        {
           image: "./images/jsquiz.png",
           title: "Javascript Quiz",
           link: "/jsquiz",

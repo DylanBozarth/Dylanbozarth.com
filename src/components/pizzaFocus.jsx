@@ -61,7 +61,7 @@ export const pizzaFocus = ({ match }) => (
         View code
       </a>
       <p className="focustext">
-       After struggling with a "Create your own" portion of a pizza restaurant's app, I decided to create my own that would be as straightforward as possible. 
+       After struggling with a "Create your own" portion of a pizza restaurant's app, I decided to create my own that would be as straight forward as possible. 
       </p>
     </div>
   </motion.div>

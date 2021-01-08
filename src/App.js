@@ -18,15 +18,17 @@ import UseFavicon from './components/useFavicon'
 import { Jsquizfocus } from "./components/jsquizfocus";
 import { Weatherappfocus } from "./components/weatherappfocus";
  import  {pizzaFocus} from './components/pizzaFocus'
-import { Bitcoin } from "./components/bitcoinfocus";
+ import ParticlesBg from "particles-bg";
+import { Todo } from "./components/todo";
 function App() {
  UseFavicon('./images/Dicon.png')
   return (
     <Router>
       <motion.div className="wrapper">
         <Navigation />{" "}
+       
         <div className="backgroundclass">
-         
+          <ParticlesBg type="thick" bg={true}/>
         </div>
          
           <AnimatePresence > {/* this is where we control animations */}
@@ -44,7 +46,7 @@ function App() {
               <Route path="/jsquiz" component={Jsquizfocus} />
               <Route path="/weather" component={Weatherappfocus} />
               <Route path="/pizza" component={pizzaFocus} />
-              <Route path="/bitcoin" component={Bitcoin} />
+              <Route path="/todo" component={Todo} />
             </Switch>
           </AnimatePresence>
           

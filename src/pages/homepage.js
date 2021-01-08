@@ -23,13 +23,13 @@ const floatIn1 = {
   },
 }
 const floatTransition = {
-  duration: 1.2
+  duration: 1.5
 }
 const floatTransition2 = {
-  duration: 1.4
+  duration: 1.9
 }
 const floatTransition3 = {
-  duration: 1.6
+  duration: 2.1
 }
 function Homepage() {
  
@@ -68,7 +68,7 @@ function Homepage() {
           variants={floatIn1}
           transition={floatTransition2}>
             <a
-              href="https://drive.google.com/file/d/1PhWfi4_TqziYW4sE0eraEXzBaTNbATYV/view?usp=sharing"
+              href="https://drive.google.com/file/d/13Vhmlja68U-fa6Tog0hKdzXqISS51x4f/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >

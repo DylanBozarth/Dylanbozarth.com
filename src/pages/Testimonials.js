@@ -24,7 +24,6 @@ export const Testimonials = () => (
   >
     <div className="container">
       <div className="row">
-        
         <div className="col-sm-6 testcard">
           <TestCard
             imgUrl="https://skylimfitness.com/static/media/Sky.e0283525.jpg"
@@ -49,7 +48,7 @@ export const Testimonials = () => (
             title="Michelle R. of JYMR doodles"
             description="After previously placing all of our trust in a “Professional Web Designer” we were left feeling defeated when they failed to produce or even complete a website we were in desperate need of.    
             Creating a unique, customized site with functionality is a large task but finding the right Web Designer has proven to be even more complex for us. When Dylan Bozarth reached out asking to take on the task of creating a website for JYMR Doodles that would not only meet our functionality  needs but also be astatically pleasing and something we would love, we were very skeptical anyone would be able to design a website for us... 
-            Dylan Bozarth has far exceeded our expectations and we LOVE our new website! Dylan has been very easy to work with and his turnaround time is phenomenal. He is very professional and strives to ensure he is able to bring his client’s visions to life. HIs eye for detail, calm demeanor and outgoing personality are all traits that have made working with Dylan very easy. We are extremely grateful for Dylan’s patience and willingness to help us create a website we will be able to use for years to come. We have been very impressed with Dylan and have zero reservations in recommending him to anyone for their projects large or small."
+            Dylan Bozarth has far exceeded our expectations and we LOVE our new website! Dylan has been very easy to work with and his turnaround time is phenomenal. He is very professional and strives to ensure he is able to bring his client’s visions to life. His eye for detail, calm demeanor and outgoing personality are all traits that have made working with Dylan very easy. We are extremely grateful for Dylan’s patience and willingness to help us create a website we will be able to use for years to come. We have been very impressed with Dylan and have zero reservations in recommending him to anyone for their projects large or small."
           />
         </div>
       </div>
