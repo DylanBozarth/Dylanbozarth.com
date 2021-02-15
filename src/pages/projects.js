@@ -32,7 +32,7 @@ const changepage = {
   },
 };
 const pagetransition = {
-  duration: 1.5,
+  duration: 1.2,
 };
 class Projects extends Component {
   constructor() {

@@ -289,6 +289,10 @@ background-color: black;
   font-size: 2rem;
   text-align: center;
   margin-top: 2%;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,115,1) 83%, rgba(0,93,255,0.5928922594428396) 100%);
+border-radius: 15%;
+
 }
 .languagesused {
   color: white;
