@@ -11,7 +11,7 @@ const changepage = {
   },
 };
 const pagetransition = {
-  duration: 1.5,
+  duration: 1.2,
 };
 const rowIn = {
   in: {
@@ -30,7 +30,7 @@ const rowIn2 = {
   },
 };
 const SlideIn = {
-  duration: 1.5,
+  duration: 1.2,
 };
 export const Skills = () => (
   <motion.div
