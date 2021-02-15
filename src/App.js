@@ -3,7 +3,7 @@ import { Navigation } from "./components/navbar";
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import  Homepage  from "./pages/homepage";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as  Switch, Route, useLocation } from "react-router-dom";
 import  Projects  from "./pages/projects";
 import { Skills } from "./pages/skills";
 import { Testimonials } from "./pages/Testimonials";
@@ -21,9 +21,10 @@ import { Weatherappfocus } from "./components/weatherappfocus";
  import ParticlesBg from "particles-bg";
 import { Todo } from "./components/todo";
 function App() {
+  const location = useLocation();
  UseFavicon('./images/Dicon.png')
   return (
-    <Router>
+   
       <motion.div className="wrapper">
         <Navigation />{" "}
        
@@ -31,8 +32,8 @@ function App() {
           <ParticlesBg type="thick" bg={true}/>
         </div>
          
-          <AnimatePresence > {/* this is where we control animations */}
-            <Switch>
+          <AnimatePresence exitBeforeEnter={true}> 
+            <Switch location={location} key={location.pathname}>
                <Route exact path="/" component={Homepage} /> 
               <Route path="/Projects" component={Projects} />
               <Route path="/Skills" component={Skills} />
@@ -51,7 +52,7 @@ function App() {
           </AnimatePresence>
           
       </motion.div>
-    </Router>
+    
   );
 }
 

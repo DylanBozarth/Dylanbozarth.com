@@ -25,10 +25,10 @@ const imageVariants = {
 };
 const changepage = {
   in: {
-    opacity: 1,
+    y: '-2vh',
   },
   out: {
-    opacity: 0,
+    y: '100vh',
   },
 };
 const pagetransition = {
