@@ -62,6 +62,11 @@ class Projects extends Component {
       ],
       practices: [
         {
+          image: "./images/solarsystem.png",
+          title: "Solar System Viewer",
+          link: "/solarsystem",
+        },
+        {
           image: "./images/bitcoin.png",
           title: "CryptoTracker",
           link: "/bitcoin",
@@ -94,6 +99,7 @@ class Projects extends Component {
       ],
     };
   }
+  //https://www.dylanbozarth.com/Projects#practices
   state = {};
   render() {
     return (
@@ -145,7 +151,7 @@ class Projects extends Component {
               
             
             <Col></Col>
-            <Col md="auto">
+            <Col md="auto" id="practices">
               {this.state.practices.map(({ title, image, link }) => (
                 <motion.div className="thumbnail" variants={thumbnailVariants}>
                   {" "}
