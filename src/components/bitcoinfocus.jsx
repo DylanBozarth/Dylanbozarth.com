@@ -22,28 +22,50 @@ const backVariants = {
 
 export const BitcoinFocus = ({ match }) => (
   <motion.div className="single" initial="exit" animate="enter" exit="exit">
-    
-      <motion.div className="back" variants={backVariants}>
-        <Link to="/projects" className="whitetext backbutton">
-          ← Back
-        </Link>{" "}
-         
-        <p className="languagesused">Languages used</p>
-        <div className="row">
-          <img width="50px" height="50px" alt="icon" src='./images/react.png'></img>
-          <img width="50px" height="50px" alt="icon"src='./images/scss.png'></img>
-          <img width="50px" height="50px" alt="icon"src='./images/hooksicon.png'></img>
-          <img width="50px" height="50px" alt="icon"src='./images/framermotion.gif'></img>
-          
-        </div>
-      </motion.div>{" "}
-     <a href="https://xenodochial-golick-10732e.netlify.app/" target="_blank" rel="noopener noreferrer"> <motion.img
+    <motion.div className="back" variants={backVariants}>
+      <Link to="/projects" className="whitetext backbutton">
+        ← Back
+      </Link>{" "}
+      <p className="languagesused">Languages used</p>
+      <div className="row">
+        <img
+          width="50px"
+          height="50px"
+          alt="icon"
+          src="./images/react.png"
+        ></img>
+        <img
+          width="50px"
+          height="50px"
+          alt="icon"
+          src="./images/scss.png"
+        ></img>
+        <img
+          width="50px"
+          height="50px"
+          alt="icon"
+          src="./images/hooksicon.png"
+        ></img>
+        <img
+          width="50px"
+          height="50px"
+          alt="icon"
+          src="./images/framermotion.gif"
+        ></img>
+      </div>
+    </motion.div>{" "}
+    <a
+      href="https://xenodochial-golick-10732e.netlify.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {" "}
+      <motion.img
         variants={imageVariants}
         src="./images/bitcoin.png"
         alt="Pizza"
       />
     </a>
-
     <div className="linkbox">
       <a
         className="button2 b-blue rot-135"
@@ -62,7 +84,9 @@ export const BitcoinFocus = ({ match }) => (
         View code
       </a>
       <p className="focustext">
-       Looking for more practice with API calls, I created this with the added benefit of expressing my eternal regret for selling my bitcoin when it was valued at $500.
+        Looking for more practice with API calls, I created this with the added
+        benefit of expressing my eternal regret for selling my bitcoin when it
+        was valued at $500.
       </p>
     </div>
   </motion.div>

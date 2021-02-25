@@ -204,7 +204,7 @@ background-color: black;
 .single {
   overflow: hidden;
   height: 100%;
-  width: 100%;
+  width: 100vw;
 }
 
 .single img {
