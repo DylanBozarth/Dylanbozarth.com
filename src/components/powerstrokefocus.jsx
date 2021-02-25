@@ -21,7 +21,7 @@ const backVariants = {
 };
 
 export const PowerstrokeFocus = ({ match }) => (
-  <motion.div className="single" initial="exit" animate="enter" exit="exit">
+  <motion.div className="single container-fluid" initial="exit" animate="enter" exit="exit">
     
       <motion.div className="back" variants={backVariants}>
         <Link to="/projects" className="whitetext backbutton">
@@ -39,7 +39,8 @@ export const PowerstrokeFocus = ({ match }) => (
      <a href="https://spokanepowerstroke.net/" target="_blank" rel="noopener noreferrer"> <motion.img
         variants={imageVariants}
         src="./images/spokanepowerstroke.jpg"
-        alt="SkyLimit Fitness"
+        alt="Spokane Power stroke"
+        className="img-fluid"
       />
     </a>
 
