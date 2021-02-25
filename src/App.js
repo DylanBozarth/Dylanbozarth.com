@@ -21,6 +21,7 @@ import { Weatherappfocus } from "./components/weatherappfocus";
  import ParticlesBg from "particles-bg";
 import { Todo } from "./components/todo";
 import { SolarsystemFocus } from "./components/solarsystem";
+import {BitcoinFocus} from './components/bitcoinfocus'
 function App() {
   const location = useLocation();
  UseFavicon('./images/Dicon.png')
@@ -50,6 +51,7 @@ function App() {
               <Route path="/pizza" component={pizzaFocus} />
               <Route path="/todo" component={Todo} />
               <Route path="/solarsystem" component={SolarsystemFocus} />
+              <Route path="/bitcoin" component={BitcoinFocus} />
             </Switch>
           </AnimatePresence>
           
