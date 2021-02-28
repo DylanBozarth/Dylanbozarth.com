@@ -31,7 +31,9 @@ function App() {
         <Navigation />{" "}
        
         <div className="backgroundclass">
-          <ParticlesBg type="thick" bg={true}/>
+        <div className="stars"></div>
+<div className="twinkling"></div>
+<div className="clouds"></div>
         </div>
          
           <AnimatePresence exitBeforeEnter={true}> 
