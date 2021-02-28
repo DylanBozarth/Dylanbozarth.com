@@ -12,7 +12,7 @@ const changepage = {
   },
 };
 const pagetransition = {
-  duration: 1.2,
+  duration: 0.9,
 };
 const floatIn1 = {
   in: {
