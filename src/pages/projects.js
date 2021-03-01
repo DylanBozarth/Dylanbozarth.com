@@ -43,24 +43,28 @@ class Projects extends Component {
           image: "./images/jymr.jpg",
           title: "JYMR Doodles",
           link: "/doodles",
+          tag: "professional"
         },
         {
           image: "./images/spokanepowerstroke.jpg",
           title: "Spokane Power Stroke",
           link: "/powerstroke",
+          tag: "professional"
         },
         {
           image: "./images/skyfitnessnew.jpg",
           title: "Skylimit Fitness",
           link: "/skylimit",
+          tag: "professional"
+
         },
         {
           image: "./images/thiswebsite.png",
           title: "This website",
           link: "/portfolio",
+          tag: "professional",
+          date: 3
         },
-      ],
-      practices: [
         {
           image: "./images/solarsystem.png",
           title: "Solar System Viewer",
@@ -119,8 +123,19 @@ class Projects extends Component {
         transition={pagetransition}
       >
         <Container className="Projects ">
+       
           <p className="projectpagetitle ">
             Comercial web projects <br /> Click for more details
+            <div className="dropdown">
+  <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Sort By
+  </button>
+  <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <p className="sort-button">aaa</p>
+    <p className="sort-button">aaa</p>
+    <p className="sort-button">aaa</p>
+  </div>
+</div>
           </p>
           <Row>
             <Col></Col>
@@ -150,40 +165,8 @@ class Projects extends Component {
             </Col>
             <Col></Col>
           </Row>
-          <p className="projectpagetitle ">
-              Practice projects: <br /> <br /> "You don't learn to walk by following
-              rules. You learn by doing, and by falling over." <br /> -Richard
-              Branson
-            </p><Row>
-              
-            
-            <Col></Col>
-            <Col md="auto" id="practices">
-              {this.state.practices.map(({ title, image, link }) => (
-                <motion.div className="thumbnail" variants={thumbnailVariants}>
-                  {" "}
-                  <motion.div
-                    key={title}
-                    className="frame"
-                    whileHover="hover"
-                    variants={frameVariants}
-                    transition={transition}
-                  >
-                    <p className="projectstitle">{title}</p>
-                    <Link to={link}>
-                      <motion.img
-                        src={image}
-                        alt={image}
-                        variants={imageVariants}
-                        transition={transition}
-                      />
-                    </Link>
-                  </motion.div>
-                </motion.div>
-              ))}
-            </Col>
-            <Col></Col>
-          </Row>
+         
+          
         </Container>
       </motion.div>
     );
