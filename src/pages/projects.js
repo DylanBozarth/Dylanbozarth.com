@@ -65,36 +65,43 @@ class Projects extends Component {
           image: "./images/solarsystem.png",
           title: "Solar System Viewer",
           link: "/solarsystem",
+          tag: "personal"
         },
         {
           image: "./images/bitcoin.png",
           title: "CryptoTracker",
           link: "/bitcoin",
+          tag: "personal"
         },
         {
           image: "./images/pizza.jpeg",
           title: "Pizza Piza",
           link: "/pizza",
+          tag: "personal"
         },
         {
           image: "./images/hwsnew.png",
           title: "History's Armory",
           link: "/weaponsshop",
+          tag: "personal"
         },
         {
           image: "./images/weatherapp.png",
           title: "Weatherapp",
           link: "/weather",
+          tag: "personal"
         },
         {
           image: "./images/todo.png",
           title: "Javascript todo List",
           link: "/todo",
+          tag: "personal"
         },
         {
           image: "./images/jsquiz.png",
           title: "Javascript Quiz",
           link: "/jsquiz",
+          tag: "personal"
         },
       ],
     };
