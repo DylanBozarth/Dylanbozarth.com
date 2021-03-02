@@ -62,6 +62,7 @@ export const SolarsystemFocus = ({ match }) => (
       </a>
       <p className="focustext">
       Does space excite you? Same. That's why I built this App to view the solar system. Using React, tons of SCSS, and Framer-motion. (+sweat and tears).
+      <br /> Not made for mobile screens.
       </p>
     </div>
   </motion.div>

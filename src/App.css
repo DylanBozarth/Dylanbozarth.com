@@ -203,7 +203,11 @@ animation:move-clouds-back 200s linear infinite;
   0.08em -0.08em black,
   0.08em 0.08em black;
 }
-
+.sort-button {
+  color: black;
+  text-align: center;
+  text-shadow: none;
+}
 .projectpagetitle {
   
   text-align: center;
