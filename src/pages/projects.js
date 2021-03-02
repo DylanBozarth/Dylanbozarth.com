@@ -101,12 +101,7 @@ class Projects extends Component {
           link: "/todo",
           tag: "personal"
         },
-        {
-          image: "./images/jsquiz.png",
-          title: "Javascript Quiz",
-          link: "/jsquiz",
-          tag: "personal"
-        },
+        
       ],
     };
   }
@@ -126,7 +121,7 @@ class Projects extends Component {
        
           <p className="projectpagetitle ">
             Comercial web projects <br /> Click for more details
-            <div className="dropdown">
+           {/* <div className="dropdown">
   <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Sort By
   </button>
@@ -136,6 +131,7 @@ class Projects extends Component {
     <p className="sort-button">aaa</p>
   </div>
 </div>
+    */}
           </p>
           <Row>
             <Col></Col>
@@ -165,7 +161,7 @@ class Projects extends Component {
             </Col>
             <Col></Col>
           </Row>
-         
+         <h1 className="projectpagetitle"><a href="https://github.com/Imstupidpleasehelp">There's always more on Github</a></h1>
           
         </Container>
       </motion.div>
