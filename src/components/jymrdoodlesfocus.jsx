@@ -61,10 +61,10 @@ export const JymrDoodlesFocus = ({ match }) => (
       >
         View code
       </a>
-      <p className="focustext">
+      </div><p className="focustext">
       JYMR doodles, a labradoodle breeder in Utah. Website made with React, React hooks, Scss, and JSON data.  
      
       </p>
-    </div>
+    
   </motion.div>
 );

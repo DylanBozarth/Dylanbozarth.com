@@ -340,7 +340,7 @@ animation:move-clouds-back 200s linear infinite;
 .linkbox {
   text-align: center;
   padding: 1rem;
-  width: 100%;
+  
   margin-top: 1%;
 }
 .linkbutton {
@@ -361,9 +361,10 @@ animation:move-clouds-back 200s linear infinite;
 }
 .focustext {
   color: white;
-  float: right;
+  
   font-size: 2rem;
   text-align: center;
+  align-items: center;
   margin-top: 2%;
   background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,115,1) 83%, rgba(0,93,255,0.5928922594428396) 100%);
