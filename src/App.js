@@ -18,7 +18,6 @@ import UseFavicon from './components/useFavicon'
 import { Jsquizfocus } from "./components/jsquizfocus";
 import { Weatherappfocus } from "./components/weatherappfocus";
  import  {pizzaFocus} from './components/pizzaFocus'
- import ParticlesBg from "particles-bg";
 import { Todo } from "./components/todo";
 import { SolarsystemFocus } from "./components/solarsystem";
 import {BitcoinFocus} from './components/bitcoinfocus'

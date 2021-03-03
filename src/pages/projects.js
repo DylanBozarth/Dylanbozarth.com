@@ -105,6 +105,13 @@ class Projects extends Component {
       ],
     };
   }
+  componentDidMount(items) {
+    console.log('I mounted')
+    const showProjects = () => (
+      console.log('aaa')
+    )
+    showProjects()
+  }
   //https://www.dylanbozarth.com/Projects#practices
   state = {};
   render() {
@@ -136,6 +143,7 @@ class Projects extends Component {
           <Row>
             <Col></Col>
             <Col md="auto">
+              
               {this.state.items.map(({ title, image, link }) => (
                 <motion.div className="thumbnail" variants={thumbnailVariants}>
                   {" "}
