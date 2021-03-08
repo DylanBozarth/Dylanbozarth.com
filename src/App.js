@@ -23,6 +23,7 @@ import { SolarsystemFocus } from "./components/solarsystem";
 import {BitcoinFocus} from './components/bitcoinfocus'
 function App() {
   const location = useLocation();
+  
  UseFavicon('./images/Dicon.png')
   return (
    

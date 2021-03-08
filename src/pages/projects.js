@@ -46,6 +46,25 @@ class Projects extends Component {
           tag: "professional"
         },
         {
+          image: "./images/solarsystem.png",
+          title: "Solar System Viewer",
+          link: "/solarsystem",
+          tag: "personal"
+        },
+        {
+          image: "./images/bitcoin.png",
+          title: "CryptoTracker",
+          link: "/bitcoin",
+          tag: "personal"
+        },
+        {
+          image: "./images/pizza.jpeg",
+          title: "Create your own Pizza UI",
+          link: "/pizza",
+          tag: "personal"
+        },
+        {
+
           image: "./images/spokanepowerstroke.jpg",
           title: "Spokane Power Stroke",
           link: "/powerstroke",
@@ -65,24 +84,9 @@ class Projects extends Component {
           tag: "professional",
           date: 3
         },
-        {
-          image: "./images/solarsystem.png",
-          title: "Solar System Viewer",
-          link: "/solarsystem",
-          tag: "personal"
-        },
-        {
-          image: "./images/bitcoin.png",
-          title: "CryptoTracker",
-          link: "/bitcoin",
-          tag: "personal"
-        },
-        {
-          image: "./images/pizza.jpeg",
-          title: "Pizza Piza",
-          link: "/pizza",
-          tag: "personal"
-        },
+       
+      
+        
         {
           image: "./images/hwsnew.png",
           title: "History's Armory",
