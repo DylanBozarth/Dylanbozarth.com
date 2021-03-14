@@ -21,6 +21,7 @@ import { Weatherappfocus } from "./components/weatherappfocus";
 import { Todo } from "./components/todo";
 import { SolarsystemFocus } from "./components/solarsystem";
 import {BitcoinFocus} from './components/bitcoinfocus'
+import { RestFocus } from "./components/restFocus";
 function App() {
   const location = useLocation();
   
@@ -52,6 +53,7 @@ function App() {
               <Route path="/weather" component={Weatherappfocus} />
               <Route path="/pizza" component={pizzaFocus} />
               <Route path="/todo" component={Todo} />
+              <Route path="/rest" component={RestFocus} />
               <Route path="/solarsystem" component={SolarsystemFocus} />
               <Route path="/bitcoin" component={BitcoinFocus} />
             </Switch>

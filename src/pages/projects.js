@@ -58,12 +58,6 @@ class Projects extends Component {
           tag: "personal"
         },
         {
-          image: "./images/pizza.jpeg",
-          title: "Create your own Pizza UI",
-          link: "/pizza",
-          tag: "personal"
-        },
-        {
 
           image: "./images/spokanepowerstroke.jpg",
           title: "Spokane Power Stroke",
@@ -77,6 +71,19 @@ class Projects extends Component {
           tag: "professional"
 
         },
+        {
+          image: "./images/pizza.jpeg",
+          title: "Create your own Pizza UI",
+          link: "/pizza",
+          tag: "personal"
+        },
+        {
+          image: "./images/rest.jpeg",
+          title: "REST API Example",
+          link: "/rest",
+          tag: "personal"
+        },
+        
         {
           image: "./images/thiswebsite.png",
           title: "This website",
