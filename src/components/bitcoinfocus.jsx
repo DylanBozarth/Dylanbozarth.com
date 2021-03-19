@@ -55,7 +55,7 @@ export const BitcoinFocus = ({ match }) => (
       </div>
     </motion.div>{" "}
     <a
-      href="https://xenodochial-golick-10732e.netlify.app/"
+      href="https://reverent-galileo-db7978.netlify.app/"
       target="_blank"
       rel="noopener noreferrer"
     >

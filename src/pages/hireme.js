@@ -18,7 +18,7 @@ export default class Contact extends React.Component {
 
   render() {
     const { status } = this.state;
-    function itworked() {
+    const itworked = () => {
       cogoToast.success(
         "Thank you for reaching out! I will contact you shortly."
       );
