@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 import { Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
+const [active, setActive] = useState();
 const changepage = {
   in: {
     opacity: 1,

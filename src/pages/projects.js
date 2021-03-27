@@ -25,7 +25,7 @@ const imageVariants = {
 };
 const changepage = {
   in: {
-    y: '-2vh',
+    y: '0vh',
   },
   out: {
     y: '100vh',
