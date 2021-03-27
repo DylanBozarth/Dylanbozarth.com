@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-const [active, setActive] = useState();
+
 const changepage = {
   in: {
     opacity: 1,
@@ -14,7 +14,10 @@ const changepage = {
 const pagetransition = {
   duration: 1.5,
 };
-export const Navigation = () => (
+
+export const Navigation = () => {
+  const [active, setActive] = useState();
+return(
   <nav class="navbar  navbar-dark navbar-expand-sm">
       <motion.div class="container" 
       initial="out"
@@ -64,3 +67,4 @@ export const Navigation = () => (
       </motion.div>
     </nav>
 );
+}
