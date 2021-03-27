@@ -25,7 +25,7 @@ export const Navigation = () => (
       
         <NavLink to="/" className="nav-link">
           {" "}
-          <Nav.Link href="#features">Dylan Bozarth</Nav.Link>{" "}
+          <Nav.Link href="/">Dylan Bozarth</Nav.Link>{" "}
         </NavLink>
       
         <button
@@ -43,19 +43,19 @@ export const Navigation = () => (
           
         <NavLink to="/Projects" className="nav-link">
           {" "}
-          <Nav.Link href="#features">Projects</Nav.Link>{" "}
+          <Nav.Link href="/Projects">Projects</Nav.Link>{" "}
         </NavLink>
       
       
         <NavLink to="/Skills" className="nav-link">
           {" "}
-          <Nav.Link href="#features">Skills</Nav.Link>{" "}
+          <Nav.Link href="/Skills">Skills</Nav.Link>{" "}
         </NavLink>
       
       
         <NavLink to="/Testimonials" className="nav-link">
           {" "}
-          <Nav.Link href="#features">Testimonials</Nav.Link>{" "}
+          <Nav.Link href="/Testimonials">Testimonials</Nav.Link>{" "}
         </NavLink>
       
           </div>
