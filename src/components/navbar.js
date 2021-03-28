@@ -16,6 +16,11 @@ const pagetransition = {
 };
 
 export const Navigation = () => {
+  useEffect((On, setOn, On2, setOn2, On3, On4) => {
+if (On === true) {
+  setOn2(true)
+}
+},)
   const [On, setOn] = useState(false);
   const [On2, setOn2] = useState(false);
   const [On3, setOn3] = useState(false);
@@ -31,10 +36,11 @@ return(
       >
       
         <NavLink to="/" className={
-              On.isActive
+              On
                 ? "nav-link-active"
                 : "nav-link"
-            }>
+            }
+              onClick={() => (setOn(true))}>
           {" "}
           <Nav.Link href="/">Dylan Bozarth</Nav.Link>{" "}
         </NavLink>
