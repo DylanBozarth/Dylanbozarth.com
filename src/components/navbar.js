@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -16,7 +16,10 @@ const pagetransition = {
 };
 
 export const Navigation = () => {
-  const [active, setActive] = useState();
+  const [On, setOn] = useState(false);
+  const [On2, setOn2] = useState(false);
+  const [On3, setOn3] = useState(false);
+  const [On4, setOn4] = useState(false);
 return(
   <nav class="navbar  navbar-dark navbar-expand-sm">
       <motion.div class="container" 
@@ -27,7 +30,11 @@ return(
       transition={pagetransition}
       >
       
-        <NavLink to="/" className="nav-link">
+        <NavLink to="/" className={
+              On.isActive
+                ? "nav-link-active"
+                : "nav-link"
+            }>
           {" "}
           <Nav.Link href="/">Dylan Bozarth</Nav.Link>{" "}
         </NavLink>
@@ -45,19 +52,31 @@ return(
         <div class="collapse navbar-collapse" id="toggler-nav">
           <div class="navbar-nav">
           
-        <NavLink to="/Projects" className="nav-link">
+        <NavLink to="/Projects" className={
+              On2.isActive
+                ? "nav-link-active"
+                : "nav-link"
+            }>
           {" "}
           <Nav.Link href="/Projects">Projects</Nav.Link>{" "}
         </NavLink>
       
       
-        <NavLink to="/Skills" className="nav-link">
+        <NavLink to="/Skills" className={
+              On3.isActive
+                ? "nav-link-active"
+                : "nav-link"
+            }>
           {" "}
           <Nav.Link href="/Skills">Skills</Nav.Link>{" "}
         </NavLink>
       
       
-        <NavLink to="/Testimonials" className="nav-link">
+        <NavLink to="/Testimonials"  className={
+              On4.isActive
+                ? "nav-link-active"
+                : "nav-link"
+            }>
           {" "}
           <Nav.Link href="/Testimonials">Testimonials</Nav.Link>{" "}
         </NavLink>

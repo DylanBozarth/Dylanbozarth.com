@@ -64,7 +64,8 @@ nav ul li {
 }
 
 
-.nav-link:hover {
+
+.nav-link-active {
   color: white !important;
   text-shadow: 0px 0px 10px purple, 0px 0px 20px purple,
     0px 0px 30px purple, 0px 0px 40px purple, 0px 0px 70px purple,
