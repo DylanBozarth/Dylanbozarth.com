@@ -18,9 +18,26 @@ const pagetransition = {
 export const Navigation = () => {
   useEffect((On, setOn, On2, setOn2, On3, On4) => {
 if (On === true) {
-  setOn2(true)
+  setOn2(false)
+  setOn3(false)
+  setOn4(false)
 }
-},)
+if(On2 === true) {
+  setOn(false)
+  setOn3(false)
+  setOn4(false)
+}
+if(On3 ===true) {
+  setOn2(false)
+  setOn(false)
+  setOn4(false)
+}
+if (On4 === true) {
+  setOn(false)
+  setOn3(false)
+  setOn2(false)
+}
+}, [])
   const [On, setOn] = useState(false);
   const [On2, setOn2] = useState(false);
   const [On3, setOn3] = useState(false);
@@ -59,30 +76,30 @@ return(
           <div class="navbar-nav">
           
         <NavLink to="/Projects" className={
-              On2.isActive
+              On2
                 ? "nav-link-active"
                 : "nav-link"
-            }>
+            } onClick={() => (setOn2(true))}>
           {" "}
           <Nav.Link href="/Projects">Projects</Nav.Link>{" "}
         </NavLink>
       
       
         <NavLink to="/Skills" className={
-              On3.isActive
+              On3
                 ? "nav-link-active"
                 : "nav-link"
-            }>
+            } onClick={() => (setOn3(true))}>
           {" "}
           <Nav.Link href="/Skills">Skills</Nav.Link>{" "}
         </NavLink>
       
       
         <NavLink to="/Testimonials"  className={
-              On4.isActive
+              On4
                 ? "nav-link-active"
                 : "nav-link"
-            }>
+            } onClick={() => (setOn4(true))}>
           {" "}
           <Nav.Link href="/Testimonials">Testimonials</Nav.Link>{" "}
         </NavLink>
