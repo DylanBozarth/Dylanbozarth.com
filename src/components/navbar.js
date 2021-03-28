@@ -16,7 +16,11 @@ const pagetransition = {
 };
 
 export const Navigation = () => {
-  useEffect((On, setOn, On2, setOn2, On3, On4) => {
+  const [On, setOn] = useState(false);
+  const [On2, setOn2] = useState(false);
+  const [On3, setOn3] = useState(false);
+  const [On4, setOn4] = useState(false);
+  useEffect(() => {
 if (On === true) {
   setOn2(false)
   setOn3(false)
@@ -37,13 +41,10 @@ if (On4 === true) {
   setOn3(false)
   setOn2(false)
 }
-}, [])
-  const [On, setOn] = useState(false);
-  const [On2, setOn2] = useState(false);
-  const [On3, setOn3] = useState(false);
-  const [On4, setOn4] = useState(false);
+}, [On, On2, On3, On4] )
+  
 return(
-  <nav class="navbar  navbar-dark navbar-expand-sm">
+  <nav className="navbar  navbar-dark navbar-expand-sm">
       <motion.div class="container" 
       initial="out"
       animate="in"
