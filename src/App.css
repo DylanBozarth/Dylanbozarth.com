@@ -66,11 +66,11 @@ nav ul li {
 
 
 .nav-link-active {
-  color: red !important;
+
   text-shadow: 0px 0px 10px purple, 0px 0px 20px purple,
     0px 0px 30px purple, 0px 0px 40px purple, 0px 0px 70px purple,
     0px 0px 80px purple;
-    background-color: red;
+    
 }
 
 /* end of menu */
