@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState, useEffect } from "react";
 import { Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -16,22 +16,30 @@ const pagetransition = {
 };
 
 export const Navigation = () => {
-  const [active, setActive] = useState();
-return(
-  <nav class="navbar  navbar-dark navbar-expand-sm">
-      <motion.div class="container" 
-      initial="out"
-      animate="in"
-      exit="out"
-      variants={changepage}
-      transition={pagetransition}
+  const [buttonOn, setButtonOn] = useState(0);
+
+ 
+  return (
+    <nav className="navbar  navbar-dark navbar-expand-sm">
+      <motion.div
+        class="container"
+        initial="out"
+        animate="in"
+        exit="out"
+        variants={changepage}
+        transition={pagetransition}
       >
-      
-        <NavLink to="/" className="nav-link">
+        <NavLink
+          to="/"
+          className={buttonOn === 0 ? "nav-link-active" : "nav-link"}
+          onClick={() => {
+            setButtonOn(0);
+          }}
+        >
           {" "}
           <Nav.Link href="/">Dylan Bozarth</Nav.Link>{" "}
         </NavLink>
-      
+
         <button
           class="navbar-toggler"
           data-toggle="collapse"
@@ -44,27 +52,41 @@ return(
         </button>
         <div class="collapse navbar-collapse" id="toggler-nav">
           <div class="navbar-nav">
-          
-        <NavLink to="/Projects" className="nav-link">
-          {" "}
-          <Nav.Link href="/Projects">Projects</Nav.Link>{" "}
-        </NavLink>
-      
-      
-        <NavLink to="/Skills" className="nav-link">
-          {" "}
-          <Nav.Link href="/Skills">Skills</Nav.Link>{" "}
-        </NavLink>
-      
-      
-        <NavLink to="/Testimonials" className="nav-link">
-          {" "}
-          <Nav.Link href="/Testimonials">Testimonials</Nav.Link>{" "}
-        </NavLink>
-      
+            <NavLink
+              to="/Projects"
+              className={buttonOn === 1 ? "nav-link-active" : "nav-link"}
+              onClick={() => {
+                setButtonOn(1);
+              }}
+            >
+              {" "}
+              <Nav.Link href="/Projects">Projects</Nav.Link>{" "}
+            </NavLink>
+
+            <NavLink
+              to="/Skills"
+              className={buttonOn === 2 ? "nav-link-active" : "nav-link"}
+              onClick={() => {
+                setButtonOn(2);
+              }}
+            >
+              {" "}
+              <Nav.Link href="/Skills">Skills</Nav.Link>{" "}
+            </NavLink>
+
+            <NavLink
+              to="/Testimonials"
+              className={buttonOn === 3 ? "nav-link-active" : "nav-link"}
+              onClick={() => {
+                setButtonOn(3);
+              }}
+            >
+              {" "}
+              <Nav.Link href="/Testimonials">Testimonials</Nav.Link>{" "}
+            </NavLink>
           </div>
         </div>
       </motion.div>
     </nav>
-);
-}
+  );
+};

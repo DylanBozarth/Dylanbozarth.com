@@ -64,11 +64,13 @@ nav ul li {
 }
 
 
-.nav-link:hover {
-  color: white !important;
+
+.nav-link-active {
+
   text-shadow: 0px 0px 10px purple, 0px 0px 20px purple,
     0px 0px 30px purple, 0px 0px 40px purple, 0px 0px 70px purple,
-    0px 0px 80px purple
+    0px 0px 80px purple;
+    
 }
 
 /* end of menu */
