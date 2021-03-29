@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useCallback} from "react";
 import { Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -44,7 +44,9 @@ export const Navigation = () => {
       setOn2(false)
     }
   }
-  
+  useEffect(() => {
+    checkOn()
+  }, [checkOn])
 
   
 return(
