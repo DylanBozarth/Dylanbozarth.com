@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useCallback} from "react";
+import React, { useState, useEffect } from "react";
 import { Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -16,59 +16,30 @@ const pagetransition = {
 };
 
 export const Navigation = () => {
-  const [On, setOn] = useState(false);
-  const [On2, setOn2] = useState(false);
-  const [On3, setOn3] = useState(false);
-  const [On4, setOn4] = useState(false);
- 
- 
-     const checkOn = () => {
-    if (On === true) {
-      setOn2(false)
-      setOn3(false)
-      setOn4(false)
-    }
-    if(On2 === true) {
-      setOn(false)
-      setOn3(false)
-      setOn4(false)
-    }
-    if(On3 ===true) {
-      setOn2(false)
-      setOn(false)
-      setOn4(false)
-    }
-    if (On4 === true) {
-      setOn(false)
-      setOn3(false)
-      setOn2(false)
-    }
-  }
-  useEffect(() => {
-    checkOn()
-  }, [checkOn])
+  const [buttonOn, setButtonOn] = useState(0);
 
-  
-return(
-  <nav className="navbar  navbar-dark navbar-expand-sm">
-      <motion.div class="container" 
-      initial="out"
-      animate="in"
-      exit="out"
-      variants={changepage}
-      transition={pagetransition}
+ 
+  return (
+    <nav className="navbar  navbar-dark navbar-expand-sm">
+      <motion.div
+        class="container"
+        initial="out"
+        animate="in"
+        exit="out"
+        variants={changepage}
+        transition={pagetransition}
       >
-      
-        <NavLink to="/" className={
-              On
-                ? "nav-link-active"
-                : "nav-link"
-            }
-              onClick={() => {checkOn(); setOn(true);}}>
+        <NavLink
+          to="/"
+          className={buttonOn === 0 ? "nav-link-active" : "nav-link"}
+          onClick={() => {
+            setButtonOn(0);
+          }}
+        >
           {" "}
           <Nav.Link href="/">Dylan Bozarth</Nav.Link>{" "}
         </NavLink>
-      
+
         <button
           class="navbar-toggler"
           data-toggle="collapse"
@@ -81,39 +52,41 @@ return(
         </button>
         <div class="collapse navbar-collapse" id="toggler-nav">
           <div class="navbar-nav">
-          
-        <NavLink to="/Projects" className={
-              On2
-                ? "nav-link-active"
-                : "nav-link"
-            } onClick={() => {checkOn(); setOn2(true)}}>
-          {" "}
-          <Nav.Link href="/Projects">Projects</Nav.Link>{" "}
-        </NavLink>
-      
-      
-        <NavLink to="/Skills" className={
-              On3
-                ? "nav-link-active"
-                : "nav-link"
-            } onClick={() => {checkOn(); setOn3(true)}}>
-          {" "}
-          <Nav.Link href="/Skills">Skills</Nav.Link>{" "}
-        </NavLink>
-      
-      
-        <NavLink to="/Testimonials"  className={
-              On4
-                ? "nav-link-active"
-                : "nav-link"
-            } onClick={() => {checkOn(); setOn4(true)}}>
-          {" "}
-          <Nav.Link href="/Testimonials">Testimonials</Nav.Link>{" "}
-        </NavLink>
-      
+            <NavLink
+              to="/Projects"
+              className={buttonOn === 1 ? "nav-link-active" : "nav-link"}
+              onClick={() => {
+                setButtonOn(1);
+              }}
+            >
+              {" "}
+              <Nav.Link href="/Projects">Projects</Nav.Link>{" "}
+            </NavLink>
+
+            <NavLink
+              to="/Skills"
+              className={buttonOn === 2 ? "nav-link-active" : "nav-link"}
+              onClick={() => {
+                setButtonOn(2);
+              }}
+            >
+              {" "}
+              <Nav.Link href="/Skills">Skills</Nav.Link>{" "}
+            </NavLink>
+
+            <NavLink
+              to="/Testimonials"
+              className={buttonOn === 3 ? "nav-link-active" : "nav-link"}
+              onClick={() => {
+                setButtonOn(3);
+              }}
+            >
+              {" "}
+              <Nav.Link href="/Testimonials">Testimonials</Nav.Link>{" "}
+            </NavLink>
           </div>
         </div>
       </motion.div>
     </nav>
-);
-}
+  );
+};
