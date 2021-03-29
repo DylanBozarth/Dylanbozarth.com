@@ -5,32 +5,27 @@ import Card from "../components/card";
 import { NavLink } from "react-router-dom";
 const changepage = {
   in: {
-    opacity: 1,
+    y: '0vh',
   },
   out: {
-    opacity: 0,
+    y: '100vh',
   },
 };
 const pagetransition = {
-  duration: 1.5,
+  duration: 1.2
 };
 const floatIn1 = {
   in: {
-    y: 0
+    y:'0vh'
   },
   out: {
-    y: '200vh'
+    y: '100vh'
   },
 }
 const floatTransition = {
-  duration: .9
-}
-const floatTransition2 = {
   duration: 1.2
 }
-const floatTransition3 = {
-  duration: 1.6
-}
+
 function Homepage() {
  
   return (
@@ -49,8 +44,7 @@ function Homepage() {
           <motion.div initial="out"
       animate="in"
       exit="out"
-      variants={floatIn1}
-      transition={floatTransition}
+      
        className="homepagelinkbox  col-sm-4">
             <NavLink to="/projects">
               <Card
@@ -65,8 +59,7 @@ function Homepage() {
           initial="out"
           animate="in"
           exit="out"
-          variants={floatIn1}
-          transition={floatTransition2}>
+          >
             <a
               href="https://drive.google.com/file/d/19ePQHZSe1xjfK_tiEHMz1nGQ5HcsFz1G/view?usp=sharing"
               target="_blank"
@@ -83,8 +76,7 @@ function Homepage() {
           initial="out"
           animate="in"
           exit="out"
-          variants={floatIn1}
-          transition={floatTransition3}>
+         >
             <NavLink to="/hireme">
               <Card
                 imgUrl="./images/contact.png"
