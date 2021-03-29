@@ -12,7 +12,7 @@ const changepage = {
   },
 };
 const pagetransition = {
-  duration: 0.9,
+  duration: 1.5,
 };
 const floatIn1 = {
   in: {
@@ -23,13 +23,13 @@ const floatIn1 = {
   },
 }
 const floatTransition = {
-  duration: 1.5
+  duration: .9
 }
 const floatTransition2 = {
-  duration: 1.9
+  duration: 1.2
 }
 const floatTransition3 = {
-  duration: 2.1
+  duration: 1.6
 }
 function Homepage() {
  
