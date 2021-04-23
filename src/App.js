@@ -22,6 +22,7 @@ import { Todo } from "./components/todo";
 import { SolarsystemFocus } from "./components/solarsystem";
 import {BitcoinFocus} from './components/bitcoinfocus'
 import { RestFocus } from "./components/restFocus";
+import { Dadfocus } from "./components/dadfocus";
 function App() {
   const location = useLocation();
   
@@ -45,6 +46,7 @@ function App() {
               <Route path="/Testimonials" component={Testimonials} />
               <Route path="/hireme" component={Hireme} />
               <Route path="/skylimit" component={SkylimitFocus} />
+              <Route  path="/dadabase" component={Dadfocus} /> 
               <Route path="/powerstroke" component={PowerstrokeFocus} />
               <Route path="/weaponsshop" component={Weaponsshopfocus} />
               <Route path="/portfolio" component={ThiswebsiteFocus} />
