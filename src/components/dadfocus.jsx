@@ -43,7 +43,7 @@ export const Dadfocus = ({ match }) => (
       </div>
     </motion.div>{" "}
     <a
-      href="https://dadabase.azurewebsites.net/"
+      href="https://github.com/Imstupidpleasehelp/c-lesson"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -57,7 +57,7 @@ export const Dadfocus = ({ match }) => (
     <div className="linkbox">
       <a
         className="button2 b-blue rot-135"
-        href="https://dadabase.azurewebsites.net/"
+        href="https://github.com/Imstupidpleasehelp/c-lesson"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -73,6 +73,7 @@ export const Dadfocus = ({ match }) => (
       </a>
       <p className="focustext">
        Branching out to other programming languages and having a bit of fun, Dad-a-base (get it?) is a full stack C# application for storing dad jokes.
+       (App currently without hosting)
       </p>
     </div>
   </motion.div>
