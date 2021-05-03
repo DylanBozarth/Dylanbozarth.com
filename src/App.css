@@ -22,7 +22,9 @@ nav {
   
 }
 
-
+.white {
+  color: white;
+}
 nav ul {
   min-width: 100%;
   max-width: 100%;
