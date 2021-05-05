@@ -3,7 +3,7 @@ import { Navigation } from "./components/navbar";
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import  Homepage  from "./pages/homepage";
-import { BrowserRouter as  Switch, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as  Switch, Route, useLocation, Redirect } from "react-router-dom";
 import  Projects  from "./pages/projects";
 import { Skills } from "./pages/skills";
 import { Testimonials } from "./pages/Testimonials";
@@ -59,7 +59,8 @@ function App() {
               <Route path="/rest" component={RestFocus} />
               <Route path="/solarsystem" component={SolarsystemFocus} />
               <Route path="/bitcoin" component={BitcoinFocus} />
-              
+              <Route path="*" to="/404" />
+              <Route path="/404" component={Fourohfour} />
             </Switch>
           </AnimatePresence>
           
