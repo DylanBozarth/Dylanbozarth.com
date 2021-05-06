@@ -59,8 +59,8 @@ function App() {
               <Route path="/rest" component={RestFocus} />
               <Route path="/solarsystem" component={SolarsystemFocus} />
               <Route path="/bitcoin" component={BitcoinFocus} />
-              <Route path="*" to="/404" />
-              <Route path="/404" component={Fourohfour} />
+              
+             {/*  <Route component={Fourohfour} /> */}
             </Switch>
           </AnimatePresence>
           

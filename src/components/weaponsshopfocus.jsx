@@ -60,9 +60,8 @@ export const Weaponsshopfocus  = ({ match }) => (
         View code
       </a>
       <p className="focustext">
-        History's Armory. A practice project and my way of <a href="http://www.kultofathena.com/" target="blank"
-        rel="noopener noreferrer">improving this commercial website</a>. Made with React, Redux, and Css. 
-        I have no affiliation with Kult of Athena.
+        History's Armory. A practice project and my way of expressing my love of my other hobbies through code. 
+        Made with React and SCSS 
       </p>
     </div>
   </motion.div>
