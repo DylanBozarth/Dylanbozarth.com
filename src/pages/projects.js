@@ -46,6 +46,12 @@ class Projects extends Component {
           tag: "professional"
         },
         {
+          image: "./images/my_pet.png",
+          title: "My Pet ",
+          link: "/mypet",
+          tag: "professional"
+        },
+        {
           image: "./images/dadabase.jpg",
           title: "Dad joke database",
           link: "/dadabase"
