@@ -33,6 +33,8 @@ export const MyPetFocus = ({ match }) => (
           <img width="50px" height="50px" alt="icon" src='./images/react.png'></img>
           <img width="50px" height="50px" alt="icon"src='./images/scss.png'></img>
           <img width="50px" height="50px" alt="icon"src='./images/hooksicon.png'></img>
+          <img width="50px" height="50px" alt="icon"src='./images/nodejs.png'></img>
+          <img width="50px" height="50px" alt="icon"src='./images/mongo.png'></img>
           
         </div>
       </motion.div>{" "}
