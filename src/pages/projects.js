@@ -46,35 +46,36 @@ class Projects extends Component {
           tag: "professional"
         },
         {
-          image: "./images/my_pet.png",
-          title: "My Pet ",
-          link: "/mypet",
-          tag: "professional"
-        },
-        {
-          image: "./images/dadabase.jpg",
-          title: "Dad joke database",
-          link: "/dadabase"
-
-        },
-        {
           image: "./images/solarsystem.png",
           title: "Solar System Viewer",
           link: "/solarsystem",
           tag: "personal"
         },
         {
-          image: "./images/bitcoin.png",
-          title: "CryptoTracker",
-          link: "/bitcoin",
-          tag: "personal"
+          image: "./images/my_pet.png",
+          title: "My Pet ",
+          link: "/mypet",
+          tag: "professional"
         },
+        
+        
+        
         {
 
           image: "./images/spokanepowerstroke.jpg",
           title: "Spokane Power Stroke",
           link: "/powerstroke",
           tag: "professional"
+        },{
+          image: "./images/pizza.jpeg",
+          title: "Create your own Pizza UI",
+          link: "/pizza",
+          tag: "personal"
+        },{
+          image: "./images/dadabase.jpg",
+          title: "Dad joke database",
+          link: "/dadabase"
+
         },
         {
           image: "./images/skyfitnessnew.jpg",
@@ -82,13 +83,13 @@ class Projects extends Component {
           link: "/skylimit",
           tag: "professional"
 
-        },
-        {
-          image: "./images/pizza.jpeg",
-          title: "Create your own Pizza UI",
-          link: "/pizza",
+        },{
+          image: "./images/bitcoin.png",
+          title: "CryptoTracker",
+          link: "/bitcoin",
           tag: "personal"
         },
+        
         {
           image: "./images/rest.jpeg",
           title: "REST API Example",
