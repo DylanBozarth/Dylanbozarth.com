@@ -45,7 +45,7 @@ function Homepage() {
       animate="in"
       exit="out"
       
-       className="homepagelinkbox  col-sm-4">
+       className="homepagelinkbox  col-sm-6">
             <NavLink to="/projects">
               <Card
                 imgUrl="./images/projectspage.png"
@@ -55,7 +55,8 @@ function Homepage() {
               />
             </NavLink>
           </motion.div>
-          <motion.div className="homepagelinkbox col-sm-4" 
+        
+          <motion.div className="homepagelinkbox col-sm-6" 
           initial="out"
           animate="in"
           exit="out"
@@ -71,20 +72,6 @@ function Homepage() {
                 className="homepagecardimg"
               />
             </a>
-          </motion.div>
-          <motion.div className="homepagelinkbox col-sm-4" 
-          initial="out"
-          animate="in"
-          exit="out"
-         >
-            <NavLink to="/hireme">
-              <Card
-                imgUrl="./images/contact.png"
-                title="Contact Me"
-                className="homepagecardimg"
-                description=""
-              />
-            </NavLink>{" "}
           </motion.div>
           
         </div>

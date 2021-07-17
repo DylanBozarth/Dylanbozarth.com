@@ -1,7 +1,6 @@
 import React from "react";
 import { Navigation } from "./components/navbar";
 import "./App.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import  Homepage  from "./pages/homepage";
 import { BrowserRouter as  Switch, Route, useLocation, Redirect } from "react-router-dom";
 import  Projects  from "./pages/projects";
