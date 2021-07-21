@@ -217,7 +217,7 @@ export const Skills = () => (
         >
           <img className="skillimage" src="./images/stackoverflow.png" alt="" />
           <div className="item-content">
-            <p>Stackoverflow Programming forum</p>
+            <p>StackOverFlow Programming forum</p>
           </div>
         </a>
       </div>

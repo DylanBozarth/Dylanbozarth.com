@@ -82,7 +82,7 @@ export const Navigation = () => {
               }}
             >
               {" "}
-              <Nav.Link href="/Testimonials">Testimonials</Nav.Link>{" "}
+             
             </NavLink>
           </div>
         </div>

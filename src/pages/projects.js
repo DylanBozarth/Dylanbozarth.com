@@ -72,18 +72,19 @@ class Projects extends Component {
           link: "/pizza",
           tag: "personal"
         },{
-          image: "./images/dadabase.jpg",
-          title: "Dad joke database",
-          link: "/dadabase"
-
-        },
-        {
+          image: "./images/thiswebsite.png",
+          title: "My Portfolio",
+          link: "/portfolio",
+          tag: "professional",
+          date: 3
+        },{
           image: "./images/skyfitnessnew.jpg",
           title: "Skylimit Fitness",
           link: "/skylimit",
           tag: "professional"
 
-        },{
+        },
+        {
           image: "./images/bitcoin.png",
           title: "CryptoTracker",
           link: "/bitcoin",
@@ -92,17 +93,16 @@ class Projects extends Component {
         
         {
           image: "./images/rest.jpeg",
-          title: "REST API Example",
+          title: "REST API Widget",
           link: "/rest",
           tag: "personal"
         },
         
         {
-          image: "./images/thiswebsite.png",
-          title: "This website",
-          link: "/portfolio",
-          tag: "professional",
-          date: 3
+          image: "./images/dadabase.jpg",
+          title: "Dad joke database",
+          link: "/dadabase"
+
         },
        
       
