@@ -40,12 +40,12 @@ function Homepage() {
     >
       
      
-        <div className="row">
+        <div className="row"><div className="col-sm-2"></div>
           <motion.div initial="out"
       animate="in"
       exit="out"
       
-       className="homepagelinkbox  col-sm-6">
+       className="homepagelinkbox  col-sm-4">
             <NavLink to="/projects">
               <Card
                 imgUrl="./images/projectspage.png"
@@ -56,7 +56,7 @@ function Homepage() {
             </NavLink>
           </motion.div>
         
-          <motion.div className="homepagelinkbox col-sm-6" 
+          <motion.div className="homepagelinkbox col-sm-4" 
           initial="out"
           animate="in"
           exit="out"
@@ -75,7 +75,7 @@ function Homepage() {
           </motion.div>
           
         </div>
-      
+        <div className="col-sm-2"></div>
     </motion.div>
   );
 }
