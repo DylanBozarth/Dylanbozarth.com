@@ -60,7 +60,7 @@ export const Navigation = () => {
               }}
             >
               {" "}
-              <Nav.Link href="/Projects">Projects</Nav.Link>{" "}
+              <Nav.Link href="/Projects">My Work</Nav.Link>{" "}
             </NavLink>
 
             <NavLink

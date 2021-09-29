@@ -49,7 +49,7 @@ function Homepage() {
             <NavLink to="/projects">
               <Card
                 imgUrl="./images/projectspage.png"
-                title=" My Projects"
+                title=" My Work"
                 className="homepagecardimg "
                 description=""
               />
