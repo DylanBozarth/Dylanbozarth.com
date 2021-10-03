@@ -8,22 +8,22 @@ import { Skills } from "./pages/skills";
 import { Testimonials } from "./pages/Testimonials";
 import Hireme from "./pages/hireme";
 import { AnimatePresence, motion } from "framer-motion";
-import { SkylimitFocus } from "./components/skylimitfocus";
-import {PowerstrokeFocus} from './components/powerstrokefocus'
-import { Weaponsshopfocus } from "./components/weaponsshopfocus";
-import { ThiswebsiteFocus } from "./components/thiswebsitefocus";
-import { JymrDoodlesFocus } from "./components/jymrdoodlesfocus";
+import { SkylimitFocus } from "./components/focuspages/skylimitfocus";
+import {PowerstrokeFocus} from './components/focuspages/powerstrokefocus'
+import { Weaponsshopfocus } from "./components/focuspages/weaponsshopfocus";
+import { ThiswebsiteFocus } from "./components/focuspages/thiswebsitefocus";
+import { JymrDoodlesFocus } from "./components/focuspages/jymrdoodlesfocus";
 import UseFavicon from './components/useFavicon'
-import { Jsquizfocus } from "./components/jsquizfocus";
-import { Weatherappfocus } from "./components/weatherappfocus";
- import  {pizzaFocus} from './components/pizzaFocus'
+import { Jsquizfocus } from "./components/focuspages/jsquizfocus";
+import { Weatherappfocus } from "./components/focuspages/weatherappfocus";
+ import  {pizzaFocus} from './components/focuspages/pizzaFocus'
 import { Todo } from "./components/todo";
 import { SolarsystemFocus } from "./components/solarsystem";
-import {BitcoinFocus} from './components/bitcoinfocus'
-import { RestFocus } from "./components/restFocus";
-import { Dadfocus } from "./components/dadfocus";
+import {BitcoinFocus} from './components/focuspages/bitcoinfocus'
+import { RestFocus } from "./components/focuspages/restFocus";
+import { Dadfocus } from "./components/focuspages/dadfocus";
 import { Fourohfour } from "./pages/404";
-import { MyPetFocus } from "./components/mypetfocus";
+import { MyPetFocus } from "./components/focuspages/mypetfocus";
 function App() {
   const location = useLocation();
   
