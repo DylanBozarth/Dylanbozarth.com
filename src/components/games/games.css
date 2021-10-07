@@ -4,16 +4,22 @@
 }
 .jumpgameBox {
     width: 1000px;
-    height: 400px;
+    height: 450px;
    border: solid 2px green;
     text-align: center;
     color: white;
     
 }
-.player {
+#player {
     height: 50px;
     width: 50px;
 background-color: green;
+}
+.powerUp {
+    background-color: purple
+}
+.jump{
+    animation: jump 0.3s linear;
 }
 .enemy {
     height: 50px;
