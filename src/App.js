@@ -24,6 +24,7 @@ import { RestFocus } from "./components/focuspages/restFocus";
 import { Dadfocus } from "./components/focuspages/dadfocus";
 import { Fourohfour } from "./pages/404";
 import { MyPetFocus } from "./components/focuspages/mypetfocus";
+import { Games } from "./pages/games";
 function App() {
   const location = useLocation();
   
@@ -60,6 +61,7 @@ function App() {
               <Route path="/solarsystem" component={SolarsystemFocus} />
               <Route path="/bitcoin" component={BitcoinFocus} />
               <Route path="/mypet" component={MyPetFocus} />
+              <Route path="/games" component={Games} />
              {/*  <Route component={Fourohfour} /> */}
             </Switch>
           </AnimatePresence>
