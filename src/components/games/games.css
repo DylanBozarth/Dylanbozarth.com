@@ -10,10 +10,10 @@
     color: white;
     
 }
-#player {
+
+.player {
     height: 50px;
     width: 50px;
-background-color: green;
 }
 .powerUp {
     background-color: purple
@@ -31,4 +31,9 @@ background-color: green;
     height: 50px;
     width: 50px;
     background-color: red;
+    animation: enemyPath 3s infinite linear;
+}
+@keyframes enemyPath{
+    0%{left: 500px}
+    100%{left: -20px}
 }
