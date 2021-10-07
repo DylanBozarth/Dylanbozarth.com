@@ -14,6 +14,7 @@
 .player {
     height: 50px;
     width: 50px;
+    background-color: white;
 }
 .powerUp {
     background-color: purple

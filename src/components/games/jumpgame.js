@@ -3,9 +3,7 @@ import "./games.css";
 // MOVING TO REGULAR JAVASCIPT
 export const JumpGame = () => {
   const [enemy, setEnemy] = useState({});
-  const [playerPosition, setPlayerPosition] = useState({
-    backgroundColor: "green",
-  });
+  const [playerPosition, setPlayerPosition] = useState(' ')
   useEffect(() => {
     document.addEventListener("keyup", (event) => {
       if (event.code === "Space") {
@@ -14,21 +12,16 @@ export const JumpGame = () => {
     });
   }, []);
   function Jump() {
-    setPlayerPosition({
-      backgroundColor: "purple",
-     
-    });
+    setPlayerPosition('powerUp')
     setTimeout(() => {
-      setPlayerPosition({
-        backgroundColor: "green",
-      });
+      setPlayerPosition('')
     }, 300);
   }
   return (
     <div className="masterDiv">
       <div className="jumpgameBox">
         Try and survive lol
-        <div style={playerPosition} className="player"></div>
+        <div  className={`player ${playerPosition}`}></div>
         <div style={enemy} className="enemy"></div>
       </div>
     </div>
