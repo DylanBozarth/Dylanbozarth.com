@@ -21,6 +21,12 @@ background-color: green;
 .jump{
     animation: jump 0.3s linear;
 }
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
 .enemy {
     height: 50px;
     width: 50px;
