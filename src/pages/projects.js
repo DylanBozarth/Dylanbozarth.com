@@ -193,7 +193,7 @@ class Projects extends Component {
             </Col>
             <Col></Col>
           </Row>
-         <h1 className="projectpagetitle"><a href="https://github.com/Imstupidpleasehelp">There's always more on Github</a></h1>
+      
           
         </Container>
       </motion.div>

@@ -41,103 +41,16 @@ class Games extends Component {
     this.state = {
       items: [
         {
-          image: "./images/jymr.jpg",
-          title: "JYMR Doodles",
+          image: "./gamesImages/dinogame.jfif",
+          title: "Dinosaur Jumping game",
           link: "/doodles",
           tag: "professional"
-        },
-        {
-          image: "./images/solarsystem.png",
-          title: "Solar System Viewer",
-          link: "/solarsystem",
-          tag: "personal"
-        },
-        {
-          image: "./images/my_pet.png",
-          title: "My Pet ",
-          link: "/mypet",
-          tag: "professional"
-        },
-        
-        
-        
-        {
-
-          image: "./images/spokanepowerstroke.jpg",
-          title: "Spokane Power Stroke",
-          link: "/powerstroke",
-          tag: "professional"
-        },{
-          image: "./images/pizza.jpeg",
-          title: "Create your own Pizza UI",
-          link: "/pizza",
-          tag: "personal"
-        },{
-          image: "./images/thiswebsite.png",
-          title: "My Portfolio",
-          link: "/portfolio",
-          tag: "professional",
-          date: 3
-        },{
-          image: "./images/skyfitnessnew.jpg",
-          title: "Skylimit Fitness",
-          link: "/skylimit",
-          tag: "professional"
-
-        },
-        {
-          image: "./images/bitcoin.png",
-          title: "CryptoTracker",
-          link: "/bitcoin",
-          tag: "personal"
-        },
-        
-        {
-          image: "./images/rest.jpeg",
-          title: "REST API Widget",
-          link: "/rest",
-          tag: "personal"
-        },
-        
-        {
-          image: "./images/dadabase.jpg",
-          title: "Dad joke database",
-          link: "/dadabase"
-
-        },
-       
-      
-        
-        {
-          image: "./images/hwsnew.png",
-          title: "History's Armory",
-          link: "/weaponsshop",
-          tag: "personal"
-        },
-        {
-          image: "./images/weatherapp.png",
-          title: "Weatherapp",
-          link: "/weather",
-          tag: "personal"
-        },
-        {
-          image: "./images/todo.png",
-          title: "Javascript todo List",
-          link: "/todo",
-          tag: "personal"
-        },
+        }
         
       ],
     };
   }
-  componentDidMount(items) {
-    console.log('I mounted')
-    const showProjects = () => (
-      console.log('aaa')
-    )
-    showProjects()
-  }
-  //https://www.dylanbozarth.com/Projects#practices
+ 
   state = {};
   render() {
     return (
@@ -152,7 +65,7 @@ class Games extends Component {
         <Container className="Projects ">
        
           <p className="projectpagetitle ">
-            Games and Projects<br /> Click for more details
+            Minigames and other<br /> Coding projects done for fun
            {/* <div className="dropdown">
   <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Sort By
@@ -194,7 +107,7 @@ class Games extends Component {
             </Col>
             <Col></Col>
           </Row>
-         <h1 className="projectpagetitle"><a href="https://github.com/Imstupidpleasehelp">There's always more on Github</a></h1>
+        
           
         </Container>
       </motion.div>

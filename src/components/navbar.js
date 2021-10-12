@@ -62,7 +62,16 @@ export const Navigation = () => {
               {" "}
               <Nav.Link href="/Projects">My Work</Nav.Link>{" "}
             </NavLink>
-
+            <NavLink
+              to="/Projects"
+              className={buttonOn === 1 ? "nav-link-active" : "nav-link"}
+              onClick={() => {
+                setButtonOn(1);
+              }}
+            >
+              {" "}
+              <Nav.Link href="/games">Games</Nav.Link>{" "}
+            </NavLink>
             <NavLink
               to="/Skills"
               className={buttonOn === 2 ? "nav-link-active" : "nav-link"}
@@ -71,7 +80,7 @@ export const Navigation = () => {
               }}
             >
               {" "}
-              <Nav.Link href="/Skills">Skills</Nav.Link>{" "}
+              <Nav.Link href="/Skills">My Skills</Nav.Link>{" "}
             </NavLink>
 
             <NavLink
