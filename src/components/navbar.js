@@ -63,7 +63,7 @@ export const Navigation = () => {
               <Nav.Link href="/Projects">My Work</Nav.Link>{" "}
             </NavLink>
             <NavLink
-              to="/Projects"
+              to="/games"
               className={buttonOn === 1 ? "nav-link-active" : "nav-link"}
               onClick={() => {
                 setButtonOn(1);
@@ -83,16 +83,7 @@ export const Navigation = () => {
               <Nav.Link href="/Skills">My Skills</Nav.Link>{" "}
             </NavLink>
 
-            <NavLink
-              to="/Testimonials"
-              className={buttonOn === 3 ? "nav-link-active" : "nav-link"}
-              onClick={() => {
-                setButtonOn(3);
-              }}
-            >
-              {" "}
-             
-            </NavLink>
+            
           </div>
         </div>
       </motion.div>

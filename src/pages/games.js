@@ -45,8 +45,50 @@ class Games extends Component {
           title: "Dinosaur Jumping game",
           link: "/doodles",
           tag: "professional"
-        }
-        
+        },
+        {
+          image: "./gamesImages/hwsnew.png",
+          title: "History's Armory",
+          link: "/weaponsshop",
+          tag: "personal"
+        },
+        {
+          image: "./gamesImages/weatherapp.png",
+          title: "Weatherapp",
+          link: "/weather",
+          tag: "personal"
+        },
+        {
+          image: "./gamesImages/pizza.jpeg",
+          title: "Create your own Pizza UI",
+          link: "/pizza",
+          tag: "personal"
+        },
+        {
+          image: "./gamesImages/todo.png",
+          title: "Javascript todo List",
+          link: "/todo",
+          tag: "personal"
+        },
+        {
+          image: "./gamesImages/dadabase.jpg",
+          title: "Dad joke database",
+          link: "/dadabase"
+
+        },
+        {
+          image: "./gamesImages/bitcoin.png",
+          title: "CryptoTracker",
+          link: "/bitcoin",
+          tag: "personal"
+        },
+      
+        {
+          image: "./gamesImages/rest.jpeg",
+          title: "REST API Widget",
+          link: "/rest",
+          tag: "personal"
+        },
       ],
     };
   }
