@@ -24,7 +24,7 @@ import { RestFocus } from "./components/focuspages/restFocus";
 import { Dadfocus } from "./components/focuspages/dadfocus";
 import { Fourohfour } from "./pages/404";
 import { MyPetFocus } from "./components/focuspages/mypetfocus";
-import { Games } from "./pages/games";
+import  Games  from "./pages/games";
 function App() {
   const location = useLocation();
   

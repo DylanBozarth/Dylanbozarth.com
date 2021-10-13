@@ -51,12 +51,7 @@ class Projects extends Component {
           link: "/solarsystem",
           tag: "personal"
         },
-        {
-          image: "./images/my_pet.png",
-          title: "My Pet ",
-          link: "/mypet",
-          tag: "professional"
-        },
+       
         
         
         
@@ -66,11 +61,6 @@ class Projects extends Component {
           title: "Spokane Power Stroke",
           link: "/powerstroke",
           tag: "professional"
-        },{
-          image: "./images/pizza.jpeg",
-          title: "Create your own Pizza UI",
-          link: "/pizza",
-          tag: "personal"
         },{
           image: "./images/thiswebsite.png",
           title: "My Portfolio",
@@ -84,47 +74,13 @@ class Projects extends Component {
           tag: "professional"
 
         },
-        {
-          image: "./images/bitcoin.png",
-          title: "CryptoTracker",
-          link: "/bitcoin",
-          tag: "personal"
-        },
+       
         
-        {
-          image: "./images/rest.jpeg",
-          title: "REST API Widget",
-          link: "/rest",
-          tag: "personal"
-        },
         
-        {
-          image: "./images/dadabase.jpg",
-          title: "Dad joke database",
-          link: "/dadabase"
-
-        },
        
       
         
-        {
-          image: "./images/hwsnew.png",
-          title: "History's Armory",
-          link: "/weaponsshop",
-          tag: "personal"
-        },
-        {
-          image: "./images/weatherapp.png",
-          title: "Weatherapp",
-          link: "/weather",
-          tag: "personal"
-        },
-        {
-          image: "./images/todo.png",
-          title: "Javascript todo List",
-          link: "/todo",
-          tag: "personal"
-        },
+        
         
       ],
     };
@@ -193,7 +149,7 @@ class Projects extends Component {
             </Col>
             <Col></Col>
           </Row>
-         <h1 className="projectpagetitle"><a href="https://github.com/Imstupidpleasehelp">There's always more on Github</a></h1>
+      
           
         </Container>
       </motion.div>

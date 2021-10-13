@@ -49,13 +49,26 @@ function Homepage() {
             <NavLink to="/projects">
               <Card
                 imgUrl="./images/projectspage.png"
-                title=" My Work"
+                title="Professional Projects"
                 className="homepagecardimg "
                 description=""
               />
             </NavLink>
           </motion.div>
-        
+          <motion.div initial="out"
+      animate="in"
+      exit="out"
+      
+       className="homepagelinkbox  col-lg-4">
+            <NavLink to="/games">
+              <Card
+                imgUrl="./images/unprofessional.png"
+                title="Unprofessional Projects"
+                className="homepagecardimg "
+                description=""
+              />
+            </NavLink>
+          </motion.div>
           <motion.div className="homepagelinkbox col-lg-4" 
           initial="out"
           animate="in"

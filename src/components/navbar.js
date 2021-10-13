@@ -60,30 +60,33 @@ export const Navigation = () => {
               }}
             >
               {" "}
-              <Nav.Link href="/Projects">My Work</Nav.Link>{" "}
+              <Nav.Link href="/Projects">Professional Work</Nav.Link>{" "}
             </NavLink>
-
             <NavLink
-              to="/Skills"
+              to="/games"
               className={buttonOn === 2 ? "nav-link-active" : "nav-link"}
               onClick={() => {
                 setButtonOn(2);
               }}
             >
               {" "}
-              <Nav.Link href="/Skills">Skills</Nav.Link>{" "}
+              <Nav.Link href="/games">Other Projects</Nav.Link>{" "}
             </NavLink>
-
             <NavLink
-              to="/Testimonials"
+              to="/Skills"
               className={buttonOn === 3 ? "nav-link-active" : "nav-link"}
               onClick={() => {
                 setButtonOn(3);
               }}
             >
               {" "}
-             
+              <Nav.Link href="/Skills" className={buttonOn === 4 ? "nav-link-active" : "nav-link"}
+              onClick={() => {
+                setButtonOn(4);
+              }}>My Skills</Nav.Link>{" "}
             </NavLink>
+
+            
           </div>
         </div>
       </motion.div>
