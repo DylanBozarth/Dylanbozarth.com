@@ -60,27 +60,30 @@ export const Navigation = () => {
               }}
             >
               {" "}
-              <Nav.Link href="/Projects">My Work</Nav.Link>{" "}
+              <Nav.Link href="/Projects">Professional Work</Nav.Link>{" "}
             </NavLink>
             <NavLink
               to="/games"
-              className={buttonOn === 1 ? "nav-link-active" : "nav-link"}
-              onClick={() => {
-                setButtonOn(1);
-              }}
-            >
-              {" "}
-              <Nav.Link href="/games">Games</Nav.Link>{" "}
-            </NavLink>
-            <NavLink
-              to="/Skills"
               className={buttonOn === 2 ? "nav-link-active" : "nav-link"}
               onClick={() => {
                 setButtonOn(2);
               }}
             >
               {" "}
-              <Nav.Link href="/Skills">My Skills</Nav.Link>{" "}
+              <Nav.Link href="/games">Other Projects</Nav.Link>{" "}
+            </NavLink>
+            <NavLink
+              to="/Skills"
+              className={buttonOn === 3 ? "nav-link-active" : "nav-link"}
+              onClick={() => {
+                setButtonOn(3);
+              }}
+            >
+              {" "}
+              <Nav.Link href="/Skills" className={buttonOn === 4 ? "nav-link-active" : "nav-link"}
+              onClick={() => {
+                setButtonOn(4);
+              }}>My Skills</Nav.Link>{" "}
             </NavLink>
 
             

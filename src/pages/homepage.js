@@ -62,7 +62,7 @@ function Homepage() {
        className="homepagelinkbox  col-lg-4">
             <NavLink to="/games">
               <Card
-                imgUrl="./images/projectspage.png"
+                imgUrl="./images/unprofessional.png"
                 title="Unprofessional Projects"
                 className="homepagecardimg "
                 description=""
