@@ -39,7 +39,7 @@ export const Jsquizfocus = ({ match }) => (
       </motion.div>{" "}
      <a href="https://sharp-jackson-1a18ec.netlify.app/" target="_blank" rel="noopener noreferrer"> <motion.img
         variants={imageVariants}
-        src="./images/jsquiz.png"
+        src="./gamesImages/jsquiz.png"
         alt="JYMR doodles"
       />
     </a>

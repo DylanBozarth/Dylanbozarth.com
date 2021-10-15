@@ -39,7 +39,7 @@ export const Weatherappfocus = ({ match }) => (
       </motion.div>{" "}
      <a href="https://loving-newton-bfdf08.netlify.app/" target="_blank" rel="noopener noreferrer"> <motion.img
         variants={imageVariants}
-        src="./images/weatherapp.png"
+        src="./gamesImages/weatherapp.png"
         alt="JYMR doodles"
       />
     </a>

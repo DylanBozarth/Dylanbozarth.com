@@ -23,7 +23,7 @@ const backVariants = {
 export const Dadfocus = ({ match }) => (
   <motion.div className="single" initial="exit" animate="enter" exit="exit">
     <motion.div className="back" variants={backVariants}>
-      <Link to="/projects" className="whitetext backbutton">
+      <Link to="/games" className="whitetext backbutton">
         ← Back
       </Link>{" "}
       <p className="languagesused">Languages used</p>
@@ -50,7 +50,7 @@ export const Dadfocus = ({ match }) => (
       {" "}
       <motion.img
         variants={imageVariants}
-        src="./images/dadabase.png"
+        src="./gamesImages/dadabase.png"
         alt="sql"
       />
     </a>

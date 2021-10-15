@@ -57,7 +57,7 @@ export const RestFocus = ({ match }) => (
       {" "}
       <motion.img
         variants={imageVariants}
-        src="./images/rest.jpeg"
+        src="./gamesImages/rest.jpeg"
         alt="REST API"
         className="restimage"
       />

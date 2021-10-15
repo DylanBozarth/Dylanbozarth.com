@@ -37,7 +37,7 @@ export const Weaponsshopfocus  = ({ match }) => (
       </motion.div>{" "}
      <a href="https://76y7e.csb.app/" target="_blank" rel="noopener noreferrer"> <motion.img
         variants={imageVariants}
-        src="./images/hwsnew.png"
+        src="./gamesImages/hwsnew.png"
         alt="SkyLimit Fitness"
       />
     </a>

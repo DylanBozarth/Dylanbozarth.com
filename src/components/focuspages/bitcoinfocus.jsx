@@ -62,7 +62,7 @@ export const BitcoinFocus = ({ match }) => (
       {" "}
       <motion.img
         variants={imageVariants}
-        src="./images/bitcoin.png"
+        src="./gamesImages/bitcoin.png"
         alt="Pizza"
       />
     </a>

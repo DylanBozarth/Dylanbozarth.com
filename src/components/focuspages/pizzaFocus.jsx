@@ -38,7 +38,7 @@ export const pizzaFocus = ({ match }) => (
       </motion.div>{" "}
      <a href="https://xenodochial-golick-10732e.netlify.app/" target="_blank" rel="noopener noreferrer"> <motion.img
         variants={imageVariants}
-        src="./images/pizza.jpeg"
+        src="./gamesImages/pizza.jpeg"
         alt="Pizza"
       />
     </a>
