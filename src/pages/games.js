@@ -43,8 +43,25 @@ class Games extends Component {
         {
           image: "./gamesImages/dinogame.jfif",
           title: "Dinosaur Jumping game",
-          link: "/doodles",
+          link: "/dino",
           tag: "professional"
+        },
+        {
+image: "./gamesImages/my_pet.png",
+title: "My pet database",
+link: "/mypet",
+        },
+        {
+          image: "./gamesImages/dadabase.jpg",
+          title: "Dad joke database",
+          link: "/dadabase"
+
+        },
+        {
+          image: "./gamesImages/pizza.jpeg",
+          title: "Create your own Pizza UI",
+          link: "/pizza",
+          tag: "personal"
         },
         {
           image: "./gamesImages/hwsnew.png",
@@ -58,12 +75,7 @@ class Games extends Component {
           link: "/weather",
           tag: "personal"
         },
-        {
-          image: "./gamesImages/pizza.jpeg",
-          title: "Create your own Pizza UI",
-          link: "/pizza",
-          tag: "personal"
-        },
+        
         {
           image: "./gamesImages/todo.png",
           title: "Javascript todo List",

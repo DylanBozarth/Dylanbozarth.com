@@ -24,7 +24,7 @@ export const MyPetFocus = ({ match }) => (
   <motion.div className="single" initial="exit" animate="enter" exit="exit">
     
       <motion.div className="back" variants={backVariants}>
-        <Link to="/projects" className="whitetext backbutton">
+        <Link to="/games" className="whitetext backbutton">
           ← Back
         </Link>{" "}
          
@@ -40,8 +40,8 @@ export const MyPetFocus = ({ match }) => (
       </motion.div>{" "}
      <a href="https://quizzical-agnesi-02d509.netlify.app/" target="_blank" rel="noopener noreferrer"> <motion.img
         variants={imageVariants}
-        src="./images/my_pet.png"
-        alt="Pizza"
+        src="./gamesImages/my_pet.png"
+        alt="JavaScript"
       />
     </a>
 

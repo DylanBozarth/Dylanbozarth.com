@@ -24,7 +24,7 @@ export const Jsquizfocus = ({ match }) => (
   <motion.div className="single" initial="exit" animate="enter" exit="exit">
     
       <motion.div className="back" variants={backVariants}>
-        <Link to="/projects" className="whitetext backbutton">
+        <Link to="/games" className="whitetext backbutton">
           ← Back
         </Link>{" "}
          
