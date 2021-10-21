@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Navigation } from "./components/navbar";
 import "./App.css";
 import  Homepage  from "./pages/homepage";
@@ -28,12 +28,12 @@ import  Games  from "./pages/games";
 import { Dino } from "./components/focuspages/dinofocus";
 function App() {
   const location = useLocation();
-  
+  const [buttonOn, setButtonOn] = useState(0);
  UseFavicon('./images/Dicon.png')
   return (
    
       <motion.div className="wrapper">
-        <Navigation />{" "}
+        <Navigation buttonOn={buttonOn} setButtonOn={setButtonOn} />{" "}
        
         <div className="backgroundclass">
         <div className="stars"></div>
@@ -43,7 +43,13 @@ function App() {
          
           <AnimatePresence exitBeforeEnter={true}> 
             <Switch location={location} key={location.pathname}>
-               <Route exact path="/" component={Homepage} /> 
+            <Route
+              exact
+              path="/"
+              render={(props) => (
+                <Homepage {...props} setButtonOn={setButtonOn} buttonOn={buttonOn} />
+              )}
+            />
               <Route path="/Projects" component={Projects} />
               <Route path="/Skills" component={Skills} />
               <Route path="/Testimonials" component={Testimonials} />

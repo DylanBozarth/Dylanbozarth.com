@@ -26,7 +26,7 @@ const floatTransition = {
   duration: 1.2
 }
 
-function Homepage() {
+function Homepage(props) {
  
   return (
     <motion.div
@@ -45,8 +45,8 @@ function Homepage() {
       animate="in"
       exit="out"
       
-       className="homepagelinkbox  col-lg-4">
-            <NavLink to="/projects">
+       className="homepagelinkbox  col-lg-4" >
+            <NavLink to="/projects" onClick={() => props.setButtonOn(1)}>
               <Card
                 imgUrl="./images/projectspage.png"
                 title="Professional Projects"
@@ -60,7 +60,7 @@ function Homepage() {
       exit="out"
       
        className="homepagelinkbox  col-lg-4">
-            <NavLink to="/games">
+            <NavLink to="/games"  onClick={() => props.setButtonOn(2)}>
               <Card
                 imgUrl="./images/unprofessional.png"
                 title="Unprofessional Projects"
