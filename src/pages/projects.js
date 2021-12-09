@@ -57,7 +57,7 @@ class Projects extends Component {
         
         {
 
-          image: "./images/spokanepowerstroke.jpg",
+          image: "./images/spokanepowerstroke.png",
           title: "Spokane Power Stroke",
           link: "/powerstroke",
           tag: "professional"

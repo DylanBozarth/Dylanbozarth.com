@@ -38,7 +38,7 @@ export const PowerstrokeFocus = ({ match }) => (
       </motion.div>{" "}
      <a href="https://spokanepowerstroke.net/" target="_blank" rel="noopener noreferrer"> <motion.img
         variants={imageVariants}
-        src="./images/spokanepowerstroke.jpg"
+        src="./images/spokanepowerstroke.png"
         alt="Spokane Power stroke"
         className="img-fluid"
       />
