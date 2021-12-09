@@ -26,6 +26,7 @@ import { Fourohfour } from "./pages/404";
 import { MyPetFocus } from "./components/focuspages/mypetfocus";
 import  Games  from "./pages/games";
 import { Dino } from "./components/focuspages/dinofocus";
+import { GenerateFocusPage } from "./pages/generateFocusPage";
 function App() {
   const location = useLocation();
   const [buttonOn, setButtonOn] = useState(0);
@@ -70,6 +71,7 @@ function App() {
               <Route path="/mypet" component={MyPetFocus} />
               <Route path="/games" component={Games} />
               <Route path="/dino" component={Dino} />
+              <Route path="/:id"  component={GenerateFocusPage} />
              {/*  <Route component={Fourohfour} /> */}
             </Switch>
           </AnimatePresence>
