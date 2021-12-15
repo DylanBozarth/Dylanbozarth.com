@@ -523,21 +523,12 @@ border-radius: 15%;
   }
 }
 
-/* homepage text effects */
+/* homepage  */
 
-.homepagebox {
-  text-align: center;
-  margin-top: 10vh;
-  height: 200vh;
+.homepage {
+  overflow: visible
 }
 
-
-.neon {
-  font-weight: 400;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 9vh
-}
 
 /*End of homgepage */
 /* card start */
