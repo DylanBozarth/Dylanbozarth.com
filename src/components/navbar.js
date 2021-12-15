@@ -21,7 +21,7 @@ export const Navigation = (props) => {
   return (
     <nav className="navbar  navbar-dark navbar-expand-sm">
       <motion.div
-        class="container"
+        class="container-fluid"
         initial="out"
         animate="in"
         exit="out"

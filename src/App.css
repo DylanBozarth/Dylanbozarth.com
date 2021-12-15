@@ -526,7 +526,8 @@ border-radius: 15%;
 /* homepage  */
 
 .homepage {
-  overflow: visible
+  overflow: visible;
+  height: 100vh;
 }
 
 
@@ -724,99 +725,7 @@ border-radius: 15%;
   color: black;
   transform: scale(1.1);
 }
-/* form start (hire me) */ 
-.hiremelabel {
-  color: white;
-  text-align: center;
-  font-size: 2rem;
-}
-.contactform {
-  margin-top: 5%;
-  margin-bottom:  10%;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  border-width: 1rem;
-  border-style: ridge;
-  border-color: darkslateblue;
-}
-.contactme {
-  text-align: center;
-}
-input[type="text"],
-select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-input[type="email"],
-select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
 
-input[type="submit"] {
-  width: 100%;
-  background-color: #4caf50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type="text"]:focus {
-  background-color: steelblue;
-}
-input[type="email"]:focus {
-  background-color: steelblue;
-}
-textarea:focus {
-  background-color: steelblue;
-}
-textarea {
-  width: 95%;
-  height: 150px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  resize: none;
-}
-
-.leftboxes {
-  float: left;
-  margin-right: 5%;
-}
-.rightboxes {
-  float: center;
-}
-.submitbutton {
-  background-color: #4caf50;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  font-size: 24px;
-  cursor: pointer;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.submitbutton:hover {
-  text-decoration: underline;
-}
 /* skills page */
 
  
@@ -1655,24 +1564,4 @@ aside:hover ul li:nth-child(3) {
 .linktitle {
   text-align: center;
   font-family: 'Nova Square', cursive;
-}
-
-/* typing begins */ 
-.neon {
-  color: #fff;
-  
-  font-family: 'Nova Square', cursive;
-  text-shadow:
-    0 0 5px purple,
-    0 0 10px steelblue,
-    0 0 20px purple,
-    0 0 40px blue,
-    0 0 80px red,
-    0 0 90px red
-}
-.testcard {
-  padding-top: 20px;
-}
-.restimage {
-  margin-left: 2%;
 }
