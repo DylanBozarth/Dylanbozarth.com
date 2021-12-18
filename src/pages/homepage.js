@@ -35,7 +35,7 @@ function Homepage(props) {
       exit="out"
       variants={changepage}
       transition={pagetransition}
-      className=" container-fluid homepage"
+      className=" container homepage"
     >
       <div className="row">
         <motion.div initial="out" animate="in" exit="out" className=" col-sm-4">

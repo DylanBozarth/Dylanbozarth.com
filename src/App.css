@@ -528,6 +528,7 @@ border-radius: 15%;
 .homepage {
   overflow: visible;
   height: 100vh;
+  margin-top: 10vh;
 }
 
 
