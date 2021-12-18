@@ -40,16 +40,17 @@ class Games extends Component {
     super();
     this.state = {
       items: [
+        
+        {
+image: "./gamesImages/my_pet.png",
+title: "My pet database",
+link: "/mypet",
+        },
         {
           image: "./gamesImages/dinogame.jfif",
           title: "Dinosaur Jumping game",
           link: "/dino",
           tag: "professional"
-        },
-        {
-image: "./gamesImages/my_pet.png",
-title: "My pet database",
-link: "/mypet",
         },
         {
           image: "./gamesImages/dadabase.jpg",
