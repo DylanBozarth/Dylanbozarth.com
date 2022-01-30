@@ -199,7 +199,7 @@ export const Skills = () => (
     <Row>
       <div className="item">
         <a
-          href="https://github.com/Imstupidpleasehelp"
+          href="https://github.com/dylanbozarth"
           target="_blank"
           rel="noopener noreferrer"
         >
