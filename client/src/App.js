@@ -6,7 +6,6 @@ import { BrowserRouter as  Switch, Route, useLocation, Redirect } from "react-ro
 import  Projects  from "./pages/projects";
 import { Skills } from "./pages/skills";
 import { Testimonials } from "./pages/Testimonials";
-import Hireme from "./pages/hireme";
 import { AnimatePresence, motion } from "framer-motion";
 import { SkylimitFocus } from "./components/focuspages/skylimitfocus";
 import {PowerstrokeFocus} from './components/focuspages/powerstrokefocus'
@@ -54,7 +53,6 @@ function App() {
               <Route path="/Projects" component={Projects} />
               <Route path="/Skills" component={Skills} />
               <Route path="/Testimonials" component={Testimonials} />
-              <Route path="/hireme" component={Hireme} />
               <Route path="/skylimit" component={SkylimitFocus} />
               <Route  path="/dadabase" component={Dadfocus} /> 
               <Route path="/powerstroke" component={PowerstrokeFocus} />
