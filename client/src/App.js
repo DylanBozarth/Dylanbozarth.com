@@ -69,7 +69,6 @@ function App() {
               <Route path="/mypet" component={MyPetFocus} />
               <Route path="/games" component={Games} />
               <Route path="/dino" component={Dino} />
-              <Route path="/:id"  component={GenerateFocusPage} />
              {/*  <Route component={Fourohfour} /> */}
             </Switch>
           </AnimatePresence>

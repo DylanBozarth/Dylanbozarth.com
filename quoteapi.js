@@ -1,3 +1,4 @@
+const express = require('express')
 const quotes = require("./quotes.json");
 
 const headers = {
@@ -5,9 +6,10 @@ const headers = {
     "Access-Control-Allow-Methods": "GET",
     "Access-Control-Allow-Headers": "Content-Type",
 };
-
-
-
+const app = express();
+app.get('/api/jaden', (req, res) => {
+    res.send('it worked')
+})
 async function handleRequest(request) {
     try {
         const quote = quotes[Math.floor(Math.random() * quotes.length)];
@@ -25,6 +27,3 @@ async function handleRequest(request) {
     }
 }
 
-addEventListener("fetch", (event) => {
-    event.respondWith(handleRequest(event.request));
-});
