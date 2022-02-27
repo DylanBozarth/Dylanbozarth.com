@@ -34,6 +34,7 @@ const changepage = {
 const pagetransition = {
   duration: 1.1,
 };
+// clean this up lol
 class Projects extends Component {
   constructor() {
     super();
