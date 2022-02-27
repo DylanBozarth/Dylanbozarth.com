@@ -4,9 +4,6 @@
   "homepage": "https://Dylanbozarth.com",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.5.2",
     "build": "^0.1.4",
     "framer-motion": "2.6.15",

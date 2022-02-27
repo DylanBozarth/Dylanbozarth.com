@@ -85,14 +85,7 @@ class Projects extends Component {
       ],
     };
   }
-  componentDidMount(items) {
-    console.log('I mounted')
-    const showProjects = () => (
-      console.log('aaa')
-    )
-    showProjects()
-  }
-  //https://www.dylanbozarth.com/Projects#practices
+//www.dylanbozarth.com/Projects#practices
   state = {};
   render() {
     return (
