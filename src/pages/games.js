@@ -91,12 +91,7 @@ link: "/mypet",
           tag: "personal"
         },
       
-        {
-          image: "./gamesImages/rest.jpeg",
-          title: "REST API Widget",
-          link: "/rest",
-          tag: "personal"
-        },
+       
       ],
     };
   }
