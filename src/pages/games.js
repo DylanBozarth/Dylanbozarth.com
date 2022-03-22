@@ -52,12 +52,7 @@ link: "/mypet",
           link: "/dino",
           tag: "professional"
         },
-        {
-          image: "./gamesImages/dadabase.jpg",
-          title: "Dad joke database",
-          link: "/dadabase"
-
-        },
+        
         {
           image: "./gamesImages/pizza.jpeg",
           title: "Create your own Pizza UI",
