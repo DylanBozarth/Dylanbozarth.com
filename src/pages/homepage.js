@@ -22,9 +22,6 @@ const floatIn1 = {
     y: "100vh",
   },
 };
-const floatTransition = {
-  duration: 1.2,
-};
 
 function Homepage(props) {
   return (
@@ -48,11 +45,16 @@ function Homepage(props) {
             />
           </NavLink>
         </motion.div>
-        <motion.div initial="out" animate="in" exit="out" className="  col-sm-4">
+        <motion.div
+          initial="out"
+          animate="in"
+          exit="out"
+          className="  col-sm-4"
+        >
           <NavLink to="/games" onClick={() => props.setButtonOn(2)}>
             <Card
               imgUrl="./images/unprofessional.png"
-              title="Unprofessional Projects"
+              title="Game Projects"
               className=" "
               description=""
             />
@@ -60,15 +62,11 @@ function Homepage(props) {
         </motion.div>
         <motion.div className=" col-sm-4" initial="out" animate="in" exit="out">
           <a
-            href="https://drive.google.com/file/d/1uUpgsKgXbvMPbeHdmIUkTsQ7WLT6NpnW/view?usp=sharing"
+            href="https://drive.google.com/file/d/19Bqw_F6VsmHtQEZAZBLS7yrry8Mjzn13/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Card
-              imgUrl="./images/resume.png"
-              title="My Resume"
-              className=""
-            />
+            <Card imgUrl="./images/resume.png" title="My Resume" className="" />
           </a>
         </motion.div>
       </div>

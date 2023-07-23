@@ -16,8 +16,6 @@ const pagetransition = {
 };
 
 export const Navigation = (props) => {
-
- 
   return (
     <nav className="navbar  navbar-dark navbar-expand-sm">
       <motion.div
@@ -30,13 +28,18 @@ export const Navigation = (props) => {
       >
         <NavLink
           to="/"
-         
           onClick={() => {
             props.setButtonOn(0);
           }}
         >
           {" "}
-          <div  className={props.buttonOn === 0 ? "nav-link-active nav-link" : "nav-link"}>Dylan Bozarth</div>{" "}
+          <div
+            className={
+              props.buttonOn === 0 ? "nav-link-active nav-link" : "nav-link"
+            }
+          >
+            Dylan Bozarth
+          </div>{" "}
         </NavLink>
 
         <button
@@ -51,38 +54,57 @@ export const Navigation = (props) => {
         </button>
         <div className="collapse navbar-collapse" id="toggler-nav">
           <div className="navbar-nav">
-          <NavLink
-          to="/Projects"
-         
-          onClick={() => {
-            props.setButtonOn(1);
-          }}
-        >
-          {" "}
-          <div  className={props.buttonOn === 1 ? "nav-link-active nav-link " : "nav-link"}>Projects</div>{" "}
-        </NavLink>
-        <NavLink
-          to="/games"
-         
-          onClick={() => {
-            props.setButtonOn(2);
-          }}
-        >
-          {" "}
-          <div  className={props.buttonOn === 2 ? "nav-link-active nav-link " : "nav-link"}>Other projects</div>{" "}
-        </NavLink>
-        <NavLink
-          to="/Skills"
-         
-          onClick={() => {
-            props.setButtonOn(3);
-          }}
-        >
-          {" "}
-          <div  className={props.buttonOn === 3 ? "nav-link-active nav-link " : "nav-link"}>Technologies</div>{" "}
-        </NavLink>
-
-            
+            <NavLink
+              to="/Projects"
+              onClick={() => {
+                props.setButtonOn(1);
+              }}
+            >
+              {" "}
+              <div
+                className={
+                  props.buttonOn === 1
+                    ? "nav-link-active nav-link "
+                    : "nav-link"
+                }
+              >
+                Projects
+              </div>{" "}
+            </NavLink>
+            <NavLink
+              to="/otherProjects"
+              onClick={() => {
+                props.setButtonOn(2);
+              }}
+            >
+              {" "}
+              <div
+                className={
+                  props.buttonOn === 2
+                    ? "nav-link-active nav-link "
+                    : "nav-link"
+                }
+              >
+                Other projects
+              </div>{" "}
+            </NavLink>
+            <NavLink
+              to="/Skills"
+              onClick={() => {
+                props.setButtonOn(3);
+              }}
+            >
+              {" "}
+              <div
+                className={
+                  props.buttonOn === 3
+                    ? "nav-link-active nav-link "
+                    : "nav-link"
+                }
+              >
+                Technologies
+              </div>{" "}
+            </NavLink>
           </div>
         </div>
       </motion.div>

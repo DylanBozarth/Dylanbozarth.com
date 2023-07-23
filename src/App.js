@@ -7,25 +7,24 @@ import  Projects  from "./pages/projects";
 import { Skills } from "./pages/skills";
 import { Testimonials } from "./pages/Testimonials";
 import { AnimatePresence, motion } from "framer-motion";
-import { SkylimitFocus } from "./components/focuspages/skylimitfocus";
-import {PowerstrokeFocus} from './components/focuspages/powerstrokefocus'
-import { Weaponsshopfocus } from "./components/focuspages/weaponsshopfocus";
-import { ThiswebsiteFocus } from "./components/focuspages/thiswebsitefocus";
-import { JymrDoodlesFocus } from "./components/focuspages/jymrdoodlesfocus";
-import UseFavicon from './components/useFavicon'
-import { Jsquizfocus } from "./components/focuspages/jsquizfocus";
-import { Weatherappfocus } from "./components/focuspages/weatherappfocus";
- import  {pizzaFocus} from './components/focuspages/pizzaFocus'
+import { SkylimitFocus } from "./pages/focuspages/skylimitfocus";
+import {PowerstrokeFocus} from './pages/focuspages/powerstrokefocus'
+import { Weaponsshopfocus } from "./pages/focuspages/weaponsshopfocus";
+import { ThiswebsiteFocus } from "./pages/focuspages/thiswebsitefocus";
+import { JymrDoodlesFocus } from "./pages/focuspages/jymrdoodlesfocus";
+import UseFavicon from './components/hooks/useFavicon'
+import { Jsquizfocus } from "./pages/focuspages/jsquizfocus";
+import { Weatherappfocus } from "./pages/focuspages/weatherappfocus";
+ import  {pizzaFocus} from './pages/focuspages/pizzaFocus'
 import { Todo } from "./components/todo";
-import { SolarsystemFocus } from "./components/solarsystem";
-import {BitcoinFocus} from './components/focuspages/bitcoinfocus'
-import { RestFocus } from "./components/focuspages/restFocus";
-import { Dadfocus } from "./components/focuspages/dadfocus";
-import { Fourohfour } from "./pages/404";
-import { MyPetFocus } from "./components/focuspages/mypetfocus";
+import { SolarsystemFocus } from "./pages/focuspages/solarsystem";
+import {BitcoinFocus} from './pages/focuspages/bitcoinfocus'
+import { RestFocus } from "./pages/focuspages/restFocus";
+import { Dadfocus } from "./pages/focuspages/dadfocus";
+import { MyPetFocus } from "./pages/focuspages/mypetfocus";
 import  Games  from "./pages/games";
-import { Dino } from "./components/focuspages/dinofocus";
-import { GenerateFocusPage } from "./pages/generateFocusPage";
+import { Dino } from "./pages/focuspages/dinofocus";
+
 function App() {
   const location = useLocation();
   const [buttonOn, setButtonOn] = useState(0);
@@ -50,7 +49,7 @@ function App() {
                 <Homepage {...props} setButtonOn={setButtonOn} buttonOn={buttonOn} />
               )}
             />
-              <Route path="/Projects" component={Projects} />
+              <Route path="/Projects" component={Projects} /> {/* this was done before I knew how to do procedural routing, don't judge */}
               <Route path="/Skills" component={Skills} />
               <Route path="/Testimonials" component={Testimonials} />
               <Route path="/skylimit" component={SkylimitFocus} />
@@ -67,7 +66,7 @@ function App() {
               <Route path="/solarsystem" component={SolarsystemFocus} />
               <Route path="/bitcoin" component={BitcoinFocus} />
               <Route path="/mypet" component={MyPetFocus} />
-              <Route path="/games" component={Games} />
+              <Route path="/otherProjects" component={Games} />
               <Route path="/dino" component={Dino} />
              {/*  <Route component={Fourohfour} /> */}
             </Switch>

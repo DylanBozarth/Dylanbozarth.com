@@ -67,8 +67,8 @@ class Gallery extends Component {
             </motion.div>
           ))}
         </motion.div>
-        
-        
+
+
       </div>
     );
   }

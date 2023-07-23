@@ -25,10 +25,10 @@ const imageVariants = {
 };
 const changepage = {
   in: {
-    y: '0vh',
+    y: "0vh",
   },
   out: {
-    y: '100vh',
+    y: "100vh",
   },
 };
 const pagetransition = {
@@ -44,49 +44,37 @@ class Projects extends Component {
           image: "./images/jymr.jpg",
           title: "JYMR Doodles",
           link: "/doodles",
-          tag: "professional"
+          tag: "professional",
         },
         {
           image: "./images/solarsystem.png",
           title: "Solar System Viewer",
           link: "/solarsystem",
-          tag: "personal"
+          tag: "personal",
         },
-       
-        
-        
-        
         {
-
           image: "./images/spokanepowerstroke.png",
           title: "Spokane Power Stroke",
           link: "/powerstroke",
-          tag: "professional"
-        },{
+          tag: "professional",
+        },
+        {
           image: "./images/thiswebsite.png",
           title: "My Portfolio",
           link: "/portfolio",
           tag: "professional",
-          date: 3
-        },{
+          date: 3,
+        },
+        {
           image: "./images/skyfitnessnew.jpg",
           title: "Skylimit Fitness",
           link: "/skylimit",
-          tag: "professional"
-
+          tag: "professional",
         },
-       
-        
-        
-       
-      
-        
-        
-        
       ],
     };
   }
-//www.dylanbozarth.com/Projects#practices
+  //www.dylanbozarth.com/Projects#practices
   state = {};
   render() {
     return (
@@ -99,10 +87,9 @@ class Projects extends Component {
         transition={pagetransition}
       >
         <Container className="Projects ">
-       
           <p className="projectpagetitle ">
             Comercial web projects <br /> Click for more details
-           {/* <div className="dropdown">
+            {/* <div className="dropdown">
   <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Sort By
   </button>
@@ -117,12 +104,14 @@ class Projects extends Component {
           <Row>
             <Col></Col>
             <Col md="auto">
-              
               {this.state.items.map(({ title, image, link }) => (
-                <motion.div className="thumbnail" variants={thumbnailVariants}  key={title}>
+                <motion.div
+                  className="thumbnail"
+                  variants={thumbnailVariants}
+                  key={title}
+                >
                   {" "}
                   <motion.div
-                   
                     className="frame"
                     whileHover="hover"
                     variants={frameVariants}
@@ -143,8 +132,6 @@ class Projects extends Component {
             </Col>
             <Col></Col>
           </Row>
-      
-          
         </Container>
       </motion.div>
     );
