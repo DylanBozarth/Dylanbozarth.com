@@ -22,7 +22,7 @@ import {BitcoinFocus} from './pages/focuspages/bitcoinfocus'
 import { RestFocus } from "./pages/focuspages/restFocus";
 import { Dadfocus } from "./pages/focuspages/dadfocus";
 import { MyPetFocus } from "./pages/focuspages/mypetfocus";
-import  Games  from "./pages/games";
+import  Games  from "./pages/personal";
 import { Dino } from "./pages/focuspages/dinofocus";
 
 function App() {

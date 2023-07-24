@@ -25,10 +25,10 @@ const imageVariants = {
 };
 const changepage = {
   in: {
-    y: '0vh',
+    y: "0vh",
   },
   out: {
-    y: '100vh',
+    y: "100vh",
   },
 };
 const pagetransition = {
@@ -40,11 +40,15 @@ class Games extends Component {
     super();
     this.state = {
       items: [
-        
+        /*{
+          image: "./images/andromeda.png",
+          title: "Andromeda",
+          link: "/andromeda",
+        },*/
         {
-image: "./gamesImages/my_pet.png",
-title: "My pet database",
-link: "/mypet",
+          image: "./gamesImages/my_pet.png",
+          title: "My pet database",
+          link: "/mypet",
         },
         {
           image: "./images/solarsystem.png",
@@ -56,47 +60,25 @@ link: "/mypet",
           image: "./gamesImages/dinogame.jfif",
           title: "Dinosaur Jumping game",
           link: "/dino",
-          tag: "professional"
+          tag: "professional",
         },
-        
+
         {
           image: "./gamesImages/pizza.jpeg",
           title: "Create your own Pizza UI",
           link: "/pizza",
-          tag: "personal"
+          tag: "personal",
         },
         {
           image: "./gamesImages/hwsnew.png",
           title: "History's Armory",
           link: "/weaponsshop",
-          tag: "personal"
+          tag: "personal",
         },
-        {
-          image: "./gamesImages/weatherapp.png",
-          title: "Weatherapp",
-          link: "/weather",
-          tag: "personal"
-        },
-        
-        {
-          image: "./gamesImages/todo.png",
-          title: "Javascript todo List",
-          link: "/todo",
-          tag: "personal"
-        },
-        
-        {
-          image: "./gamesImages/bitcoin.png",
-          title: "CryptoTracker",
-          link: "/bitcoin",
-          tag: "personal"
-        },
-      
-       
       ],
     };
   }
- 
+
   state = {};
   render() {
     return (
@@ -109,30 +91,21 @@ link: "/mypet",
         transition={pagetransition}
       >
         <Container className="Projects ">
-       
           <p className="projectpagetitle ">
-            Minigames and other<br /> Coding projects done for fun
-           {/* <div className="dropdown">
-  <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Sort By
-  </button>
-  <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <p className="sort-button">aaa</p>
-    <p className="sort-button">aaa</p>
-    <p className="sort-button">aaa</p>
-  </div>
-</div>
-    */}
+            Minigames and other
+            <br /> Coding projects done for fun
           </p>
           <Row>
             <Col></Col>
             <Col md="auto">
-              
               {this.state.items.map(({ title, image, link }) => (
-                <motion.div className="thumbnail" variants={thumbnailVariants} key={title}>
+                <motion.div
+                  className="thumbnail"
+                  variants={thumbnailVariants}
+                  key={title}
+                >
                   {" "}
                   <motion.div
-                    
                     className="frame"
                     whileHover="hover"
                     variants={frameVariants}
@@ -153,8 +126,6 @@ link: "/mypet",
             </Col>
             <Col></Col>
           </Row>
-        
-          
         </Container>
       </motion.div>
     );

@@ -51,10 +51,10 @@ function Homepage(props) {
           exit="out"
           className="  col-sm-4"
         >
-          <NavLink to="/games" onClick={() => props.setButtonOn(2)}>
+          <NavLink to="/otherProjects" onClick={() => props.setButtonOn(2)}>
             <Card
               imgUrl="./images/unprofessional.png"
-              title="Game Projects"
+              title="Personal Projects"
               className=" "
               description=""
             />
