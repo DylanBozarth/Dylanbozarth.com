@@ -68,7 +68,7 @@ export const Navigation = (props) => {
                     : "nav-link"
                 }
               >
-                Projects
+                Freelance work
               </div>{" "}
             </NavLink>
             <NavLink

@@ -42,11 +42,12 @@ export const Skills = () => (
     className="whitetext"
   >
     <div className="container">
-      <p className="projectpagetitle">I work with the following technologies</p>
+      <p className="projectpagetitle">I have worked with the following technologies</p>
       <p className="projectstitle">
        Anything that I don't already know, I am
         always able to learn.
       </p>
+      {/* make these reusable components */}
       <motion.div initial="out"
     animate="in"
     exit="out"
@@ -110,6 +111,18 @@ export const Skills = () => (
                 JavaScript library for building user interfaces. It is
                 maintained by Facebook and a community of individual developers
                 and companies.
+              </p>
+            </div>
+          </aside>{" "}
+        </div>
+        <div className="col-sm ">
+          <aside className="profile-card asidetypescript">
+            <header></header>
+
+            <div className="profile-bio">
+              <p>TypeScript</p>
+              <p>
+              TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
               </p>
             </div>
           </aside>{" "}

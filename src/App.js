@@ -3,7 +3,7 @@ import { Navigation } from "./components/navbar";
 import "./App.css";
 import  Homepage  from "./pages/homepage";
 import { BrowserRouter as  Switch, Route, useLocation, Redirect } from "react-router-dom";
-import  Projects  from "./pages/projects";
+import  Projects  from "./pages/freelance";
 import { Skills } from "./pages/skills";
 import { Testimonials } from "./pages/Testimonials";
 import { AnimatePresence, motion } from "framer-motion";

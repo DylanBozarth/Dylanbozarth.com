@@ -47,12 +47,6 @@ class Projects extends Component {
           tag: "professional",
         },
         {
-          image: "./images/solarsystem.png",
-          title: "Solar System Viewer",
-          link: "/solarsystem",
-          tag: "personal",
-        },
-        {
           image: "./images/spokanepowerstroke.png",
           title: "Spokane Power Stroke",
           link: "/powerstroke",

@@ -974,6 +974,10 @@ aside {
   background: url(./skillsimages/csharp.png);
   background-size: 100% 100%;
 }
+.asidetypescript {
+  background: url(./skillsimages/typescript.png);
+  background-size: 100% 100%;
+}
 aside:hover {
   border-top: 4px solid #26a69a;
   border-bottom: 4px solid #00695c;

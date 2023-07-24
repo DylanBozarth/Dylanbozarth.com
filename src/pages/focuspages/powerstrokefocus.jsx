@@ -36,7 +36,7 @@ export const PowerstrokeFocus = ({ match }) => (
           
         </div>
       </motion.div>{" "}
-     <a href="https://spokanepowerstroke.net/" target="_blank" rel="noopener noreferrer"> <motion.img
+     <a href="https://loving-turing-361ea9.netlify.app/" target="_blank" rel="noopener noreferrer"> <motion.img
         variants={imageVariants}
         src="./images/spokanepowerstroke.png"
         alt="Spokane Power stroke"
@@ -47,7 +47,7 @@ export const PowerstrokeFocus = ({ match }) => (
     <div className="linkbox">
       <a
         className="button2 b-blue rot-135"
-        href="https://spokanepowerstroke.net/"
+        href="https://loving-turing-361ea9.netlify.app/"
         target="_blank"
         rel="noopener noreferrer"
       >

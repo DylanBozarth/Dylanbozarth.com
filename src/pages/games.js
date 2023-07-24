@@ -47,6 +47,12 @@ title: "My pet database",
 link: "/mypet",
         },
         {
+          image: "./images/solarsystem.png",
+          title: "Solar System Viewer",
+          link: "/solarsystem",
+          tag: "personal",
+        },
+        {
           image: "./gamesImages/dinogame.jfif",
           title: "Dinosaur Jumping game",
           link: "/dino",

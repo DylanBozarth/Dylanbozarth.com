@@ -27,7 +27,7 @@ export const Dino = ({ match }) => (
     <motion.div className="single" initial="exit" animate="enter" exit="exit">
       
         <motion.div className="back" variants={backVariants}>
-          <Link to="/games" className="whitetext backbutton">
+          <Link to="/otherProjects" className="whitetext backbutton">
             ← Back
           </Link>{" "}
            
