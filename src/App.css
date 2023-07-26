@@ -144,7 +144,7 @@ background-size: 100% 100%;
 }
 
 .twinkling{
-background:transparent url(./images/twinkling.png) repeat top center;
+background:transparent url(./images/twinkling.webp) repeat top center;
 z-index:1;
 
 -moz-animation:move-twink-back 200s linear infinite;
@@ -155,7 +155,7 @@ animation:move-twink-back 200s linear infinite;
 }
 
 .clouds{
-  background:transparent url(./images/clouds3.png) repeat top center;
+  background:transparent url(./images/clouds3.webp) repeat top center;
   z-index:3;
 background-size: 100% 100%;
 -moz-animation:move-clouds-back 250s linear infinite;

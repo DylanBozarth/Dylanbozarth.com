@@ -38,7 +38,7 @@ function Homepage(props) {
         <motion.div initial="out" animate="in" exit="out" className=" col-sm-4">
           <NavLink to="/projects" onClick={() => props.setButtonOn(1)}>
             <Card
-              imgUrl="./images/projectspage.png"
+              imgUrl="./images/projectspage.webp"
               title="Professional Projects"
               className=" "
               description=""
@@ -53,7 +53,7 @@ function Homepage(props) {
         >
           <NavLink to="/otherProjects" onClick={() => props.setButtonOn(2)}>
             <Card
-              imgUrl="./images/unprofessional.png"
+              imgUrl="./images/unprofessional.webp"
               title="Personal Projects"
               className=" "
               description=""
@@ -66,7 +66,7 @@ function Homepage(props) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Card imgUrl="./images/resume.png" title="My Resume" className="" />
+            <Card imgUrl="./images/resume.webp" title="My Resume" className="" />
           </a>
         </motion.div>
       </div>
