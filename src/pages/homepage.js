@@ -35,30 +35,35 @@ function Homepage(props) {
       className=" container homepage"
     >
       <div className="row">
-        <motion.div initial="out" animate="in" exit="out" className=" col-sm-4">
-          <NavLink to="/projects" onClick={() => props.setButtonOn(1)}>
-            <Card
-              imgUrl="./images/projectspage.webp"
-              title="Professional Projects"
-              className=" "
-              description=""
-            />
-          </NavLink>
+        <motion.div
+          initial="out"
+          animate="in"
+          exit="out"
+          className=" col-sm-4"
+          onClick={() => props.setButtonOn(1)}
+        >
+          <Card
+            imgUrl="./images/projectspage.webp"
+            link="/projects"
+            title="Professional Projects"
+            className=" "
+            description=""
+          />
         </motion.div>
         <motion.div
           initial="out"
           animate="in"
           exit="out"
-          className="  col-sm-4"
+          className="col-sm-4"
+          onClick={() => props.setButtonOn(2)}
         >
-          <NavLink to="/otherProjects" onClick={() => props.setButtonOn(2)}>
-            <Card
-              imgUrl="./images/unprofessional.webp"
-              title="Personal Projects"
-              className=" "
-              description=""
-            />
-          </NavLink>
+          <Card
+            imgUrl="./images/unprofessional.webp"
+            title="Personal Projects"
+            link="/otherProjects"
+            className=" "
+            description=""
+          />
         </motion.div>
         <motion.div className=" col-sm-4" initial="out" animate="in" exit="out">
           <a
@@ -66,7 +71,12 @@ function Homepage(props) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Card imgUrl="./images/resume.webp" title="My Resume" className="" />
+            <div className="card gradient-border container-fluid resume">
+              <div className="card-info">
+                <h4 className="card-title">My Resume</h4>
+                <div className="card-waves" />
+              </div>
+            </div>
           </a>
         </motion.div>
       </div>

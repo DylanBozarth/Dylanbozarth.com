@@ -1,7 +1,8 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
 export default function Card(props) {
   return (
+    <NavLink to={`${props.link}`}>
     <div
       style={{
         backgroundImage: `url(${props.imgUrl})`
@@ -14,5 +15,6 @@ export default function Card(props) {
         <div className="card-waves" />
       </div>
     </div>
+    </NavLink>
   );
 }
