@@ -53,13 +53,6 @@ class Projects extends Component {
           tag: "professional",
         },
         {
-          image: "./images/thiswebsite.png",
-          title: "My Portfolio",
-          link: "/portfolio",
-          tag: "professional",
-          date: 3,
-        },
-        {
           image: "./images/skyfitnessnew.jpg",
           title: "Skylimit Fitness",
           link: "/skylimit",
