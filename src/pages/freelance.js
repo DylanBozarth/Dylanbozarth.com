@@ -32,7 +32,6 @@ const changepage = {
 const pagetransition = {
   duration: 1.1,
 };
-// clean this up lol
 export const Projects = () => {
   const [projects, setProjects] = useState([
     {
@@ -66,7 +65,7 @@ export const Projects = () => {
     >
       <div className="Projects ">
         <p className="projectpagetitle ">
-          Commercial web projects <br /> Click for more details
+          Commercial web projects I made before finding stable employment<br /> Click for more details
         </p>
         <div md="auto">
           {projects.map(({ title, image, link }) => (

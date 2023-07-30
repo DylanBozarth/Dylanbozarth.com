@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import Card from "../components/card";
-import { NavLink } from "react-router-dom";
 const changepage = {
   in: {
     y: "0vh",
@@ -14,15 +13,6 @@ const changepage = {
 const pagetransition = {
   duration: 1.2,
 };
-const floatIn1 = {
-  in: {
-    y: "0vh",
-  },
-  out: {
-    y: "100vh",
-  },
-};
-
 function Homepage(props) {
   return (
     <motion.div
