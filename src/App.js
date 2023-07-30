@@ -9,15 +9,10 @@ import { AnimatePresence, motion } from "framer-motion";
 import { SkylimitFocus } from "./pages/focuspages/skylimitfocus";
 import { PowerstrokeFocus } from "./pages/focuspages/powerstrokefocus";
 import { Weaponsshopfocus } from "./pages/focuspages/weaponsshopfocus";
-import { ThiswebsiteFocus } from "./pages/focuspages/thiswebsitefocus";
 import { JymrDoodlesFocus } from "./pages/focuspages/jymrdoodlesfocus";
-import { Jsquizfocus } from "./pages/focuspages/jsquizfocus";
 import { Weatherappfocus } from "./pages/focuspages/weatherappfocus";
 import { pizzaFocus } from "./pages/focuspages/pizzaFocus";
 import { SolarsystemFocus } from "./pages/focuspages/solarsystem";
-import { BitcoinFocus } from "./pages/focuspages/bitcoinfocus";
-import { RestFocus } from "./pages/focuspages/restFocus";
-import { Dadfocus } from "./pages/focuspages/dadfocus";
 import { MyPetFocus } from "./pages/focuspages/mypetfocus";
 import  { Personal } from "./pages/personal";
 import { Dino } from "./pages/focuspages/dinofocus";
@@ -51,17 +46,12 @@ function App() {
           {/* this was done before I knew how to do procedural routing, don't judge */}
           <Route path="/Skills" component={Skills} />
           <Route path="/skylimit" component={SkylimitFocus} />
-          <Route path="/dadabase" component={Dadfocus} />
           <Route path="/powerstroke" component={PowerstrokeFocus} />
           <Route path="/weaponsshop" component={Weaponsshopfocus} />
-          <Route path="/portfolio" component={ThiswebsiteFocus} />
           <Route path="/doodles" component={JymrDoodlesFocus} />
-          <Route path="/jsquiz" component={Jsquizfocus} />
           <Route path="/weather" component={Weatherappfocus} />
           <Route path="/pizza" component={pizzaFocus} />
-          <Route path="/rest" component={RestFocus} />
           <Route path="/solarsystem" component={SolarsystemFocus} />
-          <Route path="/bitcoin" component={BitcoinFocus} />
           <Route path="/mypet" component={MyPetFocus} />
 
           <Route path="/dino" component={Dino} />
