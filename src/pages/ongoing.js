@@ -32,26 +32,13 @@ const changepage = {
 const pagetransition = {
   duration: 1.1,
 };
-export const Freelance = () => {
+export const OnGoing = () => {
   const [projects, setProjects] = useState([
     {
-      image: "./images/jymr.jpg",
-      title: "JYMR Doodles",
-      link: "/doodles",
-      tag: "professional",
-    },
-    {
-      image: "./images/spokanepowerstroke.png",
-      title: "Spokane Power Stroke",
-      link: "/powerstroke",
-      tag: "professional",
-    },
-    {
-      image: "./images/skyfitnessnew.jpg",
-      title: "Skylimit Fitness",
-      link: "/skylimit",
-      tag: "professional",
-    },
+      image: "./images/andromeda.webp",
+      title: "Andromeda",
+      link: "/andromeda",
+    }
   ]);
 
   return (
@@ -65,7 +52,7 @@ export const Freelance = () => {
     >
       <div className="Projects ">
         <p className="projectpagetitle ">
-          Commercial web projects made while I was freelancing<br /> I am no longer accepting freelance offers.
+          Long-term projects that are still in development
         </p>
         <div md="auto">
           {projects.map(({ title, image, link }) => (

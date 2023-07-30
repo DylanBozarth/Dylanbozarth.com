@@ -28,11 +28,11 @@ export const Weaponsshopfocus  = ({ match }) => (
           ← Back
         </Link>{" "}
          
-        <p className="languagesused">Languages used</p>
+        <p className="languagesused">Technology used</p>
         <div className="row">
-          <img width="50px" height="50px" alt="icon" src='./images/react.png'></img>
-          <img width="50px" height="50px" alt="icon"src='./images/css.jfif'></img>
-          <img width="50px" height="50px" alt="icon" src="./images/redux.png"></img>
+          <img width="50px" height="50px" alt="icon" src='./images/icons/react.png'></img>
+          <img width="50px" height="50px" alt="icon"src='./images/icons/css.jfif'></img>
+          <img width="50px" height="50px" alt="icon" src="./images/icons/redux.png"></img>
         </div>
       </motion.div>{" "}
      <a href="https://76y7e.csb.app/" target="_blank" rel="noopener noreferrer"> <motion.img

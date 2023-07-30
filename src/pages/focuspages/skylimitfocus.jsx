@@ -24,17 +24,17 @@ export const SkylimitFocus = ({ match }) => (
   <motion.div className="single" initial="exit" animate="enter" exit="exit">
     
       <motion.div className="back" variants={backVariants}>
-        <Link to="/projects" className="whitetext backbutton">
+        <Link to="/freelance" className="whitetext backbutton">
           ← Back
         </Link>{" "}
          
-        <p className="languagesused">Languages used</p>
+        <p className="languagesused">Technology used</p>
         <div className="row">
-          <img width="50px" height="50px" alt="icon" src='./images/react.png'></img>
-          <img width="50px" height="50px" alt="icon" src='./images/scss.png'></img>
-          <img width="50px" height="50px" alt="icon" src='./images/paypal.jpg'></img>
-          <img width="50px" height="50px" alt="icon" src='./images/framermotion.gif'></img>
-          <img width="70px" height="50px" alt="icon" src='./images/redux.png'></img>
+          <img width="50px" height="50px" alt="icon" src='./images/icons/react.png'></img>
+          <img width="50px" height="50px" alt="icon" src='./images/icons/scss.png'></img>
+          <img width="50px" height="50px" alt="icon" src='./images/icons/paypal.jpg'></img>
+          <img width="50px" height="50px" alt="icon" src='./images/icons/framermotion.gif'></img>
+          <img width="70px" height="50px" alt="icon" src='./images/icons/redux.png'></img>
         </div>
       </motion.div>{" "}
      <a href="https://skylimfitness.com/" target="_blank" rel="noopener noreferrer"> <motion.img

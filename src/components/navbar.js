@@ -54,7 +54,7 @@ export const Navigation = (props) => {
         <div className="collapse navbar-collapse" id="toggler-nav">
           <div className="navbar-nav">
             <NavLink
-              to="/Projects"
+              to="/freelance"
               onClick={() => {
                 props.setButtonOn(1);
               }}
@@ -88,6 +88,23 @@ export const Navigation = (props) => {
               </div>{" "}
             </NavLink>
             <NavLink
+              to="/ongoing"
+              onClick={() => {
+                props.setButtonOn(4);
+              }}
+            >
+              {" "}
+              <div
+                className={
+                  props.buttonOn === 4
+                    ? "nav-link-active nav-link "
+                    : "nav-link"
+                }
+              >
+                Ongoing Projects
+              </div>{" "}
+            </NavLink>
+            <NavLink
               to="/Skills"
               onClick={() => {
                 props.setButtonOn(3);
@@ -104,6 +121,7 @@ export const Navigation = (props) => {
                 Technologies
               </div>{" "}
             </NavLink>
+            
           </div>
         </div>
       </motion.div>
