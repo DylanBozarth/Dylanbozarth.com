@@ -1,8 +1,6 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-
-import { Container, Col, Row } from "react-bootstrap";
 
 const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] };
 
@@ -35,101 +33,82 @@ const pagetransition = {
   duration: 1.1,
 };
 // make this a functional component
-class Games extends Component {
-  constructor() {
-    super();
-    this.state = {
-      items: [
-        /*{
-          image: "./images/andromeda.png",
-          title: "Andromeda",
-          link: "/andromeda",
-        },*/
-        {
-          image: "./gamesImages/my_pet.png",
-          title: "My pet database",
-          link: "/mypet",
-        },
-        {
-          image: "./images/solarsystem.png",
-          title: "Solar System Viewer",
-          link: "/solarsystem",
-          tag: "personal",
-        },
-        {
-          image: "./gamesImages/dinogame.jfif",
-          title: "Dinosaur Jumping game",
-          link: "/dino",
-          tag: "professional",
-        },
+export const Personal = () => {
+  const [personalProjects, setPersonalProjects] = useState([
+    {
+      image: "./gamesImages/my_pet.png",
+      title: "My pet database",
+      link: "/mypet",
+    },
+    {
+      image: "./images/solarsystem.png",
+      title: "Solar System Viewer",
+      link: "/solarsystem",
+      tag: "personal",
+    },
+    {
+      image: "./gamesImages/dinogame.jfif",
+      title: "Dinosaur Jumping game",
+      link: "/dino",
+      tag: "professional",
+    },
 
-        {
-          image: "./gamesImages/pizza.jpeg",
-          title: "Create your own Pizza UI",
-          link: "/pizza",
-          tag: "personal",
-        },
-        {
-          image: "./gamesImages/hwsnew.png",
-          title: "History's Armory",
-          link: "/weaponsshop",
-          tag: "personal",
-        },
-      ],
-    };
-  }
-
-  state = {};
-  render() {
-    return (
-      <motion.div
-        className="thumbnails "
-        initial="out"
-        animate="in"
-        exit="out"
-        variants={changepage}
-        transition={pagetransition}
-      >
-        <Container className="Projects ">
-          <p className="projectpagetitle ">
-            Minigames and other
-            <br /> Coding projects done for fun
-          </p>
-          <Row>
-            <Col></Col>
-            <Col md="auto">
-              {this.state.items.map(({ title, image, link }) => (
+    {
+      image: "./gamesImages/pizza.jpeg",
+      title: "Create your own Pizza UI",
+      link: "/pizza",
+      tag: "personal",
+    },
+    {
+      image: "./gamesImages/hwsnew.png",
+      title: "History's Armory",
+      link: "/weaponsshop",
+      tag: "personal",
+    },
+  ]);
+  return (
+    <motion.div
+      className="thumbnails scroll-page horizontal-center"
+      initial="out"
+      animate="in"
+      exit="out"
+      variants={changepage}
+      transition={pagetransition}
+    >
+      <div className="Projects">
+        <p className="projectpagetitle ">
+          Minigames and other
+          <br /> Coding projects done for fun
+        </p>
+          <div md="auto">
+            {personalProjects.map(({ title, image, link }) => (
+              <motion.div
+                className="thumbnail"
+                variants={thumbnailVariants}
+                key={title}
+              >
+                {" "}
                 <motion.div
-                  className="thumbnail"
-                  variants={thumbnailVariants}
-                  key={title}
+                  className="frame"
+                  whileHover="hover"
+                  variants={frameVariants}
+                  transition={transition}
                 >
-                  {" "}
-                  <motion.div
-                    className="frame"
-                    whileHover="hover"
-                    variants={frameVariants}
-                    transition={transition}
-                  >
-                    <p className="projectstitle">{title}</p>
-                    <Link to={link}>
-                      <motion.img
-                        src={image}
-                        alt="javascript react developer"
-                        variants={imageVariants}
-                        transition={transition}
-                      />
-                    </Link>
-                  </motion.div>
+                  <p className="projectstitle">{title}</p>
+                  <Link to={link}>
+                    <motion.img
+                      src={image}
+                      alt="javascript react developer"
+                      variants={imageVariants}
+                      transition={transition}
+                    />
+                  </Link>
                 </motion.div>
-              ))}
-            </Col>
-            <Col></Col>
-          </Row>
-        </Container>
-      </motion.div>
-    );
-  }
-}
-
-export default Games;
+              </motion.div>
+            ))}
+          </div>
+          <div></div>
+        </div>
+    </motion.div>
+  );
+};

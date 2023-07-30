@@ -2,12 +2,7 @@ import React, { useState } from "react";
 import { Navigation } from "./components/navbar";
 import "./App.css";
 import Homepage from "./pages/homepage";
-import {
-  BrowserRouter as Switch,
-  Route,
-  useLocation,
-  Redirect,
-} from "react-router-dom";
+import { BrowserRouter as Switch, Route, useLocation } from "react-router-dom";
 import Projects from "./pages/freelance";
 import { Skills } from "./pages/skills";
 import { AnimatePresence, motion } from "framer-motion";
@@ -16,7 +11,6 @@ import { PowerstrokeFocus } from "./pages/focuspages/powerstrokefocus";
 import { Weaponsshopfocus } from "./pages/focuspages/weaponsshopfocus";
 import { ThiswebsiteFocus } from "./pages/focuspages/thiswebsitefocus";
 import { JymrDoodlesFocus } from "./pages/focuspages/jymrdoodlesfocus";
-import UseFavicon from "./components/hooks/useFavicon";
 import { Jsquizfocus } from "./pages/focuspages/jsquizfocus";
 import { Weatherappfocus } from "./pages/focuspages/weatherappfocus";
 import { pizzaFocus } from "./pages/focuspages/pizzaFocus";
@@ -25,13 +19,12 @@ import { BitcoinFocus } from "./pages/focuspages/bitcoinfocus";
 import { RestFocus } from "./pages/focuspages/restFocus";
 import { Dadfocus } from "./pages/focuspages/dadfocus";
 import { MyPetFocus } from "./pages/focuspages/mypetfocus";
-import Games from "./pages/personal";
+import  { Personal } from "./pages/personal";
 import { Dino } from "./pages/focuspages/dinofocus";
 
 function App() {
   const location = useLocation();
   const [buttonOn, setButtonOn] = useState(0);
-  UseFavicon("./images/Dicon.png");
   return (
     <motion.div className="wrapper">
       <Navigation buttonOn={buttonOn} setButtonOn={setButtonOn} />{" "}
@@ -54,7 +47,7 @@ function App() {
             )}
           />
           <Route path="/Projects" component={Projects} />
-          <Route path="/otherProjects" component={Games} />
+          <Route path="/otherProjects" component={Personal} />
           {/* this was done before I knew how to do procedural routing, don't judge */}
           <Route path="/Skills" component={Skills} />
           <Route path="/skylimit" component={SkylimitFocus} />

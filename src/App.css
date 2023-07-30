@@ -231,10 +231,6 @@ animation:move-clouds-back 250s linear infinite;
   font-size: 2vh;
 
 }
-.projectspage {
-  margin-left: auto;
-  margin-right: auto;
-}
 .evidencerow {
   margin-left: 200px;
 }
@@ -298,10 +294,6 @@ animation:move-clouds-back 250s linear infinite;
   font-size: 54px;
   float: center;
   margin-right: 5%;
-}
-
-.Projects {
-  margin-bottom: 10%;
 }
 
 .whitetext {
@@ -1572,4 +1564,14 @@ aside:hover ul li:nth-child(3) {
 }
 .resume {
   background-image: url('../public/images/resume.webp');
+}
+.horizontal-center {
+  width: 50%;
+  margin: 0 auto;
+  margin-left: auto; margin-right: auto;
+  justify-content: center;
+}
+.scroll-page {
+  display: flex;
+  margin-bottom: 10%;
 }

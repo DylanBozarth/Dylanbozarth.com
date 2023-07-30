@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import { Row } from "react-bootstrap";
 const changepage = {
   in: {
     opacity: 1,
@@ -15,18 +14,18 @@ const pagetransition = {
 };
 const rowIn = {
   in: {
-    x: 0
+    x: 0,
   },
   out: {
-    x: '100vw'
+    x: "100vw",
   },
 };
 const rowIn2 = {
   in: {
-    x: 0
+    x: 0,
   },
   out: {
-    x: '-100vw'
+    x: "-100vw",
   },
 };
 const SlideIn = {
@@ -42,17 +41,21 @@ export const Skills = () => (
     className="whitetext"
   >
     <div className="container">
-      <p className="projectpagetitle">I have worked with the following technologies</p>
+      <p className="projectpagetitle">
+        I have worked with the following technologies
+      </p>
       <p className="projectstitle">
-       Anything that I don't already know, I am
-        always able to learn.
+        Anything that I don't already know, I am always able to learn.
       </p>
       {/* make these reusable components */}
-      <motion.div initial="out"
-    animate="in"
-    exit="out"
-    variants={rowIn}
-    transition={SlideIn} className="row">
+      <motion.div
+        initial="out"
+        animate="in"
+        exit="out"
+        variants={rowIn}
+        transition={SlideIn}
+        className="row"
+      >
         <div className="col-sm ">
           <aside className="profile-card asidehtml">
             <header></header>
@@ -122,17 +125,21 @@ export const Skills = () => (
             <div className="profile-bio">
               <p>TypeScript</p>
               <p>
-              TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
+                TypeScript is a strongly typed programming language that builds
+                on JavaScript, giving you better tooling at any scale.
               </p>
             </div>
           </aside>{" "}
         </div>
       </motion.div>
-      <motion.div initial="out"
-    animate="in"
-    exit="out"
-    variants={rowIn2}
-    transition={SlideIn} className="row">
+      <motion.div
+        initial="out"
+        animate="in"
+        exit="out"
+        variants={rowIn2}
+        transition={SlideIn}
+        className="row"
+      >
         <div className="col-sm ">
           <aside className="profile-card asidereactnative">
             <header></header>
@@ -194,10 +201,9 @@ export const Skills = () => (
           </aside>{" "}
         </div>
       </motion.div>
-     
     </div>
     <p className="projectpagetitle">My online presence</p>
-    <Row>
+    <div className="row">
       <div className="item">
         <a
           href="https://github.com/dylanbozarth"
@@ -230,12 +236,10 @@ export const Skills = () => (
         >
           <img className="skillimage" src="./images/linkedin.png" alt="" />
           <div className="item-content">
-            <p>
-              LinkedIn
-            </p>
+            <p>LinkedIn</p>
           </div>
         </a>
       </div>
-    </Row>
+    </div>
   </motion.div>
 );
