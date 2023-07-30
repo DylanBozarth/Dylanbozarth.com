@@ -28,10 +28,10 @@ export const SolarsystemFocus = ({ match }) => (
           ← Back
         </Link>{" "}
          
-        <p className="languagesused">Languages used</p>
+        <p className="languagesused">Technology used</p>
         <div className="row">
-          <img width="50px" height="50px" alt="icon" src='./images/react.png'></img>
-          <img width="50px" height="50px" alt="icon" src='./images/scss.png'></img>
+          <img width="50px" height="50px" alt="icon" src='./images/icons/react.png'></img>
+          <img width="50px" height="50px" alt="icon" src='./images/icons/scss.png'></img>
          
           <img width="50px" height="50px" alt="icon" src='./images/framermotion.gif'></img>
         </div>

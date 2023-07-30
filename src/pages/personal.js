@@ -77,8 +77,8 @@ export const Personal = () => {
     >
       <div className="Projects">
         <p className="projectpagetitle ">
-          Minigames and other
-          <br /> Coding projects done for fun
+        Coding projects done for fun or to work with new technology.
+        <br /> 
         </p>
           <div md="auto">
             {personalProjects.map(({ title, image, link }) => (

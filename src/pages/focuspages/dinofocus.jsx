@@ -31,12 +31,12 @@ export const Dino = ({ match }) => (
             ← Back
           </Link>{" "}
            
-          <p className="languagesused">Languages used</p>
+          <p className="languagesused">Technology used</p>
           <div className="row">
-            <img width="50px" height="50px" alt="icon" src='./images/javascript.png'></img>
-            <img width="50px" height="50px" alt="icon"src='./images/html.jfif'></img>
-            <img width="50px" height="50px" alt="icon"src='./images/css.jfif'></img>
-            <img width="50px" height="50px" alt="icon"src='./images/react.png'></img>
+            <img width="50px" height="50px" alt="icon" src='/images/icons/javascript.png'></img>
+            <img width="50px" height="50px" alt="icon"src='./images/icons/html.jfif'></img>
+            <img width="50px" height="50px" alt="icon"src='./images/icons/css.jfif'></img>
+            <img width="50px" height="50px" alt="icon"src='./images/icons/react.png'></img>
   
             
           </div>
