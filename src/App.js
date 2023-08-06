@@ -13,7 +13,7 @@ import { JymrDoodlesFocus } from "./pages/focuspages/jymrdoodlesfocus";
 import { pizzaFocus } from "./pages/focuspages/pizzaFocus";
 import { SolarsystemFocus } from "./pages/focuspages/solarsystem";
 import { MyPetFocus } from "./pages/focuspages/mypetfocus";
-import  { Personal } from "./pages/personal";
+import { Personal } from "./pages/personal";
 import { Dino } from "./pages/focuspages/dinofocus";
 import { OnGoing } from "./pages/ongoing";
 import { AndromedaFocus } from "./pages/focuspages/andromedafocus";
@@ -56,7 +56,6 @@ function App() {
           <Route path="/mypet" component={MyPetFocus} />
           <Route path="/dino" component={Dino} />
           <Route path="/andromeda" component={AndromedaFocus} />
-          {/*  <Route component={Fourohfour} /> */}
         </Switch>
       </AnimatePresence>
     </motion.div>
