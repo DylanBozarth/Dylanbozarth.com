@@ -34,7 +34,7 @@ function Homepage(props) {
         >
           <Card
             imgUrl="./images/projectspage.webp"
-            link="/projects"
+            link="/freelance"
             title="Professional Projects"
             className=" "
             description=""
