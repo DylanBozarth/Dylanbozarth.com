@@ -29,7 +29,7 @@ export const SkylimitFocus = ({ match }) => (
         </Link>{" "}
          
         <p className="languagesused">Technology used</p>
-        <div className="row">
+        <div className="icon-row">
           <img width="50px" height="50px" alt="icon" src='./images/icons/react.png'></img>
           <img width="50px" height="50px" alt="icon" src='./images/icons/scss.png'></img>
           <img width="50px" height="50px" alt="icon" src='./images/icons/paypal.jpg'></img>

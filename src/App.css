@@ -373,6 +373,9 @@ animation:move-clouds-back 250s linear infinite;
   color: white;
   font-size: 2rem
 }
+.icon-row {
+  display: flex;
+}
 
 /* codepen buttons start */ 
 
@@ -1397,4 +1400,7 @@ aside:hover ul li:nth-child(3) {
 .scroll-page {
   display: flex;
   margin-bottom: 10%;
+}
+.row {
+  display: flex;
 }

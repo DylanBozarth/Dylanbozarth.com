@@ -121,7 +121,6 @@ export const Navigation = (props) => {
                 Technologies
               </div>{" "}
             </NavLink>
-            
           </div>
         </div>
       </motion.div>

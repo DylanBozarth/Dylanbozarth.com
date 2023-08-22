@@ -28,7 +28,7 @@ export const AndromedaFocus = ({ match }) => (
         ← Back
       </Link>{" "}
       <p className="languagesused">Technology used</p>
-      <div className="row">
+      <div className="icon-row">
         <img
           width="50px"
           height="50px"
