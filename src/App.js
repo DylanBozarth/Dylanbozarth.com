@@ -30,7 +30,7 @@ function App() {
       </div>
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Homepage />} buttonOn={buttonOn} setButtonOn={setButtonOn}></Route>
+          <Route path="/" element={<Homepage buttonOn={buttonOn} setButtonOn={setButtonOn} />} ></Route>
           <Route path="/freelance" element={<Freelance />} />
           <Route path="/otherProjects" element={<Personal />} />
           <Route path="/ongoing" element={<OnGoing />} />
