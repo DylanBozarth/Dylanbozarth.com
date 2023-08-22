@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Navigation } from "./components/navbar";
 import "./App.css";
 import Homepage from "./pages/homepage";
-import { BrowserRouter as Switch, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { Freelance } from "./pages/freelance";
 import { Skills } from "./pages/skills";
 import { AnimatePresence, motion } from "framer-motion";
@@ -10,7 +10,6 @@ import { SkylimitFocus } from "./pages/focuspages/skylimitfocus";
 import { PowerstrokeFocus } from "./pages/focuspages/powerstrokefocus";
 import { Weaponsshopfocus } from "./pages/focuspages/weaponsshopfocus";
 import { JymrDoodlesFocus } from "./pages/focuspages/jymrdoodlesfocus";
-import { pizzaFocus } from "./pages/focuspages/pizzaFocus";
 import { SolarsystemFocus } from "./pages/focuspages/solarsystem";
 import { MyPetFocus } from "./pages/focuspages/mypetfocus";
 import { Personal } from "./pages/personal";
@@ -29,34 +28,23 @@ function App() {
         <div className="twinkling"></div>
         <div className="clouds"></div>
       </div>
-      <AnimatePresence exitBeforeEnter={true}>
-        <Switch location={location} key={location.pathname}>
-          <Route
-            exact
-            path="/"
-            render={(props) => (
-              <Homepage
-                {...props}
-                setButtonOn={setButtonOn}
-                buttonOn={buttonOn}
-              />
-            )}
-          />
-          <Route path="/freelance" component={Freelance} />
-          <Route path="/otherProjects" component={Personal} />
-          <Route path="/ongoing" component={OnGoing} />
-          {/* this was done before I knew how to do procedural routing, don't judge */}
-          <Route path="/Skills" component={Skills} />
-          <Route path="/skylimit" component={SkylimitFocus} />
-          <Route path="/powerstroke" component={PowerstrokeFocus} />
-          <Route path="/weaponsshop" component={Weaponsshopfocus} />
-          <Route path="/doodles" component={JymrDoodlesFocus} />
-          <Route path="/pizza" component={pizzaFocus} />
-          <Route path="/solarsystem" component={SolarsystemFocus} />
-          <Route path="/mypet" component={MyPetFocus} />
-          <Route path="/dino" component={Dino} />
-          <Route path="/andromeda" component={AndromedaFocus} />
-        </Switch>
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Homepage buttonOn={buttonOn} setButtonOn={setButtonOn} />} ></Route>
+          <Route path="/freelance" element={<Freelance />} />
+          <Route path="/otherProjects" element={<Personal />} />
+          <Route path="/ongoing" element={<OnGoing />} />
+          <Route path="/Skills" element={<Skills />} />
+          <Route path="/skylimit" element={<SkylimitFocus />} />
+          <Route path="/powerstroke" element={<PowerstrokeFocus />} />
+          <Route path="/weaponsshop" element={<Weaponsshopfocus />} />
+          <Route path="/doodles" element={<JymrDoodlesFocus />} />
+          <Route path="/pizza" element={<pizzaFocus />} />
+          <Route path="/solarsystem" element={<SolarsystemFocus />} />
+          <Route path="/mypet" element={<MyPetFocus />} />
+          <Route path="/dino" element={<Dino />} />
+          <Route path="/andromeda" element={<AndromedaFocus />} />
+        </Routes>
       </AnimatePresence>
     </motion.div>
   );
