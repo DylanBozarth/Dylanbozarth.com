@@ -16,6 +16,7 @@ import { Personal } from "./pages/personal";
 import { Dino } from "./pages/focuspages/dinofocus";
 import { OnGoing } from "./pages/ongoing";
 import { AndromedaFocus } from "./pages/focuspages/andromedafocus";
+import { pizzaFocus } from "./pages/focuspages/pizzaFocus";
 
 function App() {
   const location = useLocation();
@@ -39,7 +40,6 @@ function App() {
           <Route path="/powerstroke" element={<PowerstrokeFocus />} />
           <Route path="/weaponsshop" element={<Weaponsshopfocus />} />
           <Route path="/doodles" element={<JymrDoodlesFocus />} />
-          <Route path="/pizza" element={<pizzaFocus />} />
           <Route path="/solarsystem" element={<SolarsystemFocus />} />
           <Route path="/mypet" element={<MyPetFocus />} />
           <Route path="/dino" element={<Dino />} />

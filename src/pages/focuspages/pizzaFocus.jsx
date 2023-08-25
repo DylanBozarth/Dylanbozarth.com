@@ -20,7 +20,7 @@ const backVariants = {
   enter: { x: 0, opacity: 1, transition: { delay: 1, ...transition } },
 };
 
-export const pizzaFocus = ({ match }) => (
+export const pizzaFocus = () => (
   <motion.div className="single" initial="exit" animate="enter" exit="exit">
     
       <motion.div className="back" variants={backVariants}>

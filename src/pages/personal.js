@@ -32,7 +32,6 @@ const changepage = {
 const pagetransition = {
   duration: 1.1,
 };
-// make this a functional component
 export const Personal = () => {
   const [personalProjects, setPersonalProjects] = useState([
     {
@@ -51,13 +50,6 @@ export const Personal = () => {
       title: "Dinosaur Jumping game",
       link: "/dino",
       tag: "professional",
-    },
-
-    {
-      image: "./gamesImages/pizza.jpeg",
-      title: "Create your own Pizza UI",
-      link: "/pizza",
-      tag: "personal",
     },
     {
       image: "./gamesImages/hwsnew.png",

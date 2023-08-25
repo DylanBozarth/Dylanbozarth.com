@@ -20,7 +20,7 @@ const backVariants = {
   enter: { x: 0, opacity: 1, transition: { delay: 1, ...transition } },
 };
 
-export const PowerstrokeFocus = ({ match }) => (
+export const PowerstrokeFocus = () => (
   <motion.div className="single container-fluid" initial="exit" animate="enter" exit="exit">
     
       <motion.div className="back" variants={backVariants}>

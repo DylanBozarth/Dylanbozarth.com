@@ -23,7 +23,7 @@ const transition = {
   
 
 
-export const Dino = ({ match }) => (
+export const Dino = () => (
     <motion.div className="single" initial="exit" animate="enter" exit="exit">
       
         <motion.div className="back" variants={backVariants}>
