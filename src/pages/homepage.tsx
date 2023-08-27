@@ -13,7 +13,11 @@ const changepage = {
 const pagetransition = {
   duration: 1.2,
 };
-function Homepage(props) {
+interface homepageProps {
+  buttonOn: number,
+  setButtonOn: Function
+}
+function Homepage({buttonOn, setButtonOn}: homepageProps) {
   return (
     <motion.div
       id=""
@@ -29,14 +33,13 @@ function Homepage(props) {
           initial="out"
           animate="in"
           exit="out"
-          className=" col-sm-4"
-          onClick={() => props.setButtonOn(1)}
+          className=" col-sm-4" 
+          onClick={() => setButtonOn(1)}
         >
           <Card
             imgUrl="./images/projectspage.webp"
             link="/freelance"
             title="Professional Projects"
-            className=" "
             description=""
           />
         </motion.div>
@@ -45,13 +48,12 @@ function Homepage(props) {
           animate="in"
           exit="out"
           className="col-sm-4"
-          onClick={() => props.setButtonOn(2)}
+          onClick={() => setButtonOn(2)}
         >
           <Card
             imgUrl="./images/unprofessional.webp"
             title="Personal Projects"
             link="/otherProjects"
-            className=" "
             description=""
           />
         </motion.div>

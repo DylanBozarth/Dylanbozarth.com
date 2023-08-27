@@ -16,7 +16,6 @@ import { Personal } from "./pages/personal";
 import { Dino } from "./pages/focuspages/dinofocus";
 import { OnGoing } from "./pages/ongoing";
 import { AndromedaFocus } from "./pages/focuspages/andromedafocus";
-import { pizzaFocus } from "./pages/focuspages/pizzaFocus";
 
 function App() {
   const location = useLocation();
