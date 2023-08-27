@@ -20,7 +20,7 @@ const backVariants = {
   enter: { x: 0, opacity: 1, transition: { delay: 1, ...transition } },
 };
 
-export const MyPetFocus = ({ match }) => (
+export const pizzaFocus = () => (
   <motion.div className="single" initial="exit" animate="enter" exit="exit">
     
       <motion.div className="back" variants={backVariants}>
@@ -33,22 +33,20 @@ export const MyPetFocus = ({ match }) => (
           <img width="50px" height="50px" alt="icon" src='./images/icons/react.png'></img>
           <img width="50px" height="50px" alt="icon"src='./images/icons/scss.png'></img>
           <img width="50px" height="50px" alt="icon"src='./images/icons/hooksicon.png'></img>
-          <img width="50px" height="50px" alt="icon"src='./images/icons/nodejs.png'></img>
-          <img width="50px" height="50px" alt="icon"src='./images/icons/mongo.png'></img>
           
         </div>
       </motion.div>{" "}
-     <a href="https://quizzical-agnesi-02d509.netlify.app/" target="_blank" rel="noopener noreferrer"> <motion.img
+     <a href="https://xenodochial-golick-10732e.netlify.app/" target="_blank" rel="noopener noreferrer"> <motion.img
         variants={imageVariants}
-        src="./gamesImages/my_pet.png"
-        alt="JavaScript"
+        src="./gamesImages/pizza.jpeg"
+        alt="Pizza"
       />
     </a>
 
     <div className="linkbox">
       <a
         className="button2 b-blue rot-135"
-        href="https://quizzical-agnesi-02d509.netlify.app/"
+        href="https://xenodochial-golick-10732e.netlify.app/"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -56,15 +54,14 @@ export const MyPetFocus = ({ match }) => (
       </a>{" "}
       <a
         className="button2 b-blue rot-135"
-        href="https://github.com/Imstupidpleasehelp/MERN-lesson"
+        href="https://github.com/Imstupidpleasehelp/pizzaPiza"
         target="blank"
         rel="noopener noreferrer"
       >
         View code
       </a>
       <p className="focustext">
-     Full Stack MERN (MongoDb, Express, React, and Node) Webapp. Share a photo of your pet and see other people's pets. 
-     <br /> Go ahead and submit your own! 
+       After struggling with a "Create your own" portion of a pizza restaurant's app, I decided to create my own that would be as straight forward as possible. 
       </p>
     </div>
   </motion.div>

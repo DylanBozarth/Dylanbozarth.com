@@ -20,24 +20,26 @@ const backVariants = {
   enter: { x: 0, opacity: 1, transition: { delay: 1, ...transition } },
 };
 
-export const Weaponsshopfocus  = ({ match }) => (
+export const SkylimitFocus = () => (
   <motion.div className="single" initial="exit" animate="enter" exit="exit">
     
       <motion.div className="back" variants={backVariants}>
-        <Link to="/otherProjects" className="whitetext backbutton">
+        <Link to="/freelance" className="whitetext backbutton">
           ← Back
         </Link>{" "}
          
         <p className="languagesused">Technology used</p>
         <div className="icon-row">
           <img width="50px" height="50px" alt="icon" src='./images/icons/react.png'></img>
-          <img width="50px" height="50px" alt="icon"src='./images/icons/css.jfif'></img>
-          <img width="50px" height="50px" alt="icon" src="./images/icons/redux.png"></img>
+          <img width="50px" height="50px" alt="icon" src='./images/icons/scss.png'></img>
+          <img width="50px" height="50px" alt="icon" src='./images/icons/paypal.jpg'></img>
+          <img width="50px" height="50px" alt="icon" src='./images/icons/framermotion.gif'></img>
+          <img width="70px" height="50px" alt="icon" src='./images/icons/redux.png'></img>
         </div>
       </motion.div>{" "}
-     <a href="https://76y7e.csb.app/" target="_blank" rel="noopener noreferrer"> <motion.img
+     <a href="https://skylimfitness.com/" target="_blank" rel="noopener noreferrer"> <motion.img
         variants={imageVariants}
-        src="./gamesImages/hwsnew.png"
+        src="./images/skyfitnessnew.jpg"
         alt="SkyLimit Fitness"
       />
     </a>
@@ -45,7 +47,7 @@ export const Weaponsshopfocus  = ({ match }) => (
     <div className="linkbox">
       <a
         className="button2 b-blue rot-135"
-        href="https://76y7e.csb.app/"
+        href="https://skylimfitness.com/"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -53,15 +55,14 @@ export const Weaponsshopfocus  = ({ match }) => (
       </a>{" "}
       <a
         className="button2 b-blue rot-135"
-        href="https://github.com/Imstupidpleasehelp/Historical-weapons-shop"
+        href="https://github.com/Imstupidpleasehelp/SkylimitHost"
         target="blank"
         rel="noopener noreferrer"
       >
         View code
       </a>
       <p className="focustext">
-        History's Armory. A practice project and my way of expressing my love of my other hobbies through code. 
-        Made with React and SCSS 
+        Skylimit Fitness. A React website made for a personal trainer from Spokane Washington. Skylimit fitness was my first full scale project. 
       </p>
     </div>
   </motion.div>

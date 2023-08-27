@@ -20,49 +20,51 @@ const backVariants = {
   enter: { x: 0, opacity: 1, transition: { delay: 1, ...transition } },
 };
 
-export const pizzaFocus = ({ match }) => (
+export const JymrDoodlesFocus = () => (
   <motion.div className="single" initial="exit" animate="enter" exit="exit">
     
       <motion.div className="back" variants={backVariants}>
-        <Link to="/otherProjects" className="whitetext backbutton">
+        <Link to="/freelance" className="whitetext backbutton">
           ← Back
         </Link>{" "}
          
         <p className="languagesused">Technology used</p>
         <div className="icon-row">
-          <img width="50px" height="50px" alt="icon" src='./images/icons/react.png'></img>
-          <img width="50px" height="50px" alt="icon"src='./images/icons/scss.png'></img>
-          <img width="50px" height="50px" alt="icon"src='./images/icons/hooksicon.png'></img>
+          <img width="50px" height="50px" alt="react" src='./images/icons/react.png'></img>
+          <img width="50px" height="50px" alt="scss"src='./images/icons/scss.png'></img>
+          <img width="50px" height="50px" alt="react-hooks"src='./images/icons/hooksicon.png'></img>
+
           
         </div>
       </motion.div>{" "}
-     <a href="https://xenodochial-golick-10732e.netlify.app/" target="_blank" rel="noopener noreferrer"> <motion.img
+     <a href="https://jymrdoodles.com" target="_blank" rel="noopener noreferrer"> <motion.img
         variants={imageVariants}
-        src="./gamesImages/pizza.jpeg"
-        alt="Pizza"
+        src="./images/jymr.jpg"
+        alt="JYMR doodles"
       />
     </a>
 
     <div className="linkbox">
       <a
         className="button2 b-blue rot-135"
-        href="https://xenodochial-golick-10732e.netlify.app/"
+        href="https://jymrdoodles.com"
         target="_blank"
         rel="noopener noreferrer"
       >
-        View Website
+        View Website 
       </a>{" "}
       <a
         className="button2 b-blue rot-135"
-        href="https://github.com/Imstupidpleasehelp/pizzaPiza"
+        href="https://github.com/Imstupidpleasehelp/Puppywebsite"
         target="blank"
         rel="noopener noreferrer"
       >
         View code
       </a>
-      <p className="focustext">
-       After struggling with a "Create your own" portion of a pizza restaurant's app, I decided to create my own that would be as straight forward as possible. 
+      </div><p className="focustext">
+      JYMR doodles, a labradoodle breeder in Utah. Website made with React, React hooks, Scss, and JSON data.  
+     
       </p>
-    </div>
+    
   </motion.div>
 );

@@ -10,7 +10,7 @@ const thumbnailVariants = {
   exit: {
     scale: 0.5,
     opacity: 0,
-    transition: { duration: 1.5, ...transition },
+    transition: { ...transition },
   },
 };
 
@@ -32,7 +32,6 @@ const changepage = {
 const pagetransition = {
   duration: 1.1,
 };
-// make this a functional component
 export const Personal = () => {
   const [personalProjects, setPersonalProjects] = useState([
     {
@@ -51,13 +50,6 @@ export const Personal = () => {
       title: "Dinosaur Jumping game",
       link: "/dino",
       tag: "professional",
-    },
-
-    {
-      image: "./gamesImages/pizza.jpeg",
-      title: "Create your own Pizza UI",
-      link: "/pizza",
-      tag: "personal",
     },
     {
       image: "./gamesImages/hwsnew.png",
@@ -80,7 +72,7 @@ export const Personal = () => {
         Coding projects done for fun or to work with new technology.
         <br /> 
         </p>
-          <div md="auto">
+          <div>
             {personalProjects.map(({ title, image, link }) => (
               <motion.div
                 className="thumbnail"

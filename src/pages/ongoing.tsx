@@ -10,7 +10,7 @@ const thumbnailVariants = {
   exit: {
     scale: 0.5,
     opacity: 0,
-    transition: { duration: 1.5, ...transition },
+    transition: { ...transition },
   },
 };
 
@@ -54,7 +54,7 @@ export const OnGoing = () => {
         <p className="projectpagetitle ">
           Long-term projects that are still in development
         </p>
-        <div md="auto">
+        <div>
           {projects.map(({ title, image, link }) => (
             <motion.div
               className="thumbnail"

@@ -13,8 +13,11 @@ const changepage = {
 const pagetransition = {
   duration: 1.5,
 };
-
-export const Navigation = (props) => {
+interface homepageProps {
+  buttonOn: number,
+  setButtonOn: Function
+}
+export const Navigation = ({buttonOn, setButtonOn}: homepageProps) => {
   return (
     <nav className="navbar  navbar-dark navbar-expand-sm">
       <motion.div
@@ -28,13 +31,13 @@ export const Navigation = (props) => {
         <NavLink
           to="/"
           onClick={() => {
-            props.setButtonOn(0);
+            setButtonOn(0);
           }}
         >
           {" "}
           <div
             className={
-              props.buttonOn === 0 ? "nav-link-active nav-link" : "nav-link"
+              buttonOn === 0 ? "nav-link-active nav-link" : "nav-link"
             }
           >
             Dylan Bozarth
@@ -56,13 +59,13 @@ export const Navigation = (props) => {
             <NavLink
               to="/freelance"
               onClick={() => {
-                props.setButtonOn(1);
+                setButtonOn(1);
               }}
             >
               {" "}
               <div
                 className={
-                  props.buttonOn === 1
+                  buttonOn === 1
                     ? "nav-link-active nav-link "
                     : "nav-link"
                 }
@@ -73,13 +76,13 @@ export const Navigation = (props) => {
             <NavLink
               to="/otherProjects"
               onClick={() => {
-                props.setButtonOn(2);
+                setButtonOn(2);
               }}
             >
               {" "}
               <div
                 className={
-                  props.buttonOn === 2
+                  buttonOn === 2
                     ? "nav-link-active nav-link "
                     : "nav-link"
                 }
@@ -90,13 +93,13 @@ export const Navigation = (props) => {
             <NavLink
               to="/ongoing"
               onClick={() => {
-                props.setButtonOn(4);
+                setButtonOn(4);
               }}
             >
               {" "}
               <div
                 className={
-                  props.buttonOn === 4
+                  buttonOn === 4
                     ? "nav-link-active nav-link "
                     : "nav-link"
                 }
@@ -107,13 +110,13 @@ export const Navigation = (props) => {
             <NavLink
               to="/Skills"
               onClick={() => {
-                props.setButtonOn(3);
+                setButtonOn(3);
               }}
             >
               {" "}
               <div
                 className={
-                  props.buttonOn === 3
+                  buttonOn === 3
                     ? "nav-link-active nav-link "
                     : "nav-link"
                 }

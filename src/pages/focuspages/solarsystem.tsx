@@ -20,34 +20,33 @@ const backVariants = {
   enter: { x: 0, opacity: 1, transition: { delay: 1, ...transition } },
 };
 
-export const PowerstrokeFocus = ({ match }) => (
-  <motion.div className="single container-fluid" initial="exit" animate="enter" exit="exit">
+export const SolarsystemFocus = () => (
+  <motion.div className="single" initial="exit" animate="enter" exit="exit">
     
       <motion.div className="back" variants={backVariants}>
-        <Link to="/freelance" className="whitetext backbutton">
+        <Link to="/otherProjects" className="whitetext backbutton">
           ← Back
         </Link>{" "}
          
         <p className="languagesused">Technology used</p>
         <div className="icon-row">
           <img width="50px" height="50px" alt="icon" src='./images/icons/react.png'></img>
-          <img width="50px" height="50px" alt="icon"src='./images/icons/scss.png'></img>
-          <img width="50px" height="50px" alt="icon"src='./images/icons/framermotion.gif'></img>
-          
+          <img width="50px" height="50px" alt="icon" src='./images/icons/scss.png'></img>
+         
+          <img width="50px" height="50px" alt="icon" src='./images/framermotion.gif'></img>
         </div>
       </motion.div>{" "}
-     <a href="https://loving-turing-361ea9.netlify.app/" target="_blank" rel="noopener noreferrer"> <motion.img
+     <a href="https://brave-wiles-0ecc37.netlify.app/" target="_blank" rel="noopener noreferrer"> <motion.img
         variants={imageVariants}
-        src="./images/spokanepowerstroke.png"
-        alt="Spokane Power stroke"
-        className="img-fluid"
+        src="./images/solarsystem.png"
+        alt="SkyLimit Fitness"
       />
     </a>
 
     <div className="linkbox">
       <a
         className="button2 b-blue rot-135"
-        href="https://loving-turing-361ea9.netlify.app/"
+        href="https://brave-wiles-0ecc37.netlify.app/"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -55,14 +54,15 @@ export const PowerstrokeFocus = ({ match }) => (
       </a>{" "}
       <a
         className="button2 b-blue rot-135"
-        href="https://github.com/Imstupidpleasehelp/spokane-power-stroke"
+        href="https://github.com/Imstupidpleasehelp/planetviewer"
         target="blank"
         rel="noopener noreferrer"
       >
         View code
       </a>
       <p className="focustext">
-       Spokane Power Stroke, A website for an autoshop in Spokane Washington. Website made with React, Scss, and framer motion animation. 
+      Does space excite you? Same. That's why I built this App to view the solar system. Using React, tons of SCSS, and Framer-motion. (+sweat and tears).
+      <br /> Not made for mobile screens.
       </p>
     </div>
   </motion.div>

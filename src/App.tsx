@@ -39,7 +39,6 @@ function App() {
           <Route path="/powerstroke" element={<PowerstrokeFocus />} />
           <Route path="/weaponsshop" element={<Weaponsshopfocus />} />
           <Route path="/doodles" element={<JymrDoodlesFocus />} />
-          <Route path="/pizza" element={<pizzaFocus />} />
           <Route path="/solarsystem" element={<SolarsystemFocus />} />
           <Route path="/mypet" element={<MyPetFocus />} />
           <Route path="/dino" element={<Dino />} />
