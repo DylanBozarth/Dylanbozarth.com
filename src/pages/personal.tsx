@@ -10,7 +10,7 @@ const thumbnailVariants = {
   exit: {
     scale: 0.5,
     opacity: 0,
-    transition: { duration: 1.5, ...transition },
+    transition: { ...transition },
   },
 };
 
@@ -72,7 +72,7 @@ export const Personal = () => {
         Coding projects done for fun or to work with new technology.
         <br /> 
         </p>
-          <div md="auto">
+          <div>
             {personalProjects.map(({ title, image, link }) => (
               <motion.div
                 className="thumbnail"

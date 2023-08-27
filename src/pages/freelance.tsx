@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { animate, motion } from "framer-motion";
+import { link } from "fs";
+import { exit, title } from "process";
 
 const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] };
 
@@ -10,7 +12,7 @@ const thumbnailVariants = {
   exit: {
     scale: 0.5,
     opacity: 0,
-    transition: { duration: 1.5, ...transition },
+    transition: { ...transition },
   },
 };
 
@@ -62,12 +64,12 @@ export const Freelance = () => {
       exit="out"
       variants={changepage}
       transition={pagetransition}
-    >
+      >
       <div className="Projects ">
         <p className="projectpagetitle ">
           Commercial web projects made while I was freelancing<br /> I am no longer accepting freelance offers.
         </p>
-        <div md="auto">
+        <div>
           {projects.map(({ title, image, link }) => (
             <motion.div
               className="thumbnail"
